@@ -1,0 +1,22 @@
+{
+  "name" : "krosmaster-map-editor",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-plumber": "1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-html-replace": "*",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "build": "gulp style"
+  },
+  "engines": {
+    "node": "6.10"
+  }
+}
