@@ -10,6 +10,7 @@ var del = require("del");
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
 var htmlreplace = require('gulp-html-replace');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task("style", function() {
     gulp.src("css/style.css")
@@ -57,6 +58,10 @@ gulp.task('html_replace', function() {
         .pipe(gulp.dest('build/'));
 });
 
+gulp.task('deploy', function() {
+    return gulp.src('./build/**/*')
+        .pipe(ghPages());
+});
 
 gulp.task("build", function(fn) {
     run(
@@ -66,6 +71,7 @@ gulp.task("build", function(fn) {
         "images",
         "js",
         "html_replace",
+        "deploy",
         fn
     );
 });
