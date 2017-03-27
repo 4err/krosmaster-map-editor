@@ -71,7 +71,6 @@ gulp.task("build", function(fn) {
         "images",
         "js",
         "html_replace",
-        "deploy",
         fn
     );
 });
