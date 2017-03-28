@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Редактор карт для Krosmaster Arena</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
     <!-- build:css -->
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -17,8 +18,8 @@
 
 <body>
 <div class="main-container">
-    <img src="img/maps/bonta1.png" alt="Бонта" id="map">
-    <div id="dialog" title="Инструменты">
+    <aside class="tools-list">
+
         <div id="menu">
             <select name="choice_map" id="choice_map">
                 <option value="bonta1" selected>Бонта 1</option>
@@ -27,13 +28,23 @@
                 <option value="bonta2_tapped">Бонта 2 (повернутая)</option>
                 <option value="fog">Туман</option>
                 <option value="fog_tapped">Туман (повернутая)</option>
+                <option value="pit">Пит</option>
+                <option value="pit_tapped">Пит (повернутая)</option>
+                <option value="elemental">Элементаль</option>
+                <option value="elemental_tapped">Элементаль (повернутая)</option>
+                <option value="frigost">Фригост</option>
+                <option value="frigost_tapped">Фригост (повернутая)</option>
+                <option value="piwate1">Пиратская 1</option>
+                <option value="piwate1_tapped">Пиратская 1 (повернутая)</option>
+                <option value="piwate2">Пиратская 2</option>
+                <option value="piwate2_tapped">Пиратская 2 (повернутая)</option>
                 <option value="empty">Пустое поле</option>
             </select>
 
-            <span id="bouton_enreg">Сохранить карту</span>
+            <button id="bouton_enreg">Сохранить карту</button>
         </div>
 
-        <div id="tabs">
+        <div id="tabs" class="tabs">
             <ul>
                 <li><a href="#tabs-1">Ур. 1</a></li>
                 <li><a href="#tabs-2">Ур. 2</a></li>
@@ -49,7 +60,7 @@
                 <li><a href="#tabs-11">Декор</a></li>
                 <li><a href="#tabs-12">Цифры</a></li>
             </ul>
-            <div id="tabs-1">
+            <div id="tabs-1" class="tab">
                 <span class='prototype circle'><img src='img/krosmasters/EDMOND DENTIER jeton.png' alt='jeton_EDMOND DENTIER'></span>
                 <span class='prototype circle'><img src='img/krosmasters/JERRY ORLO jeton.png' alt='jeton_JERRY ORLO'></span>
                 <span class='prototype circle'><img src='img/krosmasters/KIVIN jeton.png' alt='jeton_KIVIN'></span>
@@ -62,7 +73,7 @@
                 <span class='prototype circle'><img src='img/krosmasters/kanniboul archer jeton.png' alt='jeton_kanniboul archer'></span>
                 <span class='prototype circle'><img src='img/krosmasters/kanniboul sarbak jeton.png' alt='jeton_kanniboul sarbak'></span>
             </div>
-            <div id="tabs-2">
+            <div id="tabs-2" class="tab">
                 <span class='prototype circle'><img src='img/krosmasters/LOU jeton.png' alt='jeton_lou'></span>
                 <span class='prototype circle'><img src='img/krosmasters/JORIS jeton.png' alt='jeton_joris'></span>
                 <span class='prototype circle'><img src='img/krosmasters/AYAN jeton.png' alt='jeton_AYAN'></span>
@@ -80,7 +91,7 @@
                 <span class='prototype circle'><img src='img/krosmasters/kanniboul jav jeton.png' alt='jeton_kanniboul jav'></span>
                 <span class='prototype circle'><img src='img/krosmasters/kanniboul thierry jeton.png' alt='jeton_kanniboul thierry'></span>
             </div>
-            <div id="tabs-3">
+            <div id="tabs-3" class="tab">
                 <span class='prototype circle'><img src='img/krosmasters/TERMINATOT GAULDE jeton.png' alt='jeton_terminatotgaulde'></span>
                 <span class='prototype circle'><img src='img/krosmasters/TERMINATOT STASIS jeton.png' alt='jeton_terminatotstasis'></span>
                 <span class='prototype circle'><img src='img/krosmasters/TERMINATOT WAKFU jeton.png' alt='jeton_terminatotwakfu'></span>
@@ -102,7 +113,7 @@
                 <span class='prototype circle'><img src='img/krosmasters/bouftou royal jeton.png' alt='jeton_bouftou royal '></span>
                 <span class='prototype circle'><img src='img/krosmasters/tofu royal jeton.png' alt='jeton_tofu royal'></span>
             </div>
-            <div id="tabs-4">
+            <div id="tabs-4" class="tab">
                 <span class='prototype circle'><img src='img/krosmasters/PAPYCHAT jeton.png' alt='jeton_papychat'></span>
                 <span class='prototype circle'><img src='img/krosmasters/KERUBIM CREPIN jeton.png' alt='jeton_kerubimcrepin'></span>
                 <span class='prototype circle'><img src='img/krosmasters/ELOGIO jeton.png' alt='jeton_ELOGIO'></span>
@@ -118,7 +129,7 @@
                 <span class='prototype circle'><img src='img/krosmasters/dragueuse jeton.png' alt='jeton_dragueuse'></span>
                 <span class='prototype circle'><img src='img/krosmasters/minotoror jeton.png' alt='jeton_minotoror'></span>
             </div>
-            <div id="tabs-5">
+            <div id="tabs-5" class="tab">
                 <span class='prototype circle'><img src='img/krosmasters/DUC REX jeton.png' alt='jeton_DUC REX'></span>
                 <span class='prototype circle'><img src='img/krosmasters/KITTY RAGE jeton.png' alt='jeton_KITTY RAGE'></span>
                 <span class='prototype circle'><img src='img/krosmasters/MALI BOUH jeton.png' alt='jeton_MALI BOUH'></span>
@@ -129,14 +140,14 @@
                 <span class='prototype circle'><img src='img/krosmasters/crocabula jeton.png' alt='jeton_crocabula'></span>
                 <span class='prototype circle'><img src='img/krosmasters/moon jeton.png' alt='jeton_moon'></span>
             </div>
-            <div id="tabs-6">
+            <div id="tabs-6" class="tab">
                 <span class='prototype circle'><img src='img/krosmasters/GEIN jeton.png' alt='jeton_GEIN'></span>
                 <span class='prototype circle'><img src='img/krosmasters/QILBY jeton.png' alt='jeton_QILBY'></span>
                 <span class='prototype circle'><img src='img/krosmasters/QUILBY-TRAITE jeton.png' alt='jeton_QUIBY-TRAITE'></span>
                 <span class='prototype circle'><img src='img/krosmasters/katar jeton.png' alt='jeton_katar'></span>
                 <span class='prototype circle'><img src='img/krosmasters/otomai jeton.png' alt='jeton_otomai'></span>
             </div>
-            <div id="tabs-7">
+            <div id="tabs-7" class="tab">
                 <span class='prototype circle'><img src='img/summons/BOMBE A EAU jeton.png' alt='jeton_bombeaeau'></span>
                 <span class='prototype circle'><img src='img/summons/BOMBE INCENDIAIRE jeton.png' alt='jeton_bombeincendiaire'></span>
                 <span class='prototype circle'><img src='img/summons/TORNABOMBE jeton.png' alt='jeton_tornabombe'></span>
@@ -166,8 +177,8 @@
                 <span class='prototype circle'><img src='img/summons/Dragoeuf Immature 4.png' alt='jeton_dragoeuf immature 4'></span>
                 <span class='prototype circle'><img src='img/summons/nodkoko jeton.png' alt='jeton_nodkoko'></span>
             </div>
-            <div id="tabs-8"></div>
-            <div id="tabs-9">
+            <div id="tabs-8" class="tab"></div>
+            <div id="tabs-9" class="tab">
                 <span class='prototype kit'><img src='img/pieces/tuile/herbe1.png' alt='piece_herbe1'></span>
                 <span class='prototype kit'><img src='img/pieces/tuile/herbe2.png' alt='piece_herbe2'></span>
                 <span class='prototype kit'><img src='img/pieces/tuile/herbe3.png' alt='piece_herbe3'></span>
@@ -219,7 +230,7 @@
                 <span class='prototype kit'><img src='img/pieces/tuile/tuile (37).png' alt='tuile (37)'></span>
                 <span class='prototype kit'><img src='img/pieces/tuile/tuile (38).png' alt='tuile (38)'></span>
             </div>
-            <div id="tabs-11">
+            <div id="tabs-11" class="tab">
                 <span class='prototype kit'><img src='img/pieces/arbre.png' alt='piece_arbre'></span>
                 <span class='prototype kit'><img src='img/pieces/buisson.png' alt='piece_buisson'></span>
                 <span class='prototype kit'><img src='img/pieces/caisse.png' alt='piece_caisse'></span>
@@ -239,7 +250,7 @@
                 <span class='prototype kit'><img src='img/pieces/armes.png' alt='piece_armes'></span>
                 <span class='prototype kit'><img src='img/pieces/rocher.png' alt='piece_rocher'></span>
             </div>
-            <div id="tabs-12">
+            <div id="tabs-12" class="tab">
                 <span class='prototype'><img src='img/digits/0.png' alt='num_0'></span>
                 <span class='prototype'><img src='img/digits/1.png' alt='num_1'></span>
                 <span class='prototype'><img src='img/digits/2.png' alt='num_2'></span>
@@ -261,7 +272,7 @@
                 <span class='prototype'><img src='img/digits/18.png' alt='num_18'></span>
                 <span class='prototype'><img src='img/digits/19.png' alt='num_19'></span>
             </div>
-            <div id="tabs-13">
+            <div id="tabs-13" class="tab">
                 <span class='prototype circle'><img src='img/krosmasters/COA GULAY jeton.png' alt='jeton_coagulay'></span>
                 <span class='prototype circle'><img src='img/krosmasters/DAIE GUERI jeton.png ' alt='jeton_daiegueri'></span>
                 <span class='prototype circle'><img src='img/krosmasters/LIANE ZOLIE jeton.png' alt='jeton_lianezolie'></span>
@@ -315,13 +326,24 @@
                 <span class='prototype circle'><img src='img/krosmasters/COMTE HAREBOURG jeton.png' alt='jeton_comteharebourg'></span>
                 <span class='prototype circle'><img src='img/krosmasters/MERKATOR jeton.png' alt='jeton_merkator'></span>
             </div>
-            <div id="tabs-14">
+            <div id="tabs-14" class="tab">
                 <span class='prototype circle'><img src='img/krosmasters/ARTHUR BINE jeton.png' alt='jeton_ARTHUR BINE'></span>
                 <span class='prototype circle'><img src='img/krosmasters/POOCHAN jeton.png' alt='jeton_POOCHAN'></span>
                 <span class='prototype circle'><img src='img/krosmasters/THIO jeton.png' alt='jeton_THIO'></span>
             </div>
         </div>
-    </div>
+    </aside>
+    <section class="workflow">
+        <div class="loading">Загрузка...</div>
+        <img src="img/maps/bonta1.png" alt="Бонта" id="map" class="map">
+    </section>
+    <aside class="right-column">
+        <div class="kamas-counter">
+            <p>Камочек ровно: <span class="js-kamas-counter counter">0</span></p>
+            <button class="js-kamas-button js-kamas-plus kama-btn">+</button>
+            <button class="js-kamas-button kama-btn">-</button>
+        </div>
+    </aside>
     <canvas id="createur" style="border:2px solid black;" width="72" height="72"></canvas>
     <canvas id="canvasKit" style="border:2px solid black;" width="93" height="93"></canvas>
     <canvas id="canvas" style="border:2px solid black;" width="1196" height="1196"></canvas>
@@ -334,31 +356,6 @@
         <label>Симметрия относительно центра:
             <input type="checkbox" name="SymC" id="symC"></label>
         <div id="bouton_valid">Сохранить</div>
-    </div>
-
-    <div id="dialog_aide" title="Great Bad's Tips">
-        <div id='accordion'>
-            <h3>To resize windows</h3>
-            <div> Each window (Toolbox and help) is resizeable, simply grab an edge and pull.</div>
-            <h3>To create and to move tokens </h3>
-            <div> Holding left click on a token'll make it follow your mouse.</div>
-            <h3>To delete a token </h3>
-            <div> Right clicking on a token outside of the toolbox will delete it.</div>
-            <h3>One 'Double Click' to control them all</h3>
-            <div>On tokens and diagrams : it will alter their ring's colour. On decors and tiles : it will make them rotate.</div>
-            <h3>How to snap ? </h3>
-            <div> pieces in the Diagrams tab can snap together to align them easier. They gain that snapping ability if you release and regrab them after creation. Decors and Tiles snap with each other too.</div>
-            <h3>To save your work as .png</h3>
-            <div>Clicking on Create Picture will open a window. Chose a size in pixels, and a name for your picture then validate. Checking Symmetry will mirror tiles and decors toward center.</div>
-            <h3>Terms of Use </h3>
-            <div> If you use Taktikor's picture on another website than Big Bad, we would enjoy a little word about the website and that tool. =)</div>
-            <h3>Remerciements </h3>
-            <div> Krosmaster's tokens came from the thread opened by Clement on <a href='http://big-bad.forumactif.org/t663-liste-des-cartes-francais-anglais-allemand-card-list-french-english-german'>Big Bad website</a>. Invocation's tokens are from '<a href='www.krosmaster.com/fr/forum-personnalisations/46904-cartes-petit-format-invocations'>Hamstur's nice work</a>. Thanks to
-                them.</br> And last but not least, thanks to Big Bad to gently watch over us.
-            </div>
-            <h3>About </h3>
-            <div>You're on the 1.08 version of Taktikor. Created by Huun and Garween. For all informations do no hesitate to contact us at gannael@hotmail.com</div>
-        </div>
     </div>
 </div>
 

@@ -1,16 +1,6 @@
 $(function () {
-    //Initialise le dialog avec une taille prédéfini et retire les possibilités de fermer.
-    $("#dialog").dialog({
-        height: 500
-        , width: 660
-        , dialogClass: 'no-close'
-        , closeOnEscape: false
-        , open: function () {
-            $(".ui-dialog-title").attr("id", "titlebarDialog").append("<img src = 'http://i76.servimg.com/u/f76/18/18/28/87/pion_b12.png' alt ='bombe_tooltip' id = 'bombe_tooltip'>");
-        }
-    });
     $("#tabs").tabs({
-        heightStyle: "fill"
+        heightStyle: "content"
     });
 
     $("#choice_map").change(function () {
@@ -22,19 +12,7 @@ $(function () {
         height: 180
         , width: 500
     }).dialog("close");
-    $("#dialog_aide").dialog({
-        height: 600
-        , width: 450
-        , autoOpen: false
-        , show: {
-            effect: "blind"
-            , duration: 1000
-        }
-        , hide: {
-            effect: "blind"
-            , duration: 1000
-        }
-    }).dialog("close");
+
     //Rends les canvas invisibles
     $("#createur").hide();
     $("#canvas").hide();
@@ -45,8 +23,7 @@ $(function () {
     //Event liées à prototype
     //Avec la creation d'un jeton lors du draggage du dit prototype.
     //Le jeton obtenant draggage et divers capacitée liés au jeton
-    $(document).on("mouseover", ".prototype", function () {
-        $(this).draggable({
+        $(".prototype").draggable({
             delay: 100
             , appendTo: "body"
             , containment: "parent"
@@ -55,60 +32,22 @@ $(function () {
             , scrollSpeed: 30
             , scrollSensitivity: 100
             , helper: "clone"
-            , start: function (event, ui) {
-                $("#dialog").hide("blind");
-            }
             , stop: function (event, ui) {
-                $("#dialog").show("blind");
-                if ($(this).is('.circle')) {
-                    snappy = false;
-                    var specificite = 'circle';
-                }
-                else if ($(this).is('.schema')) {
-                    snappy = '.schema';
-                    var specificite = 'schema';
-                }
-                else if ($(this).is('.kit')) {
-                    snappy = '.kit';
-                    var specificite = 'kit';
-                }
-                else {
-                    snappy = false;
-                    var specificite = 'truc';
-                }
-                ;
-                $("<span class = 'jeton " + specificite + "'>" + $(this).html() + "</span>").appendTo("body").css({
+                $("<span class = 'jeton " + $(this)[0].classList[1] + "'>" + $(this).html() + "</span>").appendTo("body").css({
                     "position": "absolute"
                     , "left": ui.offset.left
                     , "top": ui.offset.top
                     , "border-color": $(this).css("borderTopColor")
                 }).draggable({
-                    snap: snappy
-                    , snapMode: "both"
-                    , snapTolerance: 5
-                    , delay: 100
+                    delay: 100
                     , containment: "parent"
                     , cursor: "move"
                     , scroll: true
                     , scrollSpeed: 30
                     , scrollSensitivity: 100
-                    , helper: "clone"
-                    , start: function (event, ui) {
-                        $("#dialog").hide("blind");
-                        $(this).hide();
-                    }
-                    , stop: function (event, ui) {
-                        $("#dialog").show("blind");
-                        $(this).appendTo("body").css({
-                            "position": "absolute"
-                            , "left": ui.offset.left
-                            , "top": ui.offset.top
-                        }).show();
-                    }
-                }).show();
+                });
             }
-        })
-    });
+        });
     //Gestion des jetons
     //Changement de couleur du circle via click gauche
     $(document).on("dblclick", ".circle", function (event) {
@@ -137,7 +76,6 @@ $(function () {
     });
     $("#bouton_valid").button();
     $(document).on("click", "#bouton_valid", function (event) {
-        $.post("compteurE.php");
         $("#canvas").attr("width", $("#qualite").val()).attr("height", $("#qualite").val());
         var ratio = $("#qualite").val() / 1196;
         var canvas = document.getElementById("canvas");
@@ -363,4 +301,18 @@ $(function () {
     $("<span class = 'prototype schema'><img src ='" + CreerRect("verti", "black") + "' class = '.vert .black'></span>").appendTo("#tabs-8");
     $("<span class = 'prototype schema'><img src ='" + CreerRect("hori", "black") + "' class = '.hori .black'></span>").appendTo("#tabs-8");
     $("<span class = 'prototype schema'><img src ='" + CreerCroix("black") + "' class = '.croix .black'></span>").appendTo("#tabs-8");
+
+    $('.js-kamas-button').on('click', function () {
+        var count = parseInt(document.querySelector('.js-kamas-counter').innerHTML, 10);
+        if($(this).is('.js-kamas-plus')){
+            count++;
+        } else {
+            if (count>0) {
+                count--;
+            }
+        }
+        document.querySelector('.js-kamas-counter').innerHTML = count;
+
+        return false;
+    });
 });

@@ -1,21 +1,75 @@
 body {
-    background: #9e7b43;
+    background: #f0f0f0;
+    min-width: 1200px;
+    margin: 0 auto;
 
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
+
 .no-close .ui-dialog-titlebar-close {
     display: none;
 }
 
 .main-container {
-    margin: 0 auto;
     text-align: center;
+    display: flex;
 }
 
-.circle {
+.tools-list {
+    width: 30%;
+    min-width: 300px;
+    padding: 5px;
+    padding-top: 15px;
+}
+
+.workflow {
+    font-size: 0;
+}
+
+.right-column {
+    padding: 10px;
+}
+.kama-btn {
+    border: none;
+    box-shadow: none;
+    width: 50px;
+    height: 25px;
+    outline: none;
+    background: #9e7b43;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.kama-btn:hover {
+    background: #b89543;
+}
+
+.kama-btn:active {
+    background: #876443;
+}
+
+.map {
+    height: 100vh;
+}
+
+.tab {
+    height: 500px;
+    overflow: auto;
+}
+
+.prototype {
     display: inline-block;
+}
+.jeton img,
+.prototype img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.circle img {
     border-radius: 50%;
-    width: 72px;
-    height: 72px;
     border: 8px solid black;
 }
 
@@ -25,12 +79,6 @@ body {
 
 #titlebarDialog {
     height: 28px;
-}
-
-#map {
-    width: 1196px;
-    margin-right: 102px;
-    margin-left: 102px;
 }
 
 #grille {
@@ -44,4 +92,9 @@ body {
     position: absolute;
     top: 0px;
     right: 0px;
+}
+
+.loading {
+    display: none;
+    font-size: 32px;
 }
