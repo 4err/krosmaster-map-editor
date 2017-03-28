@@ -16,7 +16,7 @@ gulp.task("style", function() {
     gulp.src("css/style.css")
         .pipe(minify())
         .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("build/css"));
+        .pipe(gulp.dest("../krosmaster-map-editor-build/krosmaster-map-editor/css"));
 });
 
 gulp.task("images", function() {
@@ -25,18 +25,18 @@ gulp.task("images", function() {
             imagemin.jpegtran({ progressive : true }),
             imagemin.optipng({ optimizationLevel : 3 })
         ]))
-        .pipe(gulp.dest("build/img"));
+        .pipe(gulp.dest("../krosmaster-map-editor-build/krosmaster-map-editor/img"));
 });
 
 gulp.task("js", function() {
     gulp.src("js/*.js")
         .pipe(concat("script.min.js"))
         .pipe(uglify())
-        .pipe(gulp.dest("build/js"));
+        .pipe(gulp.dest("../krosmaster-map-editor-build/krosmaster-map-editor/js"));
 });
 
 gulp.task("clean", function() {
-    return del("build");
+    return del("../krosmaster-map-editor-build/krosmaster-map-editor/*");
 });
 
 gulp.task("copy", function() {
@@ -46,7 +46,7 @@ gulp.task("copy", function() {
     ], {
         base: "."
     })
-        .pipe(gulp.dest("build"));
+        .pipe(gulp.dest("../krosmaster-map-editor-build/krosmaster-map-editor"));
 });
 
 gulp.task('html_replace', function() {
@@ -55,17 +55,12 @@ gulp.task('html_replace', function() {
             'css': 'css/style.min.css',
             'js': 'js/script.min.js'
         }))
-        .pipe(gulp.dest('build/'));
-});
-
-gulp.task('deploy', function() {
-    return gulp.src('./build/**/*')
-        .pipe(ghPages());
+        .pipe(gulp.dest('../krosmaster-map-editor-build/krosmaster-map-editor/'));
 });
 
 gulp.task("build", function(fn) {
     run(
-        "clean",
+        // "clean",
         "copy",
         "style",
         "images",
