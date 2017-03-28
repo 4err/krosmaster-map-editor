@@ -36,7 +36,7 @@ gulp.task("js", function() {
 });
 
 gulp.task("clean", function() {
-    return del("../krosmaster-map-editor-build/krosmaster-map-editor/*");
+    return del(['../krosmaster-map-editor-build/krosmaster-map-editor/*'], {force: true});
 });
 
 gulp.task("copy", function() {
@@ -60,7 +60,7 @@ gulp.task('html_replace', function() {
 
 gulp.task("build", function(fn) {
     run(
-        // "clean",
+        "clean",
         "copy",
         "style",
         "images",
