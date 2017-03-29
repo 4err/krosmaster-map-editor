@@ -27,6 +27,16 @@
                 <option value="bonta2_tapped">Бонта 2 (повернутая)</option>
                 <option value="fog">Туман</option>
                 <option value="fog_tapped">Туман (повернутая)</option>
+                <option value="pit">Пит</option>
+                <option value="pit_tapped">Пит (повернутая)</option>
+                <option value="elemental">Элементаль</option>
+                <option value="elemental_tapped">Элементаль (повернутая)</option>
+                <option value="frigost">Фригост</option>
+                <option value="frigost_tapped">Фригост (повернутая)</option>
+                <option value="piwate1">Пиратская 1</option>
+                <option value="piwate1_tapped">Пиратская 1 (повернутая)</option>
+                <option value="piwate2">Пиратская 2</option>
+                <option value="piwate2_tapped">Пиратская 2 (повернутая)</option>
                 <option value="empty">Пустое поле</option>
             </select>
 
@@ -323,14 +333,18 @@
         </div>
     </aside>
     <section class="workflow">
-        <div class="loading">Загрузка...</div>
-        <img src="img/maps/bonta1.png" alt="Бонта" id="map" class="map">
+        <canvas class="los" id="cnv" width="954" height="954"></canvas>
     </section>
     <aside class="right-column">
         <div class="kamas-counter">
             <p>Камочек ровно: <span class="js-kamas-counter counter">0</span></p>
             <button class="js-kamas-button js-kamas-plus kama-btn">+</button>
             <button class="js-kamas-button kama-btn">-</button>
+        </div>
+        <div class="los-tools">
+            <button class="js-move-hero">Переместить героя</button>
+            <button class="js-toggle-distance">Показать/скрыть расстояния</button>
+            <button class="js-clear-los">Очистить поле</button>
         </div>
     </aside>
     <canvas id="createur" style="border:2px solid black;" width="72" height="72"></canvas>
