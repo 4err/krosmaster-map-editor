@@ -4,7 +4,7 @@ $(function () {
     });
 
     $("#choice_map").change(function () {
-        $("#map").attr("src", "img/maps/" + this.value + ".png");
+        $(".workflow").css("background-image", "url(./img/maps/" + this.value + ".png)");
     });
 
     //Fermetures des dialogs
@@ -314,5 +314,17 @@ $(function () {
         document.querySelector('.js-kamas-counter').innerHTML = count;
 
         return false;
+    });
+
+    Start();
+
+    $('.js-move-hero').on('click', function () {
+        moveHero();
+    });
+    $('.js-toggle-distance').on('click', function () {
+        toggleDistance();
+    });
+    $('.js-clear-los').on('click', function () {
+        clearSight();
     });
 });

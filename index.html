@@ -334,14 +334,18 @@
         </div>
     </aside>
     <section class="workflow">
-        <div class="loading">Загрузка...</div>
-        <img src="img/maps/bonta1.png" alt="Бонта" id="map" class="map">
+        <canvas class="los" id="cnv" width="954" height="954"></canvas>
     </section>
     <aside class="right-column">
         <div class="kamas-counter">
             <p>Камочек ровно: <span class="js-kamas-counter counter">0</span></p>
             <button class="js-kamas-button js-kamas-plus kama-btn">+</button>
             <button class="js-kamas-button kama-btn">-</button>
+        </div>
+        <div class="los-tools">
+            <button class="js-move-hero">Переместить героя</button>
+            <button class="js-toggle-distance">Показать/скрыть расстояния</button>
+            <button class="js-clear-los">Очистить поле</button>
         </div>
     </aside>
     <canvas id="createur" style="border:2px solid black;" width="72" height="72"></canvas>
@@ -364,6 +368,7 @@
 <script src="js/canvas-toBlob.js"></script>
 <script src="js/FileSaver.js"></script>
 <script src="js/main_script.js"></script>
+<script src="js/los.js"></script>
 <!-- endbuild -->
 
 </body>

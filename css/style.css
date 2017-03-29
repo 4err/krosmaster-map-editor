@@ -24,10 +24,24 @@ body {
 
 .workflow {
     font-size: 0;
+    background: url("../img/maps/bonta1.png") no-repeat;
+    background-size: 900px 900px;
+    height: 900px;
+    min-width: 900px;
+}
+
+.los {
+    margin-top: 39px;
 }
 
 .right-column {
     padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.kamas-counter {
+    margin-bottom: 20px;
 }
 .kama-btn {
     border: none;
@@ -49,8 +63,10 @@ body {
     background: #876443;
 }
 
-.map {
-    height: 100vh;
+.los-tools button {
+    display: block;
+    margin: 5px auto;
+
 }
 
 .tab {
@@ -97,4 +113,14 @@ body {
 .loading {
     display: none;
     font-size: 32px;
+}
+
+.los-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 0px solid #ddd;
 }
