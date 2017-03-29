@@ -115,12 +115,22 @@ body {
     font-size: 32px;
 }
 
-.los-responsive {
+.los-btn {
+    color: white;
+    box-shadow: none;
+    border: none;
+    cursor:pointer;
     width: 100%;
-    margin-bottom: 15px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 0px solid #ddd;
+    background: #009926;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.los-btn:hover {
+    background: #00bb2c;
+}
+
+.los-btn:active {
+    background: #007e1f;
 }

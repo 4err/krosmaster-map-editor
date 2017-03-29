@@ -327,4 +327,9 @@ $(function () {
     $('.js-clear-los').on('click', function () {
         clearSight();
     });
+    $('.js-load-map').on('click', function () {
+        var map = $("#choice_map option:selected").val();
+        loadMap(map);
+    });
+
 });

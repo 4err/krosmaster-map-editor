@@ -1,10 +1,44 @@
 var cs = null;
 
+var maps_shapes = {
+    bonta1: [
+        [3, 3],
+        [10, 4],
+        [6, 5],
+        [5, 6],
+        [1, 7],
+        [8, 8]
+    ],
+    bonta1_tapped: [
+        [4, 1],
+        [8, 3],
+        [7, 10],
+        [3, 8],
+        [6, 6],
+        [5, 5]
+    ],
+    bonta2: [
+        [3, 2],
+        [6, 3],
+        [9, 5],
+        [8, 9],
+        [5, 8],
+        [2, 6]
+    ],
+    bonta2_tapped: [
+        [5, 2],
+        [9, 3],
+        [8, 6],
+        [3, 5],
+        [2, 8],
+        [6, 9]
+    ]
+};
 
 function lineIntersect2(x1, y1, x2, y2, x3, y3, x4, y4) {
     var x = ((x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)) / ((x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4));
     var y = ((x1 * y2 - y1 * x2) * (y3 - y4) - (y1 - y2) * (x3 * y4 - y3 * x4)) / ((x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4));
-    console.log(x + '-' + y);
+    // console.log(x + '-' + y);
     if (isNaN(x) || isNaN(y)) {
         return false;
     }
@@ -52,7 +86,7 @@ function lineIntersect2(x1, y1, x2, y2, x3, y3, x4, y4) {
     }
     return true;
 }
-console.log(lineIntersect2(4, 4, 12, 12, 0, 8, 8, 8));
+// console.log(lineIntersect2(4, 4, 12, 12, 0, 8, 8, 8));
 
 function lineIntersect(x1, y1, x2, y2, x3, y3, x4, y4) {
     var x = ((x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)) / ((x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4));
@@ -165,7 +199,7 @@ CellBlock.prototype.contains = function (mx, my) {
     var res = (this.x <= mx) && (this.x + this.w >= mx) &&
         (this.y <= my) && (this.y + this.h >= my);
 
-    console.log('(' + this.x + '<=' + mx + ') && (' + this.x + '+' + this.w + '>=' + mx + ') && (' + this.y + ' <= ' + my + ') && (' + this.y + '+' + this.h + '>=' + my + ') => ' + res);
+    // console.log('(' + this.x + '<=' + mx + ') && (' + this.x + '+' + this.w + '>=' + mx + ') && (' + this.y + ' <= ' + my + ') && (' + this.y + '+' + this.h + '>=' + my + ') => ' + res);
 
     return res;
 };
@@ -234,10 +268,6 @@ function CanvasState(canvas, csize, cx, cy) {
 
     //fixes a problem where double clicking causes text to get selected on the canvas
     canvas.addEventListener('selectstart', function (e) {
-        e.preventDefault();
-        return false;
-    }, false);
-    canvas.addEventListener('dbclick', function (e) {
         e.preventDefault();
         return false;
     }, false);
@@ -330,7 +360,7 @@ CanvasState.prototype.addShapeBlock = function (mouse) {
             this.valid = false;
         }
         else {
-            shape = new CellBlock(cell_x * this.cell_size, cell_y * this.cell_size, this.cell_size, this.cell_size);
+            shape = new CellBlock(cell_x * this.cell_size, cell_y * this.cell_size, this.cell_size, this.cell_size, 'rgba(206,59,85,0.5)');
             shape.cell_x = cell_x;
             shape.cell_y = cell_y;
             this.shapes.push(shape);
@@ -495,7 +525,7 @@ CanvasState.prototype.getMouse = function (e) {
     }
 
     // We return a simple javascript object (a hash) with x and y defined
-    console.log('Mouse: ' + mx + ':' + my + ' (' + div.scrollLeft() + '_' + $('.content:first').scrollTop() + ')');
+    // console.log('Mouse: ' + mx + ':' + my + ' (' + div.scrollLeft() + '_' + $('.content:first').scrollTop() + ')');
     return {x: mx, y: my};
 };
 
@@ -539,6 +569,20 @@ CanvasState.prototype.MakeGrid = function (c, cx, cy) {
 
 };
 
+CanvasState.prototype.loadMap = function (map) {
+    for (var i = 0; i < map.length; i++) {
+        var cell_x = map[i][0];
+        var cell_y = map[i][1];
+
+        shape = new CellBlock(cell_x * this.cell_size, cell_y * this.cell_size, this.cell_size, this.cell_size, 'rgba(206,59,85,0.5)');
+        shape.cell_x = cell_x;
+        shape.cell_y = cell_y;
+        this.shapes.push(shape);
+        this.matrix[cell_x][cell_y] = 1;
+        this.valid = false;
+    }
+};
+
 
 function Start() {
     // alert(obj.detail.state.url);
@@ -547,7 +591,6 @@ function Start() {
     // MakeGrid(30,20,10);
     //if (cs==null)
     cs = new CanvasState(document.getElementById('cnv'), 69, 12, 12);
-    console.log(cs.hero);
     // s.MakeGrid(30,20,10);
 }
 
@@ -577,4 +620,11 @@ function toggleDistance() {
 
 function moveHero() {
     cs.hero.isMoving = true;
+}
+
+function loadMap(map) {
+    if (maps_shapes[map]) {
+        cs.loadMap(maps_shapes[map]);
+    }
+
 }
