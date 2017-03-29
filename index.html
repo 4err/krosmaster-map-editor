@@ -28,8 +28,8 @@
                 <option value="bonta2_tapped">Бонта 2 (повернутая)</option>
                 <option value="fog">Туман</option>
                 <option value="fog_tapped">Туман (повернутая)</option>
-                <option value="pit">Пит</option>
-                <option value="pit_tapped">Пит (повернутая)</option>
+                <option value="arena">Пит</option>
+                <option value="arena_tapped">Пит (повернутая)</option>
                 <option value="elemental">Элементаль</option>
                 <option value="elemental_tapped">Элементаль (повернутая)</option>
                 <option value="frigost">Фригост</option>
@@ -334,7 +334,7 @@
         </div>
     </aside>
     <section class="workflow">
-        <canvas class="los" id="cnv"></canvas>
+        <canvas class="los" id="los"></canvas>
     </section>
     <aside class="right-column">
         <div class="kamas-counter">
@@ -343,10 +343,15 @@
             <button class="js-kamas-button kama-btn">-</button>
         </div>
         <div class="los-tools">
-            <button class="los-btn js-move-hero">Переместить героя</button>
+            <button class="los-btn js-enable-los">Вкл/выкл ЛОС</button>
+
+            <button class="los-btn js-move-hero">Переместить камеру</button>
             <button class="los-btn js-toggle-distance">Показать/скрыть расстояния</button>
             <button class="los-btn js-clear-los">Очистить поле</button>
-            <button class="los-btn js-load-map"los-btn >Загрузить деревья</button>
+            <button class="los-btn js-load-map">Загрузить деревья</button>
+        </div>
+        <div class="help">
+            <button class="help-btn js-enable-help">Помощь</button>
         </div>
     </aside>
     <canvas id="createur" style="border:2px solid black;" width="72" height="72"></canvas>

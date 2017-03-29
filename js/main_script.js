@@ -331,5 +331,8 @@ $(function () {
         var map = $("#choice_map option:selected").val();
         loadMap(map);
     });
+    $('.js-enable-los').on('click', function () {
+        $('.los').toggle();
+    });
 
 });

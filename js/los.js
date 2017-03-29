@@ -35,6 +35,8 @@ var maps_shapes = {
     ]
 };
 
+var hero_color = '#0080ff';
+
 function lineIntersect2(x1, y1, x2, y2, x3, y3, x4, y4) {
     var x = ((x1 * y2 - y1 * x2) * (x3 - x4) - (x1 - x2) * (x3 * y4 - y3 * x4)) / ((x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4));
     var y = ((x1 * y2 - y1 * x2) * (y3 - y4) - (y1 - y2) * (x3 * y4 - y3 * x4)) / ((x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4));
@@ -161,7 +163,7 @@ CellBlock.prototype.draw = function (ctx) {
         var lW = ctx.lineWidth;
         var sS = ctx.strokeStyle;
         ctx.lineWidth = 6;
-        ctx.strokeStyle = '#0080ff';
+        ctx.strokeStyle = this.fill;
         ctx.arc(this.x + Math.floor(this.w / 2), this.y + Math.floor(this.h / 2), Math.floor(this.w / 2) - 3, 0, 2 * Math.PI, false);
         ctx.stroke();
         ctx.lineWidth = lW;
@@ -224,7 +226,7 @@ function CanvasState(canvas, csize, cx, cy) {
     this.hero.cell_x = Math.floor(cx / 2);
     this.hero.cell_y = cy - 1;
     this.matrix[Math.floor(cx / 2)][cy - 1] = 2;
-    this.hero.fill = '#00FF00';
+    this.hero.fill = hero_color;
     this.hero.isMoving = false;
     this.hero.isHero = true;
 
@@ -354,7 +356,7 @@ CanvasState.prototype.addShapeBlock = function (mouse) {
             this.hero.cell_x = cell_x;
             this.hero.cell_y = cell_y;
             this.matrix[cell_x][cell_y] = 2;
-            this.hero.fill = '#00FF00';
+            this.hero.fill = hero_color;
             this.hero.isMoving = false;
             this.hero.isHero = true;
             this.valid = false;
@@ -367,6 +369,10 @@ CanvasState.prototype.addShapeBlock = function (mouse) {
             this.matrix[cell_x][cell_y] = 1;
             this.valid = false;
         }
+    } else if (this.matrix[cell_x][cell_y] == 2) {
+        this.hero.fill = '#000000';
+        this.hero.isMoving = true;
+        this.valid = false;
     }
 };
 
@@ -536,10 +542,8 @@ CanvasState.prototype.MakeGrid = function (c, cx, cy) {
     this.width = c * cx;
     this.height = c * cy;
 
-    $('#cnv').attr('width', c * cx);
-    $('#cnv').attr('height', c * cy);
-    $('#divcnv').attr('width', c * cx);
-    $('#divcnv').attr('height', c * cy);
+    $('#los').attr('width', c * cx);
+    $('#los').attr('height', c * cy);
 
     ctx.strokeStyle = '#cccccc';
     ctx.strokeWidth = 0.5;
@@ -573,13 +577,14 @@ CanvasState.prototype.loadMap = function (map) {
     for (var i = 0; i < map.length; i++) {
         var cell_x = map[i][0];
         var cell_y = map[i][1];
-
-        shape = new CellBlock(cell_x * this.cell_size, cell_y * this.cell_size, this.cell_size, this.cell_size, 'rgba(206,59,85,0.5)');
-        shape.cell_x = cell_x;
-        shape.cell_y = cell_y;
-        this.shapes.push(shape);
-        this.matrix[cell_x][cell_y] = 1;
-        this.valid = false;
+        if (this.matrix[cell_x][cell_y] == 0) {
+            shape = new CellBlock(cell_x * this.cell_size, cell_y * this.cell_size, this.cell_size, this.cell_size, 'rgba(206,59,85,0.5)');
+            shape.cell_x = cell_x;
+            shape.cell_y = cell_y;
+            this.shapes.push(shape);
+            this.matrix[cell_x][cell_y] = 1;
+            this.valid = false;
+        }
     }
 };
 
@@ -590,7 +595,7 @@ function Start() {
     // ctx = document.getElementById("cnv").getContext("2d");
     // MakeGrid(30,20,10);
     //if (cs==null)
-    cs = new CanvasState(document.getElementById('cnv'), 69, 12, 12);
+    cs = new CanvasState(document.getElementById('los'), 69, 12, 12);
     // s.MakeGrid(30,20,10);
 }
 
@@ -620,11 +625,12 @@ function toggleDistance() {
 
 function moveHero() {
     cs.hero.isMoving = true;
+    cs.hero.fill = '#000000';
+    cs.valid = false;
 }
 
 function loadMap(map) {
     if (maps_shapes[map]) {
         cs.loadMap(maps_shapes[map]);
     }
-
 }
