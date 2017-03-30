@@ -25,7 +25,7 @@ $(function () {
     //Le jeton obtenant draggage et divers capacitée liés au jeton
         $(".prototype").draggable({
             delay: 100
-            , appendTo: "body"
+            , appendTo: ".workflow"
             , containment: "parent"
             , cursor: "move"
             , scroll: true
@@ -40,27 +40,42 @@ $(function () {
                     , "border-color": $(this).css("borderTopColor")
                 }).draggable({
                     delay: 100
-                    , containment: "parent"
+                    , containment: ".workflow"
                     , cursor: "move"
                     , scroll: true
                     , scrollSpeed: 30
-                    , scrollSensitivity: 100
+                    , scrollSensitivity: 100,
+                    start: function (event) {
+                        cs.mouseHandler(event, 'removeObstructive');
+                    },
+                    stop: function (event) {
+                        cs.mouseHandler(event, 'addObstructive', true);
+                    }
                 });
+
+                cs.mouseHandler(event, 'addObstructive', true);
             }
         });
     //Gestion des jetons
     //Changement de couleur du circle via click gauche
-    $(document).on("dblclick", ".circle", function (event) {
-        if (event.which == 1) {
-            var dico_couleur = {
-                "rgb(0, 0, 0)": "blue"
-                , "rgb(0, 0, 255)": "red"
-                , "rgb(255, 0, 0)": "orange"
-                , "rgb(255, 165, 0)": "purple"
-                , "rgb(128, 0, 128)": "black"
-            };
-            $(this).css("border-color", dico_couleur[$(this).css("borderTopColor")]);
+    $(document).on("dblclick", ".jeton", function (event) {
+
+
+        if (event.shiftKey) {
+            cs.mouseHandler(event, 'addObstructive');
+        } else {
+            cs.mouseHandler(event, 'moveHero');
         }
+        // if (event.which == 1) {
+        //     var dico_couleur = {
+        //         "rgb(0, 0, 0)": "blue"
+        //         , "rgb(0, 0, 255)": "red"
+        //         , "rgb(255, 0, 0)": "orange"
+        //         , "rgb(255, 165, 0)": "purple"
+        //         , "rgb(128, 0, 128)": "black"
+        //     };
+        //     $(this).css("border-color", dico_couleur[$(this).css("borderTopColor")]);
+        // }
     });
     //Empeche d'ouvrir le contextmenu
     //$(document).on("contextmenu",".prototype, #dialog, #map,",function(event){return false;});
@@ -332,7 +347,7 @@ $(function () {
         loadMap(map);
     });
     $('.js-enable-los').on('click', function () {
-        $('.los').toggle();
+        toggleInvisible();
     });
 
 });

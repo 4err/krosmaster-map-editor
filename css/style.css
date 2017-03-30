@@ -30,19 +30,17 @@ body {
     min-width: 900px;
 }
 
-.los {
-    margin-top: 39px;
-}
-
 .right-column {
     padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
+
 .kamas-counter {
     margin-bottom: 20px;
 }
+
 .kama-btn {
     border: none;
     box-shadow: none;
@@ -71,6 +69,7 @@ body {
 .prototype {
     display: inline-block;
 }
+
 .jeton img,
 .prototype img {
     display: inline-block;
@@ -104,20 +103,42 @@ body {
     right: 0px;
 }
 
-.loading {
-    display: none;
-    font-size: 32px;
+/* Стилизация инструментов */
+.kamas-counter {
+    margin-bottom: 20px;
 }
+
+.kama-btn {
+    border: none;
+    box-shadow: none;
+    width: 50px;
+    height: 25px;
+    outline: none;
+    background: #9e7b43;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.kama-btn:hover {
+    background: #b89543;
+}
+
+.kama-btn:active {
+    background: #876443;
+}
+
 .los {
-    display: none;
+    margin-top: 39px;
 }
+
 .los-btn {
     display: block;
     margin: 5px auto;
     color: white;
     box-shadow: none;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     width: 100%;
     background: #009926;
     border-radius: 10px;
