@@ -18,8 +18,7 @@
 <body>
 <div class="main-container">
     <aside class="tools-list">
-
-        <div id="menu">
+        <div class="menu">
             <select name="choice_map" id="choice_map">
                 <option value="bonta1" selected>Бонта 1</option>
                 <option value="bonta1_tapped">Бонта 1 (повернутая)</option>
@@ -40,7 +39,14 @@
                 <option value="empty">Пустое поле</option>
             </select>
 
-            <button id="bouton_enreg">Сохранить карту</button>
+           <!-- <button id="bouton_enreg">Сохранить карту</button> -->
+        </div>
+        <div class="toolbox">
+            <button class="tool-btn tool-btn-view js-enable-los" title="Сменить вид">Вкл/выкл ЛОС</button>
+            <button class="tool-btn tool-btn-distance js-toggle-distance" title="Показать/скрыть расстояния">Показать/скрыть расстояния</button>
+            <button class="tool-btn tool-btn-clean js-clear-los" title="Очистить поле">Очистить поле</button>
+            <button class="tool-btn tool-btn-trees js-load-map" title="Загрузить деревья">Загрузить деревья</button>
+            <button class="tool-btn tool-btn-help js-enable-help" title="Помощь">Помощь</button>
         </div>
 
         <div id="tabs" class="tabs">
@@ -51,8 +57,9 @@
                 <li><a href="#tabs-4">Ур. 4</a></li>
                 <li><a href="#tabs-5">Ур. 5</a></li>
                 <li><a href="#tabs-6">Ур. 6</a></li>
-                <li><a href="#tabs-13">1 сезон</a></li>
-                <li><a href="#tabs-14">Забаненные</a></li>
+                <li><a href="#tabs-13">Вечность*</a></li>
+                <li><a href="#tabs-14">Бан-Лист*</a></li>
+                <li><a href="#tabs-15">Босс-Лист*</a></li>
                 <li><a href="#tabs-7">Токены</a></li>
                 <li><a href="#tabs-8">Диаграммы</a></li>
                 <li><a href="#tabs-9">Клетки</a></li>
@@ -60,121 +67,167 @@
                 <li><a href="#tabs-12">Цифры</a></li>
             </ul>
             <div id="tabs-1" class="tab">
-                <span class='prototype circle'><img src='img/krosmasters/EDMOND DENTIER jeton.png' alt='jeton_EDMOND DENTIER'></span>
-                <span class='prototype circle'><img src='img/krosmasters/JERRY ORLO jeton.png' alt='jeton_JERRY ORLO'></span>
-                <span class='prototype circle'><img src='img/krosmasters/KIVIN jeton.png' alt='jeton_KIVIN'></span>
-                <span class='prototype circle'><img src='img/krosmasters/STEAMY WONDER jeton.png' alt='jeton_STEAMY WONDER'></span>
-                <span class='prototype circle'><img src='img/krosmasters/WALLY FAILLEUR jeton.png' alt='jeton_STEAMY WONDER'></span>
-                <span class='prototype circle'><img src='img/krosmasters/PHAERIS-ANEANTI jeton.png' alt='jeton_PHAERIS-ANEANTI'></span>
-                <span class='prototype circle'><img src='img/krosmasters/djaul jeton.png' alt='jeton_djaul'></span>
-                <span class='prototype circle'><img src='img/krosmasters/ogrest enfant jeton.png' alt='jeton_ogrest enfant'></span>
-                <span class='prototype circle'><img src='img/krosmasters/boomba jeton.png' alt='jeton_boomba'></span>
-                <span class='prototype circle'><img src='img/krosmasters/kanniboul archer jeton.png' alt='jeton_kanniboul archer'></span>
-                <span class='prototype circle'><img src='img/krosmasters/kanniboul sarbak jeton.png' alt='jeton_kanniboul sarbak'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/boomba.png' alt='boomba'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/chafer_foot_soldier.png' alt='chafer_foot_soldier'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/chafer_lancer.png' alt='chafer_lancer'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/djaul.png' alt='djaul'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/grougaloragram_old.png' alt='grougaloragram_old'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/kanniball_archer.png' alt='kanniball_archer'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/kanniball_sarbak.png' alt='kanniball_sarbak'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/kivin.png' alt='kivin'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/mike_locke.png' alt='mike_locke'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/moe_lawr.png' alt='moe_lawr'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/ogrest_child.png' alt='ogrest_child'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/phaeris_devastated.png' alt='phaeris_devastated'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/puny_vampire.png' alt='puny_vampire'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/steamy_wonder.png' alt='steamy_wonder'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/wally_sumwerels.png' alt='wally_sumwerels'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/maskemane_psychopate.png' alt='maskemane_psychopate'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/maskemane_classic.png' alt='maskemane_classic'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/maskemane_coward.png' alt='maskemane_coward'></span>
             </div>
             <div id="tabs-2" class="tab">
-                <span class='prototype circle'><img src='img/krosmasters/LOU jeton.png' alt='jeton_lou'></span>
-                <span class='prototype circle'><img src='img/krosmasters/JORIS jeton.png' alt='jeton_joris'></span>
-                <span class='prototype circle'><img src='img/krosmasters/AYAN jeton.png' alt='jeton_AYAN'></span>
-                <span class='prototype circle'><img src='img/krosmasters/GEGARD LAPORTE jeton.png' alt='jeton_GEGARD LAPORTE'></span>
-                <span class='prototype circle'><img src='img/krosmasters/HENUAL jeton.png' alt='jeton_HENUAL'></span>
-                <span class='prototype circle'><img src='img/krosmasters/RIKTUS AMAKNA jeton.png' alt='jeton_RIKTUS AMAKNA'></span>
-                <span class='prototype circle'><img src='img/krosmasters/RIKTUS BONTA jeton.png' alt='jeton_RIKTUS BONTA'></span>
-                <span class='prototype circle'><img src='img/krosmasters/RIKTUS BRAKMAR jeton.png' alt='jeton_RIKTUS BRAKMAR'></span>
-                <span class='prototype circle'><img src='img/krosmasters/RIKTUS SUFOKIA jeton.png' alt='jeton_RIKTUS SUFOKIA'></span>
-                <span class='prototype circle'><img src='img/krosmasters/SAM HYRRIT jeton.png' alt='jeton_SAM HYRRIT'></span>
-                <span class='prototype circle'><img src='img/krosmasters/CLEOPHEE jeton.png' alt='jeton_CLEOPHEE'></span>
-                <span class='prototype circle'><img src='img/krosmasters/dark vlad jeton.png' alt='jeton_dark vlad'></span>
-                <span class='prototype circle'><img src='img/krosmasters/dragoeth le penseur jeton.png' alt='jeton_dragoeth le penseur'></span>
-                <span class='prototype circle'><img src='img/krosmasters/nakunbra jeton.png' alt='jeton_nakunbra'></span>
-                <span class='prototype circle'><img src='img/krosmasters/kanniboul jav jeton.png' alt='jeton_kanniboul jav'></span>
-                <span class='prototype circle'><img src='img/krosmasters/kanniboul thierry jeton.png' alt='jeton_kanniboul thierry'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/atcham.png' alt='atcham'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/ayan.png' alt='ayan'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/chafer_archer.png' alt='chafer_archer'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/cleophee.png' alt='cleophee'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/dark_vlad.png' alt='dark_vlad'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/darkli_moon.png' alt='darkli_moon'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/dreggoog_the_downunder.png' alt='dreggoog_the_downunder'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/grim_preacher.png' alt='grim_preacher'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/hazwonarm.png' alt='hazwonarm'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/henual.png' alt='henual'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/igar_dlador.png' alt='igar_dlador'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/ira_tayte.png' alt='ira_tayte'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/joris.png' alt='joris'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/joris_swashbuckler.png' alt='joris_swashbuckler'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/kanniball_jav.png' alt='kanniball_jav'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/kanniball_thierry.png' alt='kanniball_thierry'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/khan_karkass.png' alt='khan_karkass'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/lilotte.png' alt='lilotte'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/lou.png' alt='lou'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/marline.png' alt='marline'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/persee_phore.png' alt='persee_phore'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/sufokia_riktus.png' alt='sufokia_riktus'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/amakna_riktus.png' alt='amakna_riktus'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/bonta_riktus.png' alt='bonta_riktus'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/brakmar_riktus.png' alt='brakmar_riktus'></span>
             </div>
             <div id="tabs-3" class="tab">
-                <span class='prototype circle'><img src='img/krosmasters/TERMINATOT GAULDE jeton.png' alt='jeton_terminatotgaulde'></span>
-                <span class='prototype circle'><img src='img/krosmasters/TERMINATOT STASIS jeton.png' alt='jeton_terminatotstasis'></span>
-                <span class='prototype circle'><img src='img/krosmasters/TERMINATOT WAKFU jeton.png' alt='jeton_terminatotwakfu'></span>
-                <span class='prototype circle'><img src='img/krosmasters/ADAMAI jeton.png' alt='jeton_ADAMAI'></span>
-                <span class='prototype circle'><img src='img/krosmasters/CHLOE MALETTE jeton.png' alt='jeton_CHLOE MALETTE'></span>
-                <span class='prototype circle'><img src='img/krosmasters/DIVER BIREL jeton.png' alt='jeton_DIVER BIREL'></span>
-                <span class='prototype circle'><img src='img/krosmasters/KATSOU MEE jeton.png' alt='jeton_KATSU MEE'></span>
-                <span class='prototype circle'><img src='img/krosmasters/PANDALIDA jeton.png' alt='jeton_PANDALIDA'></span>
-                <span class='prototype circle'><img src='img/krosmasters/RAOUL BAK jeton.png' alt='jeton_RAOUL BAK'></span>
-                <span class='prototype circle'><img src='img/krosmasters/ADAMAI-DRAGON jeton.png' alt='jeton_ADAMAI-DRAGON'></span>
-                <span class='prototype circle'><img src='img/krosmasters/erik rak jeton.png' alt='jeton_erik rak'></span>
-                <span class='prototype circle'><img src='img/krosmasters/filo comba jeton.png' alt='jeton_filo comba'></span>
-                <span class='prototype circle'><img src='img/krosmasters/jayma gourd jeton.png' alt='jeton_jayma gourd'></span>
-                <span class='prototype circle'><img src='img/krosmasters/mytik tak jeton.png' alt='jeton_mytik tak'></span>
-                <span class='prototype circle'><img src='img/krosmasters/kriss la krass jeton.png' alt='jeton_kriss la krass'></span>
-                <span class='prototype circle'><img src='img/krosmasters/deminoboule jeton.png' alt='jeton_deminoboule'></span>
-                <span class='prototype circle'><img src='img/krosmasters/drageaufol la joyeuse jeton.png' alt='jeton_drageaufol la joyeuse'></span>
-                <span class='prototype circle'><img src='img/krosmasters/kanniboul ebil jeton.png' alt='jeton_kanniboul ebil'></span>
-                <span class='prototype circle'><img src='img/krosmasters/bouftou royal jeton.png' alt='jeton_bouftou royal '></span>
-                <span class='prototype circle'><img src='img/krosmasters/tofu royal jeton.png' alt='jeton_tofu royal'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/adamai.png' alt='adamai'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/adamai_dragon.png' alt='adamai_dragon'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/arty.png' alt='arty'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/choppy_sue.png' alt='choppy_sue'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/chrissy_entrinch.png' alt='chrissy_entrinch'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/dark_vlad_karnated.png' alt='dark_vlad_karnated'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/deminoball.png' alt='deminoball'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/diver_birel.png' alt='diver_birel'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/dragossiper_the_nag.png' alt='dragossiper_the_nag'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/felonious_monk.png' alt='felonious_monk'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/grampy_shopkeeper.png' alt='grampy_shopkeeper'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/invisible_chafer.png' alt='invisible_chafer'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/joris_master.png' alt='joris_master'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/kanniball_andchain.png' alt='kanniball_andchain'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/katsu_mi.png' alt='katsu_mi'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/kip_agau.png' alt='kip_agau'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/kriss_krass.png' alt='kriss_krass'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/lord_crow.png' alt='lord_crow'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/master_vampire.png' alt='master_vampire'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/mil_kluva.png' alt='mil_kluva'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/pandalida.png' alt='pandalida'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/percimol_controlled.png' alt='percimol_controlled'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/raul_bak.png' alt='raul_bak'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/royal_gobball.png' alt='royal_gobball'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/royal_tofu.png' alt='royal_tofu'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/skidmonk.png' alt='skidmonk'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/tiktokovitch.png' alt='tiktokovitch'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/stasis_terminatot.png' alt='stasis_terminatot'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/wakfu_terminatot.png' alt='wakfu_terminatot'></span>
             </div>
             <div id="tabs-4" class="tab">
-                <span class='prototype circle'><img src='img/krosmasters/PAPYCHAT jeton.png' alt='jeton_papychat'></span>
-                <span class='prototype circle'><img src='img/krosmasters/KERUBIM CREPIN jeton.png' alt='jeton_kerubimcrepin'></span>
-                <span class='prototype circle'><img src='img/krosmasters/ELOGIO jeton.png' alt='jeton_ELOGIO'></span>
-                <span class='prototype circle'><img src='img/krosmasters/EMMA SACRE jeton.png' alt='jeton_EMMA SACRE'></span>
-                <span class='prototype circle'><img src='img/krosmasters/HERCUL EUDLA jeton.png' alt='jeton_HERCUL EUDLA'></span>
-                <span class='prototype circle'><img src='img/krosmasters/RIKTUS ELITE jeton.png' alt='jeton_RIKTUS ELITE'></span>
-                <span class='prototype circle'><img src='img/krosmasters/SARAH CROCHE jeton.png' alt='jeton_SARAH CROCHE'></span>
-                <span class='prototype circle'><img src='img/krosmasters/YUGO-JEUNE ROI jeton.png' alt='jeton_YUGO-JEUNE-ROI'></span>
-                <span class='prototype circle'><img src='img/krosmasters/reine des voleurs jeton.png' alt='jeton_reine des voleurs'></span>
-                <span class='prototype circle'><img src='img/krosmasters/roi nidas jeton.png' alt='jeton_roi nidas'></span>
-                <span class='prototype circle'><img src='img/krosmasters/corbeau noir jeton.png' alt='jeton_corbeau noir'></span>
-                <span class='prototype circle'><img src='img/krosmasters/ben le ripate jeton.png' alt='jeton_ben le ripate'></span>
-                <span class='prototype circle'><img src='img/krosmasters/dragueuse jeton.png' alt='jeton_dragueuse'></span>
-                <span class='prototype circle'><img src='img/krosmasters/minotoror jeton.png' alt='jeton_minotoror'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/anne_gupp.png' alt='anne_gupp'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/black_crow.png' alt='black_crow'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/buck_anear.png' alt='buck_anear'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/dragostess.png' alt='dragostess'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/elite_riktus.png' alt='elite_riktus'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/elogio.png' alt='elogio'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/emma_sacre.png' alt='emma_sacre'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/ghett_outadier.png' alt='ghett_outadier'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/grampy.png' alt='grampy'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/kerub_crepin.png' alt='kerub_crepin'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/king_nidas.png' alt='king_nidas'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/minotoror.png' alt='minotoror'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/queen_of_thieves.png' alt='queen_of_thieves'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/yugo_young_king.png' alt='yugo_young_king'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/bakara.png' alt='bakara'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/elite_chafer.png' alt='elite_chafer'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/friar_tubs.png' alt='friar_tubs'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/grampy_protector.png' alt='grampy_protector'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/jahash.png' alt='jahash'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/julith.png' alt='julith'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/mopy_king.png' alt='mopy_king'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/remington_smisse_mercenary.png' alt='remington_smisse_mercenary'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/shincter_cell.png' alt='shincter_cell'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/ush.png' alt='ush'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/yugo_exalted.png' alt='yugo_exalted'></span>
             </div>
             <div id="tabs-5" class="tab">
-                <span class='prototype circle'><img src='img/krosmasters/DUC REX jeton.png' alt='jeton_DUC REX'></span>
-                <span class='prototype circle'><img src='img/krosmasters/KITTY RAGE jeton.png' alt='jeton_KITTY RAGE'></span>
-                <span class='prototype circle'><img src='img/krosmasters/MALI BOUH jeton.png' alt='jeton_MALI BOUH'></span>
-                <span class='prototype circle'><img src='img/krosmasters/HARRY SAF jeton.png' alt='jeton_HARRY SAF'></span>
-                <span class='prototype circle'><img src='img/krosmasters/TRISTEPIN-TRISTECOEUR jeton.png' alt='jeton_TRISTEPIN-TRISTECOEUR'></span>
-                <span class='prototype circle'><img src='img/krosmasters/yugo dechaine jeton.png' alt='jeton_yugo dechaine'></span>
-                <span class='prototype circle'><img src='img/krosmasters/vampyro jeton.png' alt='jeton_vampyro'></span>
-                <span class='prototype circle'><img src='img/krosmasters/crocabula jeton.png' alt='jeton_crocabula'></span>
-                <span class='prototype circle'><img src='img/krosmasters/moon jeton.png' alt='jeton_moon'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/crocabulia.png' alt='crocabulia'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/doo_rex.png' alt='doo_rex'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/harry_sah.png' alt='harry_sah'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/kitty_rage.png' alt='kitty_rage'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/le_chouque.png' alt='le_chouque'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/malee_buhrum.png' alt='malee_buhrum'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/moon.png' alt='moon'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/percedal_percylax.png' alt='percedal_percylax'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/the_nun.png' alt='the_nun'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/vampyro.png' alt='vampyro'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/yugo_unleashed.png' alt='yugo_unleashed'></span>
             </div>
             <div id="tabs-6" class="tab">
-                <span class='prototype circle'><img src='img/krosmasters/GEIN jeton.png' alt='jeton_GEIN'></span>
-                <span class='prototype circle'><img src='img/krosmasters/QILBY jeton.png' alt='jeton_QILBY'></span>
-                <span class='prototype circle'><img src='img/krosmasters/QUILBY-TRAITE jeton.png' alt='jeton_QUIBY-TRAITE'></span>
-                <span class='prototype circle'><img src='img/krosmasters/katar jeton.png' alt='jeton_katar'></span>
-                <span class='prototype circle'><img src='img/krosmasters/otomai jeton.png' alt='jeton_otomai'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/gein.png' alt='gein'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/otomai.png' alt='otomai'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/katar.png' alt='katar'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/qilby.png' alt='qilby'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/qilby_traitor.png' alt='qilby_traitor'></span>
             </div>
             <div id="tabs-7" class="tab">
-                <span class='prototype circle'><img src='img/summons/BOMBE A EAU jeton.png' alt='jeton_bombeaeau'></span>
-                <span class='prototype circle'><img src='img/summons/BOMBE INCENDIAIRE jeton.png' alt='jeton_bombeincendiaire'></span>
-                <span class='prototype circle'><img src='img/summons/TORNABOMBE jeton.png' alt='jeton_tornabombe'></span>
-                <span class='prototype circle'><img src='img/summons/POUPEE BLOQUEUSE jeton.png' alt='jeton_poupeebloqueuse'></span>
-                <span class='prototype circle'><img src='img/summons/POUPEE FOLLE jeton.png' alt='jeton_poupeefolle'></span>
-                <span class='prototype circle'><img src='img/summons/POUPEE SACRIFIEE jeton.png' alt='jeton_poupeesacrifiee'></span>
-                <span class='prototype circle'><img src='img/summons/POUPEE PERDUE jeton.png' alt='jeton_poupeeperdue'></span>
-                <span class='prototype circle'><img src='img/summons/BOUFTOU jeton.png' alt='jeton_bouftou'></span>
-                <span class='prototype circle'><img src='img/summons/TOFU jeton.png' alt='jeton_tofu'></span>
-                <span class='prototype circle'><img src='img/summons/PIEGE MORTEL jeton.png' alt='jeton_piegemortel'></span>
-                <span class='prototype circle'><img src='img/summons/WABBIT jeton.png' alt='jeton_wabbit'></span>
-                <span class='prototype circle'><img src='img/summons/GRANDUK.png' alt='jeton_granduk'></span>
-                <span class='prototype circle'><img src='img/summons/craqueboule.png' alt='jeton_craqueboule'></span>
-                <span class='prototype circle'><img src='img/summons/pelle animee.png' alt='jeton_pelle animee'></span>
-                <span class='prototype circle'><img src='img/summons/prespic.png' alt='jeton_prespic'></span>
-                <span class='prototype circle'><img src='img/summons/dragoune rose.png' alt='jeton_dragoune rose'></span>
-                <span class='prototype circle'><img src='img/summons/piege sournois.png' alt='jeton_piege sournois'></span>
-                <span class='prototype circle'><img src='img/summons/tactirelle.png' alt='jeton_tactirelle'></span>
-                <span class='prototype circle'><img src='img/summons/harponneuse.png' alt='jeton_harponneuse'></span>
-                <span class='prototype circle'><img src='img/summons/gardienne.png' alt='jeton_gardienne'></span>
-                <span class='prototype circle'><img src='img/summons/goule jeton.png' alt='jeton_goule'></span>
-                <span class='prototype circle'><img src='img/summons/corbac jeton.png' alt='jeton_corbac'></span>
-                <span class='prototype circle'><img src='img/summons/rejeton de katar jeton.png' alt='jeton_rejeton de katar jeton'></span>
-                <span class='prototype circle'><img src='img/summons/Dragoeuf Immature 1.png' alt='jeton_dragoeuf immature 1'></span>
-                <span class='prototype circle'><img src='img/summons/Dragoeuf Immature 2.png' alt='jeton_dragoeuf immature 2'></span>
-                <span class='prototype circle'><img src='img/summons/Dragoeuf Immature 3.png' alt='jeton_dragoeuf immature 3'></span>
-                <span class='prototype circle'><img src='img/summons/Dragoeuf Immature 4.png' alt='jeton_dragoeuf immature 4'></span>
-                <span class='prototype circle'><img src='img/summons/nodkoko jeton.png' alt='jeton_nodkoko'></span>
+                <span class='prototype circle'><img src='img/summons/water_bomb.png' alt='water_bomb'></span>
+                <span class='prototype circle'><img src='img/summons/firebomb.png' alt='firebomb'></span>
+                <span class='prototype circle'><img src='img/summons/grenado.png' alt='grenado'></span>
+                <span class='prototype circle'><img src='img/summons/gobball.png' alt='gobball'></span>
+                <span class='prototype circle'><img src='img/summons/lifesaver.png' alt='lifesaver'></span>
+                <span class='prototype circle'><img src='img/summons/crackstone.png' alt='crackstone'></span>
+                <span class='prototype circle'><img src='img/summons/tofu.png' alt='tofu'></span>
+                <span class='prototype circle'><img src='img/summons/wabbit.png' alt='wabbit'></span>
+                <span class='prototype circle'><img src='img/summons/pink_dragoone.png' alt='pink_dragoone'></span>
+                <span class='prototype circle'><img src='img/summons/harpooner.png' alt='harpooner'></span>
+                <span class='prototype circle'><img src='img/summons/tacturret.png' alt='tacturret'></span>
+                <span class='prototype circle'><img src='img/summons/bubotron.png' alt='bubotron'></span>
+                <span class='prototype circle'><img src='img/summons/living_shovel.png' alt='living_shovel'></span>
+                <span class='prototype circle'><img src='img/summons/lethal_trap.png' alt='lethal_trap'></span>
+                <span class='prototype circle'><img src='img/summons/tricky_trap.png' alt='tricky_trap'></span>
+                <span class='prototype circle'><img src='img/summons/prespic.png' alt='prespic'></span>
+                <span class='prototype circle'><img src='img/summons/block_doll.png' alt='block_doll'></span>
+                <span class='prototype circle'><img src='img/summons/sacrificial_doll.png' alt='sacrificial_doll'></span>
+                <span class='prototype circle'><img src='img/summons/madoll.png' alt='madoll'></span>
+                <span class='prototype circle'><img src='img/summons/lost_doll.png' alt='lost_doll'></span>
+                <span class='prototype circle'><img src='img/summons/immature_dreggon_1.png' alt='immature_dreggon_1'></span>
+                <span class='prototype circle'><img src='img/summons/immature_dreggon_2.png' alt='immature_dreggon_2'></span>
+                <span class='prototype circle'><img src='img/summons/immature_dreggon_3.png' alt='immature_dreggon_3'></span>
+                <span class='prototype circle'><img src='img/summons/immature_dreggon_4.png' alt='immature_dreggon_4'></span>
+                <span class='prototype circle'><img src='img/summons/katars_offspring.png' alt='katars_offspring.png'></span>
+                <span class='prototype circle'><img src='img/summons/crobak.png' alt='crobak'></span>
+                <span class='prototype circle'><img src='img/summons/kokonut.png' alt='kokonut'></span>
+                <span class='prototype circle'><img src='img/summons/ghoul.png' alt='ghoul'></span>
+                <span class='prototype circle'><img src='img/summons/terrabomb.png' alt='terrabomb'></span>
+                <span class='prototype circle'><img src='img/summons/tombstone.png' alt='tombstone'></span>
+                <span class='prototype circle'><img src='img/summons/fleeflee.png' alt='fleeflee'></span>
+                <span class='prototype circle'><img src='img/summons/pink_fleeflee.png' alt='pink_fleeflee'></span>
+                <span class='prototype circle'><img src='img/summons/donatella_atooin.png' alt='donatella_atooin'></span>
+                <span class='prototype circle'><img src='img/summons/michelangela_atooin.png' alt='michelangela_atooin'></span>
+                <span class='prototype circle'><img src='img/summons/leonardawa_atooin.png' alt='leonardawa_atooin'></span>
+                <span class='prototype circle'><img src='img/summons/raphaela_atooin.png' alt='raphaela_atooin'></span>
             </div>
             <div id="tabs-8" class="tab"></div>
             <div id="tabs-9" class="tab">
@@ -272,69 +325,91 @@
                 <span class='prototype'><img src='img/digits/19.png' alt='num_19'></span>
             </div>
             <div id="tabs-13" class="tab">
-                <span class='prototype circle'><img src='img/krosmasters/COA GULAY jeton.png' alt='jeton_coagulay'></span>
-                <span class='prototype circle'><img src='img/krosmasters/DAIE GUERI jeton.png ' alt='jeton_daiegueri'></span>
-                <span class='prototype circle'><img src='img/krosmasters/LIANE ZOLIE jeton.png' alt='jeton_lianezolie'></span>
-                <span class='prototype circle'><img src='img/krosmasters/QUENTIN FLUSH jeton.png' alt='jeton_quentinflush'></span>
-                <span class='prototype circle'><img src='img/krosmasters/KLOR OFIL jeton.png' alt='jeton_klorofil'></span>
-                <span class='prototype circle'><img src='img/krosmasters/LUK YLOOK jeton.png' alt='jeton_lukylook'></span>
-                <span class='prototype circle'><img src='img/krosmasters/NAZ RAEL jeton.png' alt='jeton_nazrael'></span>
-                <span class='prototype circle'><img src='img/krosmasters/SRAMMY jeton.png' alt='jeton_srammy'></span>
-                <span class='prototype circle'><img src='img/krosmasters/TONY N. TRUHAN jeton.png' alt='jeton_tonyntruhan'></span>
-                <span class='prototype circle'><img src="img/krosmasters/ZOUBO L'AMICHE jeton.png" alt='jeton_zoubolamiche'></span>
-                <span class='prototype circle'><img src='img/krosmasters/MASSE jeton.png' alt='jeton_masse'></span>
-                <span class='prototype circle'><img src='img/krosmasters/SCOREUR jeton.png' alt='jeton_scoreur'></span>
-                <span class='prototype circle'><img src='img/krosmasters/SKALE jeton.png' alt='jeton_skale'></span>
-                <span class='prototype circle'><img src='img/krosmasters/KORBAX jeton.png' alt='jeton_korbax'></span>
-                <span class='prototype circle'><img src='img/krosmasters/OMBRE jeton.png' alt='jeton_ombre'></span>
-                <span class='prototype circle'><img src='img/krosmasters/LUMINO jeton.png' alt='jeton_lumino'></span>
-                <span class='prototype circle'><img src='img/krosmasters/ANNA TOMMY jeton.png' alt='jeton_annatommy'></span>
-                <span class='prototype circle'><img src='img/krosmasters/BAD ABOUM jeton.png' alt='jeton_badaboum'></span>
-                <span class='prototype circle'><img src='img/krosmasters/CHEVALIER FEUILLE jeton.png' alt='jeton_chevalierfeuille'></span>
-                <span class='prototype circle'><img src='img/krosmasters/CHEVALIER FLAMME jeton.png' alt='jeton_chevalierflamme'></span>
-                <span class='prototype circle'><img src='img/krosmasters/CHEVALIER NUAGE jeton.png' alt='jeton_chevaliernuage'></span>
-                <span class='prototype circle'><img src='img/krosmasters/CHEVALIER GOUTTE jeton.png' alt='jeton_chevaliergoutte'></span>
-                <span class='prototype circle'><img src='img/krosmasters/GUY YOMTELLA jeton.png' alt='jeton_guyyomtella'></span>
-                <span class='prototype circle'><img src='img/krosmasters/KREOL PANIKON jeton.png' alt='jeton_kreolpanikon'></span>
-                <span class='prototype circle'><img src='img/krosmasters/OPEE TISSOIN jeton.png' alt='jeton_opeetissoin'></span>
-                <span class='prototype circle'><img src='img/krosmasters/OSCAR NAK jeton.png' alt='jeton_oscarnak'></span>
-                <span class='prototype circle'><img src='img/krosmasters/REINE DES TOFUS jeton.png' alt='jeton_reinedestofus'></span>
-                <span class='prototype circle'><img src='img/krosmasters/ROI DES BOUFTOUS jeton.png' alt='jeton_roidesbouftous'></span>
-                <span class='prototype circle'><img src='img/krosmasters/AMALIA jeton.png' alt='jeton_amalia'></span>
-                <span class='prototype circle'><img src='img/krosmasters/EVANGELINE jeton.png' alt='jeton_evangeline'></span>
-                <span class='prototype circle'><img src='img/krosmasters/GASPAR FAY jeton.png' alt='jeton_gasparfay'></span>
-                <span class='prototype circle'><img src='img/krosmasters/RUEL STROUD jeton.png' alt='jeton_ruelstroud'></span>
-                <span class='prototype circle'><img src='img/krosmasters/TRISTEPIN jeton.png' alt='jeton_tristepin'></span>
-                <span class='prototype circle'><img src='img/krosmasters/YUGO jeton.png' alt='jeton_yugo'></span>
-                <span class='prototype circle'><img src='img/krosmasters/ALIE ZELE jeton.png' alt='jeton_alizele'></span>
-                <span class='prototype circle'><img src='img/krosmasters/DANY OSHEUN jeton.png' alt='jeton_danyosheun'></span>
-                <span class='prototype circle'><img src='img/krosmasters/GLOBULE LA CRAPULE jeton.png' alt='jeton_globulelacrapule'></span>
-                <span class='prototype circle'><img src='img/krosmasters/JEMS BLOND jeton.png' alt='jeton_jemsblond'></span>
-                <span class='prototype circle'><img src='img/krosmasters/MAKUM BAH jeton.png' alt='jeton_makumbah'></span>
-                <span class='prototype circle'><img src='img/krosmasters/MORORA jeton.png' alt='jeton_morora'></span>
-                <span class='prototype circle'><img src='img/krosmasters/PERCIMOL jeton.png' alt='jeton_percimol'></span>
-                <span class='prototype circle'><img src='img/krosmasters/REMINGTON SMISSE jeton.png' alt='jeton_remingtonsmisse'></span>
-                <span class='prototype circle'><img src='img/krosmasters/SHAK SHAKA jeton.png' alt='jeton_shakshaka'></span>
-                <span class='prototype circle'><img src='img/krosmasters/DOKFA TALYS jeton.png' alt='jeton_dokfatalys'></span>
-                <span class='prototype circle'><img src='img/krosmasters/Goultard jeton.png' alt='jeton_goultard'></span>
-                <span class='prototype circle'><img src='img/krosmasters/CHEVALIER TENEBRE jeton.png' alt='jeton_chevaliertenebre'></span>
-                <span class='prototype circle'><img src='img/krosmasters/GOULTARD LE BARBARE jeton.png' alt='jeton_goultardlebarbare'></span>
-                <span class='prototype circle'><img src='img/krosmasters/CAPTAIN AMAKNA jeton.png' alt='jeton_captainamakna'></span>
-                <span class='prototype circle'><img src='img/krosmasters/NOX jeton.png' alt='jeton_nox'></span>
-                <span class='prototype circle'><img src='img/krosmasters/COMTE FRIGOST jeton.png' alt='jeton_comtefrigost'></span>
-                <span class='prototype circle'><img src='img/krosmasters/COMTE HAREBOURG jeton.png' alt='jeton_comteharebourg'></span>
-                <span class='prototype circle'><img src='img/krosmasters/MERKATOR jeton.png' alt='jeton_merkator'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/coa_gulary.png' alt='coa_gulary'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/di_curey.png' alt='di_curey'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/fern_socken.png' alt='fern_socken'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/quentin_flush.png' alt='quentin_flush'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/bellzebug.png' alt='bellzebug'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/shadow.png' alt='shadow'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/skale.png' alt='skale'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/lumino.png' alt='lumino'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/krobax.png' alt='krobax'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/trank.png' alt='trank'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/luk_ylook.png' alt='luk_ylook'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/srammy.png' alt='srammy'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/naz_rael.png' alt='naz_rael'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/maskun_john.png' alt='maskun_john'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/boo_ming.png' alt='boo_ming'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/leaf_knight.png' alt='leaf_knight'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/flame_knight.png' alt='flame_knight'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/drop_knight.png' alt='drop_knight'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/cloud_knight.png' alt='cloud_knight'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/yugo.png' alt='yugo'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/amalia.png' alt='amalia'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/percedal.png' alt='percedal'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/ruel_stroud.png' alt='ruel_stroud'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/evangelyne.png' alt='evangelyne'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/nox.png' alt='nox'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/bad_aboum.png' alt='bad_aboum'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/bill_tell.png' alt='bill_tell'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/anna_tommy.png' alt='anna_tommy'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/oscar_kass.png' alt='oscar_kass'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/lil_healey.png' alt='lil_healey'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/kassius_kaos.png' alt='kassius_kaos'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/queen_of_the_tofus.png' alt='queen_of_the_tofus'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/king_of_the_gobballs.png' alt='king_of_the_gobballs'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/argon_gass.png' alt='argon_gass'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/ally_mczeal.png' alt='ally_mczeal'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/makum_bah.png' alt='makum_bah'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/jems_blond.png' alt='jems_blond'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/fraktor.png' alt='fraktor'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/clot_the_crapulous.png' alt='clot_the_crapulous'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/dani_oshun.png' alt='dani_oshun'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/klor_ofil.png' alt='klor_ofil'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/percimol.png' alt='percimol'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/remington_smisse.png' alt='remington_smisse'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/shak_shaka.png' alt='shak_shaka'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv5/victor_don_voom.png' alt='victor_don_voom'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/captain_amakna.png' alt='captain_amakna'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/count_frigost.png' alt='count_frigost'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/count_harebourg.png' alt='count_harebourg'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/darkness_knight.png' alt='darkness_knight'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/goultard.png' alt='goultard'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/goultard_the_barbarian.png' alt='goultard_the_barbarian'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/merkator.png' alt='merkator'></span>
             </div>
             <div id="tabs-14" class="tab">
-                <span class='prototype circle'><img src='img/krosmasters/ARTHUR BINE jeton.png' alt='jeton_ARTHUR BINE'></span>
-                <span class='prototype circle'><img src='img/krosmasters/POOCHAN jeton.png' alt='jeton_POOCHAN'></span>
-                <span class='prototype circle'><img src='img/krosmasters/THIO jeton.png' alt='jeton_THIO'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/arthur_bine.png' alt='arthur_bine'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/poochan.png' alt='poochan'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/theo.png' alt='theo'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/goldenrod_terminatot.png' alt='goldenrod_terminatot'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/cardboard_tube_samurai.png' alt='cardboard_tube_samurai'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv3/nemesis_samurai.png' alt='nemesis_samurai'></span>
             </div>
+            <div id="tabs-15" class="tab">
+                <span class='prototype circle'><img src='img/krosmasters/lv4/black_crow.png' alt='black_crow'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/bakara.png' alt='bakara'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/djaul.png' alt='djaul'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/gein.png' alt='gein'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/ghett_outadier.png' alt='ghett_outadier'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv2/henual.png' alt='henual'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv4/julith.png' alt='julith'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/katar.png' alt='katar'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/kivin.png' alt='kivin'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv6/qilby.png' alt='qilby'></span>
+                <span class='prototype circle'><img src='img/krosmasters/lv1/steamy_wonder.png' alt='steamy_wonder'></span>
+            </div>
+        </div>
+        <div class="kamas-counter">
+            <p>Камочек ровно: <span class="js-kamas-counter counter">0</span></p>
+            <button class="js-kamas-button js-kamas-plus kama-btn">+</button>
+            <button class="js-kamas-button kama-btn">-</button>
         </div>
     </aside>
     <section class="workflow">
         <canvas class="los" id="los"></canvas>
     </section>
+    <!--
     <aside class="right-column">
         <div class="kamas-counter">
             <p>Камочек ровно: <span class="js-kamas-counter counter">0</span></p>
@@ -343,8 +418,6 @@
         </div>
         <div class="los-tools">
             <button class="los-btn js-enable-los">Вкл/выкл ЛОС</button>
-
-            <button class="los-btn js-move-hero">Переместить камеру</button>
             <button class="los-btn js-toggle-distance">Показать/скрыть расстояния</button>
             <button class="los-btn js-clear-los">Очистить поле</button>
             <button class="los-btn js-load-map">Загрузить деревья</button>
@@ -352,7 +425,7 @@
         <div class="help">
             <button class="help-btn js-enable-help">Помощь</button>
         </div>
-    </aside>
+    </aside> -->
     <canvas id="createur" style="border:2px solid black;" width="72" height="72"></canvas>
     <canvas id="canvasKit" style="border:2px solid black;" width="93" height="93"></canvas>
     <canvas id="canvas" style="border:2px solid black;" width="1196" height="1196"></canvas>
@@ -365,6 +438,31 @@
         <label>Симметрия относительно центра:
             <input type="checkbox" name="SymC" id="symC"></label>
         <div id="bouton_valid">Сохранить</div>
+    </div>
+</div>
+
+<div class="help-popup">
+    <h2>Помощь</h2>
+    <div class="question">Управление</div>
+    <div class="answer">
+        Для работы с картой используются кнопки инструментов, расположенные над панелью кросмастеров.<br>
+        По умолчанию ЛОС отключен.
+        Камера автоматически устанавливается под первого выставленного кросмастера.
+        <p>Расширенные возможности работы с ЛОС</p>
+        <ul>
+            <li><b>Двойной клик по жетону</b> - устанавливает камеру в эту клетку.</li>
+            <li><b>SHIFT + Двойной клик по жетону</b> - устанавливает дерево в эту клетку </li>
+            <li><b>Правый клик по жетону</b> - удаляет жетон и дерево под ним</li>
+        </ul>
+    </div>
+    <div class="question">Поддержка</div>
+    <div class="answer">
+        <p>Сделано специально для <a href="https://vk.com/kmarussia">Krosmaster Russia</a></p>
+        <a href="https://github.com/4err/krosmaster-map-editor">Репозиторий проекта на GitHub</a><br>
+        Пожелания и ошибки лучше писать в <a href="https://github.com/4err/krosmaster-map-editor/issues">багтрекер на GitHub</a><br>
+        Модуль ЛОСа взят и доработан с <a href="http://krosfinder.com/">Krosfinder</a><br>
+        Жетоны и идея карты взяты с <a href="http://big-bad.forumactif.org/h4-big-bad-s-taktikor">Big bad taktikor</a>
+
     </div>
 </div>
 
