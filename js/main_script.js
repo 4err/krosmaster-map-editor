@@ -49,11 +49,20 @@ $(function () {
                         cs.mouseHandler(event, 'removeObstructive');
                     },
                     stop: function (event) {
-                        cs.mouseHandler(event, 'addObstructive', true);
+                        if ($('.jeton').length == 1) {
+                            cs.mouseHandler(event, 'moveHero');
+                        } else {
+                            cs.mouseHandler(event, 'addObstructive', true);
+                        }
                     }
                 });
 
-                cs.mouseHandler(event, 'addObstructive', true);
+                if ($('.jeton').length == 1) {
+                    cs.mouseHandler(event, 'moveHero');
+                } else {
+                    cs.mouseHandler(event, 'addObstructive', true);
+                }
+
             }
         });
     //Gestion des jetons
@@ -82,6 +91,8 @@ $(function () {
     //Destruction d'un jeton sur clic droit
     $(document).on("contextmenu", ".jeton", function (event) {
         $(this).remove();
+        cs.mouseHandler(event, 'removeObstructive');
+
         return false;
     });
     //Gestion de l'enregistrement de l'image et du bouton lié
