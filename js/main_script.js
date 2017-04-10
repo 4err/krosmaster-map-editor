@@ -361,4 +361,18 @@ $(function () {
         toggleInvisible();
     });
 
+    $('.js-enable-help').on('click', function () {
+        $('body').toggleClass('popup-background');
+        $('.help-popup').toggleClass('show');
+        return false;
+    });
+
+    $('body').on('click', function () {
+        if ($('body').hasClass('popup-background')) {
+            $('body').toggleClass('popup-background');
+            $('.help-popup').toggleClass('show');
+        }
+
+    });
+
 });

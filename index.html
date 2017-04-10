@@ -19,8 +19,7 @@
 <body>
 <div class="main-container">
     <aside class="tools-list">
-
-        <div id="menu">
+        <div class="menu">
             <select name="choice_map" id="choice_map">
                 <option value="bonta1" selected>Бонта 1</option>
                 <option value="bonta1_tapped">Бонта 1 (повернутая)</option>
@@ -41,10 +40,17 @@
                 <option value="empty">Пустое поле</option>
             </select>
 
-            <button id="bouton_enreg">Сохранить карту</button>
+           <!-- <button id="bouton_enreg">Сохранить карту</button> -->
+        </div>
+        <div class="toolbox">
+            <button class="tool-btn tool-btn-view js-enable-los" title="Сменить вид">Вкл/выкл ЛОС</button>
+            <button class="tool-btn tool-btn-distance js-toggle-distance" title="Показать/скрыть расстояния">Показать/скрыть расстояния</button>
+            <button class="tool-btn tool-btn-clean js-clear-los" title="Очистить поле">Очистить поле</button>
+            <button class="tool-btn tool-btn-trees js-load-map" title="Загрузить деревья">Загрузить деревья</button>
+            <button class="tool-btn tool-btn-help js-enable-help" title="Помощь">Помощь</button>
         </div>
 
-<div id="tabs" class="tabs">
+        <div id="tabs" class="tabs">
             <ul>
                 <li><a href="#tabs-1">Ур. 1</a></li>
                 <li><a href="#tabs-2">Ур. 2</a></li>
@@ -54,7 +60,7 @@
                 <li><a href="#tabs-6">Ур. 6</a></li>
                 <li><a href="#tabs-13">Вечность*</a></li>
                 <li><a href="#tabs-14">Бан-Лист*</a></li>
-                <li><a href="#tabs-15">Босс-Лист*</a></li>                
+                <li><a href="#tabs-15">Босс-Лист*</a></li>
                 <li><a href="#tabs-7">Токены</a></li>
                 <li><a href="#tabs-8">Диаграммы</a></li>
                 <li><a href="#tabs-9">Клетки</a></li>
@@ -116,7 +122,7 @@
                 <span class='prototype circle'><img src='img/krosmasters/lv3/chrissy_entrinch.png' alt='chrissy_entrinch'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv3/dark_vlad_karnated.png' alt='dark_vlad_karnated'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv3/deminoball.png' alt='deminoball'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv3/diver_birel.png' alt='diver_birel'></span> 
+                <span class='prototype circle'><img src='img/krosmasters/lv3/diver_birel.png' alt='diver_birel'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv3/dragossiper_the_nag.png' alt='dragossiper_the_nag'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv3/felonious_monk.png' alt='felonious_monk'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv3/grampy_shopkeeper.png' alt='grampy_shopkeeper'></span>
@@ -184,7 +190,7 @@
                 <span class='prototype circle'><img src='img/krosmasters/lv6/otomai.png' alt='otomai'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv6/katar.png' alt='katar'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv6/qilby.png' alt='qilby'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv6/qilby_traitor.png' alt='qilby_traitor'></span>   
+                <span class='prototype circle'><img src='img/krosmasters/lv6/qilby_traitor.png' alt='qilby_traitor'></span>
             </div>
             <div id="tabs-7" class="tab">
                 <span class='prototype circle'><img src='img/summons/water_bomb.png' alt='water_bomb'></span>
@@ -327,7 +333,7 @@
                 <span class='prototype circle'><img src='img/krosmasters/lv2/bellzebug.png' alt='bellzebug'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv2/shadow.png' alt='shadow'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv2/skale.png' alt='skale'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv2/lumino.png' alt='lumino'></span> 
+                <span class='prototype circle'><img src='img/krosmasters/lv2/lumino.png' alt='lumino'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv2/krobax.png' alt='krobax'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv2/trank.png' alt='trank'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv2/luk_ylook.png' alt='luk_ylook'></span>
@@ -378,7 +384,7 @@
                 <span class='prototype circle'><img src='img/krosmasters/lv1/poochan.png' alt='poochan'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv4/theo.png' alt='theo'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv3/goldenrod_terminatot.png' alt='goldenrod_terminatot'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv3/cardboard_tube_samurai.png' alt='cardboard_tube_samurai'></span>                
+                <span class='prototype circle'><img src='img/krosmasters/lv3/cardboard_tube_samurai.png' alt='cardboard_tube_samurai'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv3/nemesis_samurai.png' alt='nemesis_samurai'></span>
             </div>
             <div id="tabs-15" class="tab">
@@ -394,11 +400,17 @@
                 <span class='prototype circle'><img src='img/krosmasters/lv6/qilby.png' alt='qilby'></span>
                 <span class='prototype circle'><img src='img/krosmasters/lv1/steamy_wonder.png' alt='steamy_wonder'></span>
             </div>
-        </div>          
+        </div>
+        <div class="kamas-counter">
+            <p>Камочек ровно: <span class="js-kamas-counter counter">0</span></p>
+            <button class="js-kamas-button js-kamas-plus kama-btn">+</button>
+            <button class="js-kamas-button kama-btn">-</button>
+        </div>
     </aside>
     <section class="workflow">
         <canvas class="los" id="los"></canvas>
     </section>
+    <!--
     <aside class="right-column">
         <div class="kamas-counter">
             <p>Камочек ровно: <span class="js-kamas-counter counter">0</span></p>
@@ -407,8 +419,6 @@
         </div>
         <div class="los-tools">
             <button class="los-btn js-enable-los">Вкл/выкл ЛОС</button>
-
-            <button class="los-btn js-move-hero">Переместить камеру</button>
             <button class="los-btn js-toggle-distance">Показать/скрыть расстояния</button>
             <button class="los-btn js-clear-los">Очистить поле</button>
             <button class="los-btn js-load-map">Загрузить деревья</button>
@@ -416,7 +426,7 @@
         <div class="help">
             <button class="help-btn js-enable-help">Помощь</button>
         </div>
-    </aside>
+    </aside> -->
     <canvas id="createur" style="border:2px solid black;" width="72" height="72"></canvas>
     <canvas id="canvasKit" style="border:2px solid black;" width="93" height="93"></canvas>
     <canvas id="canvas" style="border:2px solid black;" width="1196" height="1196"></canvas>
@@ -429,6 +439,31 @@
         <label>Симметрия относительно центра:
             <input type="checkbox" name="SymC" id="symC"></label>
         <div id="bouton_valid">Сохранить</div>
+    </div>
+</div>
+
+<div class="help-popup">
+    <h2>Помощь</h2>
+    <div class="question">Управление</div>
+    <div class="answer">
+        Для работы с картой используются кнопки инструментов, расположенные над панелью кросмастеров.<br>
+        По умолчанию ЛОС отключен.
+        Камера автоматически устанавливается под первого выставленного кросмастера.
+        <p>Расширенные возможности работы с ЛОС</p>
+        <ul>
+            <li><b>Двойной клик по жетону</b> - устанавливает камеру в эту клетку.</li>
+            <li><b>SHIFT + Двойной клик по жетону</b> - устанавливает дерево в эту клетку </li>
+            <li><b>Правый клик по жетону</b> - удаляет жетон и дерево под ним</li>
+        </ul>
+    </div>
+    <div class="question">Поддержка</div>
+    <div class="answer">
+        <p>Сделано специально для <a href="https://vk.com/kmarussia">Krosmaster Russia</a></p>
+        <a href="https://github.com/4err/krosmaster-map-editor">Репозиторий проекта на GitHub</a><br>
+        Пожелания и ошибки лучше писать в <a href="https://github.com/4err/krosmaster-map-editor/issues">багтрекер на GitHub</a><br>
+        Модуль ЛОСа взят и доработан с <a href="http://krosfinder.com/">Krosfinder</a><br>
+        Жетоны и идея карты взяты с <a href="http://big-bad.forumactif.org/h4-big-bad-s-taktikor">Big bad taktikor</a>
+
     </div>
 </div>
 

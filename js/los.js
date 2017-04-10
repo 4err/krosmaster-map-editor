@@ -243,7 +243,8 @@ function CanvasState(canvas, csize, cx, cy) {
         }
     }
     this.drawDistance = false;
-    this.hiddenInvisible = false;
+    this.viewType = 0;
+
     this.hero = new CellBlock(Math.floor(cx / 2) * this.cell_size, (cy - 1) * this.cell_size, this.cell_size, this.cell_size);
     this.hero.cell_x = Math.floor(cx / 2);
     this.hero.cell_y = cy - 1;
@@ -423,18 +424,33 @@ CanvasState.prototype.draw = function () {
         this.MakeGrid(this.cell_size, this.cx, this.cy);
         // ** Add stuff you want drawn in the background all the time here **
 
-        // draw all obstructives
-        var l = obstructives.length;
-        for (var i = 0; i < l; i++) {
-            var obstructive = obstructives[i];
-            // We can skip the drawing of elements that have moved off the screen:
-            if (obstructive.x > this.width || obstructive.y > this.height ||
-                obstructive.x + obstructive.w < 0 || obstructive.y + obstructive.h < 0) {
-                continue;
+        if (this.viewType === 0) {
+            for (var i = 0; i < this.cx; i++) {
+                for (var j = 0; j < this.cy; j++) {
+                    var rx = (i * this.cell_size) + 3;
+                    var ry = (j * this.cell_size) + 3;
+                    var rs = this.cell_size - 6;
+                    ctx.beginPath();
+                    ctx.rect(rx, ry, rs, rs);
+                    ctx.strokeStyle = this.settings.strokeColor;
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
             }
-            obstructives[i].draw(ctx);
         }
-        if (this.hero) {
+        else {
+            // draw all obstructives
+            var l = obstructives.length;
+            for (var i = 0; i < l; i++) {
+                var obstructive = obstructives[i];
+                // We can skip the drawing of elements that have moved off the screen:
+                if (obstructive.x > this.width || obstructive.y > this.height ||
+                    obstructive.x + obstructive.w < 0 || obstructive.y + obstructive.h < 0) {
+                    continue;
+                }
+                obstructives[i].draw(ctx);
+            }
+
             this.hero.draw(ctx);
 
             // draw selection
@@ -464,7 +480,7 @@ CanvasState.prototype.draw = function () {
 
                         var cell_num = Math.abs(this.hero.cell_x - i) + Math.abs(this.hero.cell_y - j);
 
-                        if (!intersect || this.hiddenInvisible) {
+                        if (!intersect || this.viewType === 1) {
                             /*
                              ctx.moveTo(lineFromX, lineFromY);
                              ctx.lineTo(lineToX, lineToY);
@@ -527,17 +543,6 @@ CanvasState.prototype.draw = function () {
                 }
             }
         }
-        else {
-            var rx = (i * this.cell_size) + 3;
-            var ry = (j * this.cell_size) + 3;
-            var rs = this.cell_size - 6;
-            ctx.beginPath();
-            ctx.rect(rx, ry, rs, rs);
-            ctx.strokeStyle = this.settings.strokeColor;
-            ctx.lineWidth = 1;
-            ctx.stroke();
-        }
-
         // ** Add stuff you want drawn on top all the time here **
 
         this.valid = true;
@@ -705,7 +710,7 @@ function toggleDistance() {
 
 function toggleInvisible() {
     if (cs) {
-        cs.hiddenInvisible = !cs.hiddenInvisible;
+        cs.viewType === 2 ? cs.viewType = 0 : ++cs.viewType;
 
         cs.valid = false;
     }

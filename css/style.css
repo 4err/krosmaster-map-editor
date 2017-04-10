@@ -10,16 +10,32 @@ body {
     display: none;
 }
 
+.ui-tabs .ui-tabs-nav {
+    white-space: nowrap;
+    overflow-x: auto
+}
+
+.ui-tabs .ui-tabs-nav li {
+    float: none;
+    display: inline-block;
+}
+
 .main-container {
+    justify-content: center;
     text-align: center;
     display: flex;
 }
 
 .tools-list {
     width: 30%;
-    min-width: 300px;
+    min-width: 310px;
+    max-width: 425px;
     padding: 5px;
     padding-top: 15px;
+}
+
+.menu {
+    margin: 10px 0;
 }
 
 .workflow {
@@ -61,13 +77,19 @@ body {
     background: #876443;
 }
 
+.ui-tabs .ui-tabs-panel {
+    padding: 10px 5px;
+}
+
 .tab {
     height: 500px;
+    padding: 0;
     overflow: auto;
 }
 
 .prototype {
     display: inline-block;
+    font-size: 0;
 }
 
 .jeton img,
@@ -80,10 +102,6 @@ body {
 .circle img {
     border-radius: 50%;
     border: 8px solid black;
-}
-
-#menu {
-    height: 60px;
 }
 
 #titlebarDialog {
@@ -132,24 +150,83 @@ body {
     margin-top: 39px;
 }
 
-.los-btn {
-    display: block;
-    margin: 5px auto;
-    color: white;
+.toolbox {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.tool-btn {
+    /*display: inline-block;*/
+    width: 30px;
+    height: 30px;
+    font-size: 0;
     box-shadow: none;
     border: none;
     cursor: pointer;
-    width: 100%;
-    background: #009926;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: #009926;
+    border-radius: 3px;
+    margin: 0 3px;
     outline: none;
 }
 
-.los-btn:hover {
-    background: #00bb2c;
+.tool-btn:hover {
+    background-color: #fff;
 }
 
-.los-btn:active {
-    background: #007e1f;
+.tool-btn:active {
+    background-color: #f0f0f0;
+}
+
+.tool-btn-view {
+    background: url("../img/icons/toe.png");
+}
+
+.tool-btn-distance {
+    background: url("../img/icons/ruler.png");
+}
+
+.tool-btn-clean {
+    background: url("../img/icons/eraser.png");
+}
+
+.tool-btn-trees {
+    background: url("../img/icons/tree.png");
+}
+
+.tool-btn-help {
+    background: url("../img/icons/question.png");
+}
+
+.help-popup {
+    display: none;
+    background: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    outline: 1px solid red;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    z-index: 2;
+    overflow: auto;
+}
+
+.show {
+    display: block;
+}
+
+.popup-background::before {
+    content: '';
+    background-color: rgba(85,85,85,0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
