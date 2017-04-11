@@ -4,7 +4,11 @@ $(function () {
     });
 
     $("#choice_map").change(function () {
-        $(".workflow").css("background-image", "url(./img/maps/" + this.value + ".png)");
+        if (this.value === 'empty') {
+            $(".workflow").css("background-image", "url(./img/maps/" + this.value + ".png)");
+        } else {
+            $(".workflow").css("background-image", "url(./img/maps/" + this.value + ".jpg)");
+        }
     });
 
     //Fermetures des dialogs
