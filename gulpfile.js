@@ -20,7 +20,7 @@ gulp.task("style", function() {
 });
 
 gulp.task("images", function() {
-    return gulp.src("img/**/*.{jpg, png, gif}")
+    return gulp.src("img/**")
         .pipe(imagemin([
             imagemin.jpegtran({ progressive : true }),
             imagemin.optipng({ optimizationLevel : 3 })
