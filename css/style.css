@@ -230,3 +230,20 @@ body {
     right: 0;
     z-index: 1;
 }
+
+.krosmaster {
+    position:relative;
+    display: inline-block;
+    font-size: 0;
+}
+.krosmaster:hover::after {
+    content:'';
+    position:fixed;
+    width:300px;
+    height:400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left:50%;
+    top: 30%;
+    z-index: 100000;
+}

@@ -1,56 +1,6 @@
 /**
  * Created by Denis on 15.05.2017.
  */
-
-/*
-var list = {};
-$('[itemprop="itemListElement"]').each(function (e, val) {
-    list[val.innerHTML] = {
-        'link': val.href,
-        'level': 1
-    };
-});
-copy(list);
-
-var list = {};
-$('.table tr').each(function (e, val) {
-    if (e > 0) {
-        var color = $(val).find('td:nth-child(2)')[0].className;
-        var name = $(val).find('td:nth-child(3)').find('a')[0].innerHTML;
-        var link = $(val).find('td:nth-child(3)').find('a')[0].href;
-        var level = $(val).find('td:nth-child(4)')[0].innerText;
-        var initiative = $(val).find('td:nth-child(5)')[0].innerText;
-        var mp = $(val).find('td:nth-child(6)')[0].innerText;
-        var hp = $(val).find('td:nth-child(7)')[0].innerText;
-        var ap = $(val).find('td:nth-child(8)')[0].innerText;
-        var edition = $(val).find('td:nth-child(9)')[0].innerText;
-
-        if (edition=='Eternal 1') {
-            name += ' Eternal 1';
-        }
-
-        list[name] = {
-            'name':name,
-            'color': color,
-            'link': link,
-            'level': level,
-            'initiative': initiative,
-            'mp': mp,
-            'hp': hp,
-            'ap': ap,
-            'edition': edition
-        };
-    }
-
-});
-copy(list);
-
-var data_img = JSON.parse(localStorage.getItem("data_img"));
-$('[itemprop="itemListElement"] img').each(function (e, val) {
-    data_img.push(val.src);
-});
-localStorage.setItem("data", JSON.stringify(data_img));
-*/
 var krosmasters = {
     "Queen of the Tofus": {
         "name": "Queen of the Tofus",
@@ -316,8 +266,8 @@ var krosmasters = {
         "edition": "Dofus Krosmaster 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/030_i18n_front.png"
     },
-    "Fern Sock'em": {
-        "name": "Fern Sock'em",
+    "Fern Sockem": {
+        "name": "Fern Sockem",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/dks1/21",
         "level": "1",
@@ -340,8 +290,8 @@ var krosmasters = {
         "edition": "Dofus Krosmaster 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/020_i18n_front.png"
     },
-    "Dani O'Shun": {
-        "name": "Dani O'Shun",
+    "Dani OShun": {
+        "name": "Dani OShun",
         "color": "nameclr-2",
         "link": "http://krosfinder.com/ru/ed/dks1/23",
         "level": "4",
@@ -1144,8 +1094,8 @@ var krosmasters = {
         "edition": "Dofus Krosmaster 2",
         "img": "http://cdn.krosfinder.info/media/krs/EN/088_i18n_front.png"
     },
-    "Qilby - Traitor": {
-        "name": "Qilby - Traitor",
+    "Qilby Traitor": {
+        "name": "Qilby Traitor",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf2/1",
         "level": "6",
@@ -1156,8 +1106,8 @@ var krosmasters = {
         "edition": "Exclusive Figurines 2",
         "img": "http://cdn.krosfinder.info/media/krs/EN/102_i18n_front.png"
     },
-    "Yugo - Young King": {
-        "name": "Yugo - Young King",
+    "Yugo Young King": {
+        "name": "Yugo Young King",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf2/2",
         "level": "4",
@@ -1168,8 +1118,8 @@ var krosmasters = {
         "edition": "Exclusive Figurines 2",
         "img": "http://cdn.krosfinder.info/media/krs/EN/092_i18n_front.png"
     },
-    "Adamai - Dragon": {
-        "name": "Adamai - Dragon",
+    "Adamai Dragon": {
+        "name": "Adamai Dragon",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf2/3",
         "level": "3",
@@ -1180,8 +1130,8 @@ var krosmasters = {
         "edition": "Exclusive Figurines 2",
         "img": "http://cdn.krosfinder.info/media/krs/EN/093_i18n_front.png"
     },
-    "Phaeris - Devastated": {
-        "name": "Phaeris - Devastated",
+    "Phaeris Devastated": {
+        "name": "Phaeris Devastated",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf2/4",
         "level": "1",
@@ -1204,8 +1154,8 @@ var krosmasters = {
         "edition": "Exclusive Figurines 2",
         "img": "http://cdn.krosfinder.info/media/krs/EN/095_i18n_front.png"
     },
-    "Percedal - Percylax": {
-        "name": "Percedal - Percylax",
+    "Percedal Percylax": {
+        "name": "Percedal Percylax",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf2/6",
         "level": "5",
@@ -1564,8 +1514,8 @@ var krosmasters = {
         "edition": "Dofus Krosmaster 3",
         "img": "http://cdn.krosfinder.info/media/krs/EN/165_i18n_front.png"
     },
-    "Dark Vlad - Karnated": {
-        "name": "Dark Vlad - Karnated",
+    "Dark Vlad Karnated": {
+        "name": "Dark Vlad Karnated",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf3/1",
         "level": "3",
@@ -1576,8 +1526,8 @@ var krosmasters = {
         "edition": "Exclusive Figurines 3",
         "img": "http://cdn.krosfinder.info/media/krs/EN/114_i18n_front.png"
     },
-    "Yugo - Unleashed": {
-        "name": "Yugo - Unleashed",
+    "Yugo Unleashed": {
+        "name": "Yugo Unleashed",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf3/2",
         "level": "5",
@@ -1588,8 +1538,8 @@ var krosmasters = {
         "edition": "Exclusive Figurines 3",
         "img": "http://cdn.krosfinder.info/media/krs/EN/133_i18n_front.png"
     },
-    "Ogrest - Child": {
-        "name": "Ogrest - Child",
+    "Ogrest Child": {
+        "name": "Ogrest Child",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf3/3",
         "level": "1",
@@ -1612,8 +1562,8 @@ var krosmasters = {
         "edition": "Exclusive Figurines 3",
         "img": "http://cdn.krosfinder.info/media/krs/EN/113_i18n_front.png"
     },
-    "Joris - Master": {
-        "name": "Joris - Master",
+    "Joris Master": {
+        "name": "Joris Master",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf3/5",
         "level": "3",
@@ -1624,8 +1574,8 @@ var krosmasters = {
         "edition": "Exclusive Figurines 3",
         "img": "http://cdn.krosfinder.info/media/krs/EN/120_i18n_front.png"
     },
-    "Grougaloragran - Old": {
-        "name": "Grougaloragran - Old",
+    "Grougaloragran Old": {
+        "name": "Grougaloragran Old",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf3/6",
         "level": "1",
@@ -1636,8 +1586,8 @@ var krosmasters = {
         "edition": "Exclusive Figurines 3",
         "img": "http://cdn.krosfinder.info/media/krs/EN/121_i18n_front.png"
     },
-    "Grampy - Shopkeeper": {
-        "name": "Grampy - Shopkeeper",
+    "Grampy Shopkeeper": {
+        "name": "Grampy Shopkeeper",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf3/7",
         "level": "3",
@@ -1682,7 +1632,7 @@ var krosmasters = {
         "hp": "9",
         "ap": "6",
         "edition": "Exclusive Figurines 3",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/172_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/173_i18n_front.png"
     },
     "Royal Tofu": {
         "name": "Royal Tofu",
@@ -1744,8 +1694,8 @@ var krosmasters = {
         "edition": "Duel Pack 3",
         "img": "http://cdn.krosfinder.info/media/krs/EN/115_i18n_front.png"
     },
-    "Percimol - Controlled": {
-        "name": "Percimol - Controlled",
+    "Percimol Controlled": {
+        "name": "Percimol Controlled",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/oav/1",
         "level": "3",
@@ -1768,8 +1718,8 @@ var krosmasters = {
         "edition": "",
         "img": "http://cdn.krosfinder.info/media/krs/EN/119_i18n_front.png"
     },
-    "Remington Smisse - Mercenary": {
-        "name": "Remington Smisse - Mercenary",
+    "Remington Smisse Mercenary": {
+        "name": "Remington Smisse Mercenary",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/oav/3",
         "level": "4",
@@ -1780,8 +1730,8 @@ var krosmasters = {
         "edition": "",
         "img": "http://cdn.krosfinder.info/media/krs/EN/166_i18n_front.png"
     },
-    "Yugo - Exalted": {
-        "name": "Yugo - Exalted",
+    "Yugo Exalted": {
+        "name": "Yugo Exalted",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/oav/4",
         "level": "4",
@@ -1792,8 +1742,8 @@ var krosmasters = {
         "edition": "",
         "img": "http://cdn.krosfinder.info/media/krs/EN/167_i18n_front.png"
     },
-    "Maskemane - Psychopath": {
-        "name": "Maskemane - Psychopath",
+    "Maskemane Psychopath": {
+        "name": "Maskemane Psychopath",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/oav/5",
         "level": "1",
@@ -1816,8 +1766,8 @@ var krosmasters = {
         "edition": "",
         "img": "http://cdn.krosfinder.info/media/krs/EN/169_i18n_front.png"
     },
-    "Maskemane - Classic": {
-        "name": "Maskemane - Classic",
+    "Maskemane Classic": {
+        "name": "Maskemane Classic",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf4/1",
         "level": "1",
@@ -1828,8 +1778,8 @@ var krosmasters = {
         "edition": "Exclusive Figurines 4",
         "img": "http://cdn.krosfinder.info/media/krs/EN/170_i18n_front.png"
     },
-    "Maskemane - Coward": {
-        "name": "Maskemane - Coward",
+    "Maskemane Coward": {
+        "name": "Maskemane Coward",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/exf4/2",
         "level": "1",
@@ -2176,8 +2126,8 @@ var krosmasters = {
         "edition": "Eternal 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/226_i18n_front.png"
     },
-    "Fern Sock'em Eternal 1": {
-        "name": "Fern Sock'em Eternal 1",
+    "Fern Sockem Eternal 1": {
+        "name": "Fern Sockem Eternal 1",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/et1/29",
         "level": "1",
@@ -2536,8 +2486,8 @@ var krosmasters = {
         "edition": "Cemetery Park",
         "img": "http://cdn.krosfinder.info/media/krs/RU/149_i18n_front.png"
     },
-    "Деда - Защитник": {
-        "name": "Деда - Защитник",
+    "Деда Защитник": {
+        "name": "Деда Защитник",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/ks4/4",
         "level": "4",
@@ -2584,8 +2534,8 @@ var krosmasters = {
         "edition": "Cemetery Park",
         "img": "http://cdn.krosfinder.info/media/krs/RU/124_i18n_front.png"
     },
-    "Жорис - Меченосец": {
-        "name": "Жорис - Меченосец",
+    "Жорис Меченосец": {
+        "name": "Жорис Меченосец",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/ks4/5",
         "level": "2",
@@ -2753,6 +2703,57 @@ var krosmasters = {
         "img": "http://cdn.krosfinder.info/media/krs/RU/144_i18n_front.png"
     }
 };
+
+/*
+var list = {};
+$('[itemprop="itemListElement"]').each(function (e, val) {
+    list[val.innerHTML] = {
+        'link': val.href,
+        'level': 1
+    };
+});
+copy(list);
+
+var list = {};
+$('.table tr').each(function (e, val) {
+    if (e > 0) {
+        var color = $(val).find('td:nth-child(2)')[0].className;
+        var name = $(val).find('td:nth-child(3)').find('a')[0].innerHTML;
+        var link = $(val).find('td:nth-child(3)').find('a')[0].href;
+        var level = $(val).find('td:nth-child(4)')[0].innerText;
+        var initiative = $(val).find('td:nth-child(5)')[0].innerText;
+        var mp = $(val).find('td:nth-child(6)')[0].innerText;
+        var hp = $(val).find('td:nth-child(7)')[0].innerText;
+        var ap = $(val).find('td:nth-child(8)')[0].innerText;
+        var edition = $(val).find('td:nth-child(9)')[0].innerText;
+
+        if (edition=='Eternal 1') {
+            name += ' Eternal 1';
+        }
+
+        list[name] = {
+            'name':name,
+            'color': color,
+            'link': link,
+            'level': level,
+            'initiative': initiative,
+            'mp': mp,
+            'hp': hp,
+            'ap': ap,
+            'edition': edition
+        };
+    }
+
+});
+copy(list);
+
+var data_img = JSON.parse(localStorage.getItem("data_img"));
+$('[itemprop="itemListElement"] img').each(function (e, val) {
+    data_img.push(val.src);
+});
+localStorage.setItem("data", JSON.stringify(data_img));
+*/
+
 
 // var data_img = [
 //     "http://cdn.krosfinder.info/media/krs/EN/014_i18n_front.png",
@@ -2983,3 +2984,28 @@ var krosmasters = {
 //     "http://cdn.krosfinder.info/media/krs/RU/142_i18n_front.png",
 //     "http://cdn.krosfinder.info/media/krs/RU/145_i18n_front.png"
 // ];
+
+var busy = 0;
+var temp1 = '';
+var temp2 = '';
+var i = 0;
+for (var val in krosmasters) {
+    if (val == 'Royal Tofu') {
+        busy = 1;
+    }
+    if (busy) {
+        temp1=val;
+        if (i==0) {
+            temp1=val;
+            i++;
+        } else if(i==2) {
+            temp2=val;
+            i++;
+        } else if (i==3) {
+            krosmasters[temp1]['img']=krosmasters[val]['img'];
+            temp1 = temp2;
+            temp2 = val;
+        }
+    }
+};
+console.log(krosmasters);

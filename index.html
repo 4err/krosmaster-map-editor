@@ -14,6 +14,7 @@
 
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
 </head>
 
 <body>
@@ -70,24 +71,7 @@
                 <li><a href="#tabs-12">Цифры</a></li>
             </ul>
             <div id="tabs-1" class="tab">
-                <span class='prototype circle'><img src='img/krosmasters/lv1/boomba.png' alt='boomba'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/chafer_foot_soldier.png' alt='chafer_foot_soldier'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/chafer_lancer.png' alt='chafer_lancer'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/djaul.png' alt='djaul'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/grougaloragram_old.png' alt='grougaloragram_old'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/kanniball_archer.png' alt='kanniball_archer'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/kanniball_sarbak.png' alt='kanniball_sarbak'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/kivin.png' alt='kivin'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/mike_locke.png' alt='mike_locke'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/moe_lawr.png' alt='moe_lawr'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/ogrest_child.png' alt='ogrest_child'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/phaeris_devastated.png' alt='phaeris_devastated'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/puny_vampire.png' alt='puny_vampire'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/steamy_wonder.png' alt='steamy_wonder'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/wally_sumwerels.png' alt='wally_sumwerels'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/maskemane_psychopate.png' alt='maskemane_psychopate'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/maskemane_classic.png' alt='maskemane_classic'></span>
-                <span class='prototype circle'><img src='img/krosmasters/lv1/maskemane_coward.png' alt='maskemane_coward'></span>
+
             </div>
             <div id="tabs-2" class="tab">
                 <span class='prototype circle'><img src='img/krosmasters/lv2/atcham.png' alt='atcham'></span>
@@ -432,51 +416,69 @@
     <canvas id="createur" style="border:2px solid black;" width="72" height="72"></canvas>
     <canvas id="canvasKit" style="border:2px solid black;" width="93" height="93"></canvas>
     <canvas id="canvas" style="border:2px solid black;" width="1196" height="1196"></canvas>
-
-    <div id="dialog_enreg" title="Параметры сохранения">
-        <label>Размер изображения:
-            <input type="number" name="Largeur" id="qualite" value=800 size=4></label>
-        <label>Имя изображения:
-            <input type="text" name="Nom" id="nomImage" value="Моя карта" size=16></label>
-        <label>Симметрия относительно центра:
-            <input type="checkbox" name="SymC" id="symC"></label>
-        <div id="bouton_valid">Сохранить</div>
+    <!--
+        <div id="dialog_enreg" title="Параметры сохранения">
+            <label>Размер изображения:
+                <input type="number" name="Largeur" id="qualite" value=800 size=4></label>
+            <label>Имя изображения:
+                <input type="text" name="Nom" id="nomImage" value="Моя карта" size=16></label>
+            <label>Симметрия относительно центра:
+                <input type="checkbox" name="SymC" id="symC"></label>
+            <div id="bouton_valid">Сохранить</div>
+        </div>
     </div>
-</div>
+    -->
+    <div class="help-popup">
+        <h2>Помощь</h2>
+        <div class="question">Управление</div>
+        <div class="answer">
+            Для работы с картой используются кнопки инструментов, расположенные над панелью кросмастеров.<br>
+            По умолчанию ЛОС отключен.
+            Камера автоматически устанавливается под первого выставленного кросмастера.
+            <p>Расширенные возможности работы с ЛОС</p>
+            <ul>
+                <li><b>Двойной клик по жетону</b> - устанавливает камеру в эту клетку.</li>
+                <li><b>SHIFT + Двойной клик по жетону</b> - устанавливает дерево в эту клетку </li>
+                <li><b>Правый клик по жетону</b> - удаляет жетон и дерево под ним</li>
+            </ul>
+        </div>
+        <div class="question">Поддержка</div>
+        <div class="answer">
+            <p>Сделано специально для <a href="https://vk.com/kmarussia">Krosmaster Russia</a></p>
+            <a href="https://github.com/4err/krosmaster-map-editor">Репозиторий проекта на GitHub</a><br>
+            <a href="https://github.com/4err/krosmaster-map-editor/blob/master/changelog.md">ChangeLog</a><br>
+            Пожелания и ошибки лучше писать в <a href="https://github.com/4err/krosmaster-map-editor/issues">багтрекер на GitHub</a><br>
+            Модуль ЛОСа взят и доработан с <a href="http://krosfinder.com/">Krosfinder</a><br>
+            Жетоны и идея карты взяты с <a href="http://big-bad.forumactif.org/h4-big-bad-s-taktikor">Big bad taktikor</a>
 
-<div class="help-popup">
-    <h2>Помощь</h2>
-    <div class="question">Управление</div>
-    <div class="answer">
-        Для работы с картой используются кнопки инструментов, расположенные над панелью кросмастеров.<br>
-        По умолчанию ЛОС отключен.
-        Камера автоматически устанавливается под первого выставленного кросмастера.
-        <p>Расширенные возможности работы с ЛОС</p>
-        <ul>
-            <li><b>Двойной клик по жетону</b> - устанавливает камеру в эту клетку.</li>
-            <li><b>SHIFT + Двойной клик по жетону</b> - устанавливает дерево в эту клетку </li>
-            <li><b>Правый клик по жетону</b> - удаляет жетон и дерево под ним</li>
-        </ul>
+        </div>
     </div>
-    <div class="question">Поддержка</div>
-    <div class="answer">
-        <p>Сделано специально для <a href="https://vk.com/kmarussia">Krosmaster Russia</a></p>
-        <a href="https://github.com/4err/krosmaster-map-editor">Репозиторий проекта на GitHub</a><br>
-        <a href="https://github.com/4err/krosmaster-map-editor/blob/master/changelog.md">ChangeLog</a><br>
-        Пожелания и ошибки лучше писать в <a href="https://github.com/4err/krosmaster-map-editor/issues">багтрекер на GitHub</a><br>
-        Модуль ЛОСа взят и доработан с <a href="http://krosfinder.com/">Krosfinder</a><br>
-        Жетоны и идея карты взяты с <a href="http://big-bad.forumactif.org/h4-big-bad-s-taktikor">Big bad taktikor</a>
 
-    </div>
-</div>
-
-<!-- build:js -->
+    <!-- build:js -->
+<script src="js/krosmasters.js"></script>
 <script src="js/Blob.js"></script>
 <script src="js/canvas-toBlob.js"></script>
 <script src="js/FileSaver.js"></script>
-<script src="js/main_script.js"></script>
 <script src="js/los.js"></script>
+<script src="js/main_script.js"></script>
 <!-- endbuild -->
 
+<script type="text/template" id="tab_template">
+    <%
+        var styles = '';
+        for (var val in data) {
+            var title= data[val]['name'].toLowerCase().replace(/\s/ig, '_');
+    %>
+            <div class="krosmaster <%= title %>"><span class='prototype circle'><img src='img/krosmasters/lv<%= data[val]["level"] %>/<%=  title %>.png' alt='<%= data[val]["name"] %>'></span></div>
+    <%
+            styles += '.'+title+':hover::after {background-image:url("'+data[val]["img"]+'");}';
+
+        };
+        $('#card_styles').append(styles);
+    %>
+</script>
+<style id="card_styles">
+
+</style>
 </body>
 </html>

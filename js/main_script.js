@@ -379,4 +379,49 @@ $(function () {
 
     });
 
+    var data = {
+        "Queen of the Tofus": {
+            "name": "Queen of the Tofus",
+            "color": "nameclr-1",
+            "link": "http://krosfinder.com/ru/ed/arena/1",
+            "level": "3",
+            "initiative": "8",
+            "mp": "4",
+            "hp": "8",
+            "ap": "6",
+            "edition": "Krosmaster Arena",
+            "img": "http://cdn.krosfinder.info/media/krs/EN/014_i18n_front.png"
+        },
+        "King of the Gobballs": {
+            "name": "King of the Gobballs",
+            "color": "nameclr-1",
+            "link": "http://krosfinder.com/ru/ed/arena/2",
+            "level": "3",
+            "initiative": "2",
+            "mp": "3",
+            "hp": "10",
+            "ap": "7",
+            "edition": "Krosmaster Arena",
+            "img": "http://cdn.krosfinder.info/media/krs/EN/015_i18n_front.png"
+        }
+    };
+    var template = document.getElementById('tab_template').innerHTML;
+    var tmpl = _.template(template);
+    var result = tmpl({data: krosmasters, level: 1});
+    $('#tabs-1').append(result);
+
+    // <script type="text/template" id="tab_template">
+    //     <%
+    // var styles = '';
+    // for (var val in data) {
+    //     var title= data[val]['name'].toLowerCase().replace(/\s/ig, '_');
+    // %>
+    // <div class="krosmaster <%= title %>"><span class='prototype circle'><img src='img/krosmasters/lv<%= data[val]["level"] %>/<%= data[val]["name"] %>.png' alt='<%= title %>'></span></div>
+    //     <%
+    //     styles += '.<%= title %>{background-url:url(<%= data[val]["img"] %>);} ';
+    // };
+    // $('#card_styles').append(styles);
+    // %>
+    // </script>
+
 });
