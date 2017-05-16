@@ -1644,7 +1644,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Krosmaster Quest",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/173_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/097_i18n_front.png"
     },
     "Royal Gobball": {
         "name": "Royal Gobball",
@@ -1656,7 +1656,7 @@ var krosmasters = {
         "hp": "10",
         "ap": "7",
         "edition": "Krosmaster Quest",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/173_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/103_i18n_front.png"
     },
     "Le Chouque": {
         "name": "Le Chouque",
@@ -1668,30 +1668,6 @@ var krosmasters = {
         "hp": "12",
         "ap": "8",
         "edition": "Piwate Island",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/097_i18n_front.png"
-    },
-    "Anathar": {
-        "name": "Anathar",
-        "color": "nameclr-1",
-        "link": "http://krosfinder.com/ru/ed/duel3/1",
-        "level": "5",
-        "initiative": "7",
-        "mp": "3",
-        "hp": "14",
-        "ap": "6",
-        "edition": "Duel Pack 3",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/103_i18n_front.png"
-    },
-    "Justice Knight Jr": {
-        "name": "Justice Knight Jr",
-        "color": "nameclr-1",
-        "link": "http://krosfinder.com/ru/ed/duel3/2",
-        "level": "3",
-        "initiative": "4",
-        "mp": "4",
-        "hp": "11",
-        "ap": "6",
-        "edition": "Duel Pack 3",
         "img": "http://cdn.krosfinder.info/media/krs/EN/115_i18n_front.png"
     },
     "Percimol Controlled": {
@@ -1704,7 +1680,7 @@ var krosmasters = {
         "hp": "11",
         "ap": "6",
         "edition": "",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/118_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/166_i18n_front.png"
     },
     "Ush": {
         "name": "Ush",
@@ -1716,7 +1692,7 @@ var krosmasters = {
         "hp": "12",
         "ap": "7",
         "edition": "",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/119_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/167_i18n_front.png"
     },
     "Remington Smisse Mercenary": {
         "name": "Remington Smisse Mercenary",
@@ -1728,7 +1704,7 @@ var krosmasters = {
         "hp": "12",
         "ap": "7",
         "edition": "",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/166_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/168_i18n_front.png"
     },
     "Yugo Exalted": {
         "name": "Yugo Exalted",
@@ -1740,7 +1716,7 @@ var krosmasters = {
         "hp": "12",
         "ap": "7",
         "edition": "",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/167_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/169_i18n_front.png"
     },
     "Maskemane Psychopath": {
         "name": "Maskemane Psychopath",
@@ -1752,7 +1728,7 @@ var krosmasters = {
         "hp": "7",
         "ap": "5",
         "edition": "",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/168_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/170_i18n_front.png"
     },
     "Atcham": {
         "name": "Atcham",
@@ -1764,7 +1740,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/169_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/171_i18n_front.png"
     },
     "Maskemane Classic": {
         "name": "Maskemane Classic",
@@ -1776,7 +1752,7 @@ var krosmasters = {
         "hp": "5",
         "ap": "6",
         "edition": "Exclusive Figurines 4",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/170_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/174_i18n_front.png"
     },
     "Maskemane Coward": {
         "name": "Maskemane Coward",
@@ -1788,7 +1764,7 @@ var krosmasters = {
         "hp": "4",
         "ap": "5",
         "edition": "Exclusive Figurines 4",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/171_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/175_i18n_front.png"
     },
     "Argon Gass Eternal 1": {
         "name": "Argon Gass Eternal 1",
@@ -1800,7 +1776,7 @@ var krosmasters = {
         "hp": "10",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/174_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/201_i18n_front.png"
     },
     "Amalia Eternal 1": {
         "name": "Amalia Eternal 1",
@@ -1812,7 +1788,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/175_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/202_i18n_front.png"
     },
     "Evangelyne Eternal 1": {
         "name": "Evangelyne Eternal 1",
@@ -1824,7 +1800,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/201_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/203_i18n_front.png"
     },
     "Nox Eternal 1": {
         "name": "Nox Eternal 1",
@@ -1836,7 +1812,7 @@ var krosmasters = {
         "hp": "13",
         "ap": "8",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/202_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/204_i18n_front.png"
     },
     "Ruel Stroud Eternal 1": {
         "name": "Ruel Stroud Eternal 1",
@@ -1848,7 +1824,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/203_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/205_i18n_front.png"
     },
     "Percedal Eternal 1": {
         "name": "Percedal Eternal 1",
@@ -1860,7 +1836,7 @@ var krosmasters = {
         "hp": "11",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/204_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/206_i18n_front.png"
     },
     "Yugo Eternal 1": {
         "name": "Yugo Eternal 1",
@@ -1872,7 +1848,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/205_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/207_i18n_front.png"
     },
     "Bill Tell Eternal 1": {
         "name": "Bill Tell Eternal 1",
@@ -1884,7 +1860,7 @@ var krosmasters = {
         "hp": "6",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/206_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/208_i18n_front.png"
     },
     "Lil Healey Eternal 1": {
         "name": "Lil Healey Eternal 1",
@@ -1896,7 +1872,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/207_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/209_i18n_front.png"
     },
     "Bad Aboum Eternal 1": {
         "name": "Bad Aboum Eternal 1",
@@ -1908,7 +1884,7 @@ var krosmasters = {
         "hp": "10",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/208_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/210_i18n_front.png"
     },
     "Anna Tommy Eternal 1": {
         "name": "Anna Tommy Eternal 1",
@@ -1920,7 +1896,7 @@ var krosmasters = {
         "hp": "12",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/209_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/211_i18n_front.png"
     },
     "Oscar Kass Eternal 1": {
         "name": "Oscar Kass Eternal 1",
@@ -1932,7 +1908,7 @@ var krosmasters = {
         "hp": "10",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/210_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/212_i18n_front.png"
     },
     "Kassius Kaos Eternal 1": {
         "name": "Kassius Kaos Eternal 1",
@@ -1944,7 +1920,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/211_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/213_i18n_front.png"
     },
     "Queen of the Tofus Eternal 1": {
         "name": "Queen of the Tofus Eternal 1",
@@ -1956,7 +1932,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/212_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/214_i18n_front.png"
     },
     "King of the Gobballs Eternal 1": {
         "name": "King of the Gobballs Eternal 1",
@@ -1968,7 +1944,7 @@ var krosmasters = {
         "hp": "11",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/213_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/215_i18n_front.png"
     },
     "Jems Blond Eternal 1": {
         "name": "Jems Blond Eternal 1",
@@ -1980,7 +1956,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/214_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/216_i18n_front.png"
     },
     "Luk Ylook Eternal 1": {
         "name": "Luk Ylook Eternal 1",
@@ -1992,7 +1968,7 @@ var krosmasters = {
         "hp": "5",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/215_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/217_i18n_front.png"
     },
     "Dani O'Shun Eternal 1": {
         "name": "Dani O'Shun Eternal 1",
@@ -2004,7 +1980,7 @@ var krosmasters = {
         "hp": "13",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/216_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/218_i18n_front.png"
     },
     "Naz Rael Eternal 1": {
         "name": "Naz Rael Eternal 1",
@@ -2016,7 +1992,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/217_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/219_i18n_front.png"
     },
     "Quentin Flush Eternal 1": {
         "name": "Quentin Flush Eternal 1",
@@ -2028,7 +2004,7 @@ var krosmasters = {
         "hp": "6",
         "ap": "5",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/218_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/220_i18n_front.png"
     },
     "Ally McZeal Eternal 1": {
         "name": "Ally McZeal Eternal 1",
@@ -2040,7 +2016,7 @@ var krosmasters = {
         "hp": "11",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/219_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/221_i18n_front.png"
     },
     "Di Curey Eternal 1": {
         "name": "Di Curey Eternal 1",
@@ -2052,7 +2028,7 @@ var krosmasters = {
         "hp": "5",
         "ap": "5",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/220_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/222_i18n_front.png"
     },
     "Goultard Eternal 1": {
         "name": "Goultard Eternal 1",
@@ -2064,7 +2040,7 @@ var krosmasters = {
         "hp": "15",
         "ap": "8",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/221_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/223_i18n_front.png"
     },
     "Remington Smisse Eternal 1": {
         "name": "Remington Smisse Eternal 1",
@@ -2076,7 +2052,7 @@ var krosmasters = {
         "hp": "13",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/222_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/224_i18n_front.png"
     },
     "Boo Ming Eternal 1": {
         "name": "Boo Ming Eternal 1",
@@ -2088,7 +2064,7 @@ var krosmasters = {
         "hp": "7",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/223_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/225_i18n_front.png"
     },
     "Coa Gulary Eternal 1": {
         "name": "Coa Gulary Eternal 1",
@@ -2100,7 +2076,7 @@ var krosmasters = {
         "hp": "7",
         "ap": "5",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/224_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/226_i18n_front.png"
     },
     "Clot the Crapulous Eternal 1": {
         "name": "Clot the Crapulous Eternal 1",
@@ -2112,7 +2088,7 @@ var krosmasters = {
         "hp": "14",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/225_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/227_i18n_front.png"
     },
     "Klor Ofil Eternal 1": {
         "name": "Klor Ofil Eternal 1",
@@ -2124,7 +2100,7 @@ var krosmasters = {
         "hp": "6",
         "ap": "5",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/226_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/228_i18n_front.png"
     },
     "Fern Sockem Eternal 1": {
         "name": "Fern Sockem Eternal 1",
@@ -2136,7 +2112,7 @@ var krosmasters = {
         "hp": "6",
         "ap": "5",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/227_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/229_i18n_front.png"
     },
     "Makum Bah Eternal 1": {
         "name": "Makum Bah Eternal 1",
@@ -2148,7 +2124,7 @@ var krosmasters = {
         "hp": "13",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/228_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/230_i18n_front.png"
     },
     "Srammy Eternal 1": {
         "name": "Srammy Eternal 1",
@@ -2160,7 +2136,7 @@ var krosmasters = {
         "hp": "6",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/229_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/231_i18n_front.png"
     },
     "Fraktor Eternal 1": {
         "name": "Fraktor Eternal 1",
@@ -2172,7 +2148,7 @@ var krosmasters = {
         "hp": "13",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/230_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/232_i18n_front.png"
     },
     "Maskun John Eternal 1": {
         "name": "Maskun John Eternal 1",
@@ -2184,7 +2160,7 @@ var krosmasters = {
         "hp": "7",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/231_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/233_i18n_front.png"
     },
     "Victor don Voom Eternal 1": {
         "name": "Victor don Voom Eternal 1",
@@ -2196,7 +2172,7 @@ var krosmasters = {
         "hp": "14",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/232_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/234_i18n_front.png"
     },
     "Percimol Eternal 1": {
         "name": "Percimol Eternal 1",
@@ -2208,7 +2184,7 @@ var krosmasters = {
         "hp": "17",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/233_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/235_i18n_front.png"
     },
     "Shak Shaka Eternal 1": {
         "name": "Shak Shaka Eternal 1",
@@ -2220,7 +2196,7 @@ var krosmasters = {
         "hp": "15",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/234_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/236_i18n_front.png"
     },
     "Darkness Knight Eternal 1": {
         "name": "Darkness Knight Eternal 1",
@@ -2232,7 +2208,7 @@ var krosmasters = {
         "hp": "15",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/235_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/237_i18n_front.png"
     },
     "Cloud Knight Eternal 1": {
         "name": "Cloud Knight Eternal 1",
@@ -2244,7 +2220,7 @@ var krosmasters = {
         "hp": "9",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/236_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/238_i18n_front.png"
     },
     "Drop Knight Eternal 1": {
         "name": "Drop Knight Eternal 1",
@@ -2256,7 +2232,7 @@ var krosmasters = {
         "hp": "10",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/237_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/239_i18n_front.png"
     },
     "Flame Knight Eternal 1": {
         "name": "Flame Knight Eternal 1",
@@ -2268,7 +2244,7 @@ var krosmasters = {
         "hp": "9",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/238_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/240_i18n_front.png"
     },
     "Leaf Knight Eternal 1": {
         "name": "Leaf Knight Eternal 1",
@@ -2280,7 +2256,7 @@ var krosmasters = {
         "hp": "11",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/239_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/241_i18n_front.png"
     },
     "Goultard the Barbarian Eternal 1": {
         "name": "Goultard the Barbarian Eternal 1",
@@ -2292,7 +2268,7 @@ var krosmasters = {
         "hp": "25",
         "ap": "8",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/240_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/242_i18n_front.png"
     },
     "Count Harebourg Eternal 1": {
         "name": "Count Harebourg Eternal 1",
@@ -2304,7 +2280,7 @@ var krosmasters = {
         "hp": "15",
         "ap": "8",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/241_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/243_i18n_front.png"
     },
     "Count Frigost Eternal 1": {
         "name": "Count Frigost Eternal 1",
@@ -2316,7 +2292,7 @@ var krosmasters = {
         "hp": "15",
         "ap": "10",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/242_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/244_i18n_front.png"
     },
     "Captain Amakna Eternal 1": {
         "name": "Captain Amakna Eternal 1",
@@ -2328,7 +2304,7 @@ var krosmasters = {
         "hp": "13",
         "ap": "9",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/243_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/245_i18n_front.png"
     },
     "Merkator Eternal 1": {
         "name": "Merkator Eternal 1",
@@ -2340,7 +2316,7 @@ var krosmasters = {
         "hp": "14",
         "ap": "8",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/244_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/246_i18n_front.png"
     },
     "Krobax Eternal 1": {
         "name": "Krobax Eternal 1",
@@ -2352,7 +2328,7 @@ var krosmasters = {
         "hp": "5",
         "ap": "5",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/245_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/247_i18n_front.png"
     },
     "Belezebug Eternal 1": {
         "name": "Belezebug Eternal 1",
@@ -2364,7 +2340,7 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/246_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/248_i18n_front.png"
     },
     "Skale Eternal 1": {
         "name": "Skale Eternal 1",
@@ -2376,7 +2352,7 @@ var krosmasters = {
         "hp": "6",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/247_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/249_i18n_front.png"
     },
     "Trank Eternal 1": {
         "name": "Trank Eternal 1",
@@ -2388,7 +2364,7 @@ var krosmasters = {
         "hp": "9",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/248_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/250_i18n_front.png"
     },
     "Lumino Eternal 1": {
         "name": "Lumino Eternal 1",
@@ -2400,7 +2376,7 @@ var krosmasters = {
         "hp": "3",
         "ap": "6",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/249_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/251_i18n_front.png"
     },
     "Shadow Eternal 1": {
         "name": "Shadow Eternal 1",
@@ -2412,10 +2388,10 @@ var krosmasters = {
         "hp": "7",
         "ap": "7",
         "edition": "Eternal 1",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/250_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/252_i18n_front.png"
     },
-    "Бакара": {
-        "name": "Бакара",
+    "Bakara": {
+        "name": "bakara",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/ks4/8",
         "level": "4",
@@ -2424,10 +2400,10 @@ var krosmasters = {
         "hp": "11",
         "ap": "7",
         "edition": "Krosmaster Arena 2.0",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/251_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/125_i18n_front.png"
     },
-    "Брат Каток": {
-        "name": "Брат Каток",
+    "Skidmonk": {
+        "name": "Skidmonk",
         "color": "nameclr-2",
         "link": "http://krosfinder.com/ru/ed/cpk/14",
         "level": "3",
@@ -2436,10 +2412,10 @@ var krosmasters = {
         "hp": "9",
         "ap": "6",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/252_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/147_i18n_front.png"
     },
-    "Брат Качок": {
-        "name": "Брат Качок",
+    "Friar Tubs": {
+        "name": "Friar Tubs",
         "color": "nameclr-2",
         "link": "http://krosfinder.com/ru/ed/cpk/15",
         "level": "4",
@@ -2448,10 +2424,10 @@ var krosmasters = {
         "hp": "12",
         "ap": "7",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/125_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/148_i18n_front.png"
     },
-    "Брат Торчок": {
-        "name": "Брат Торчок",
+    "Felonious Monk": {
+        "name": "Felonious Monk",
         "color": "nameclr-2",
         "link": "http://krosfinder.com/ru/ed/cpk/16",
         "level": "3",
@@ -2460,10 +2436,10 @@ var krosmasters = {
         "hp": "9",
         "ap": "7",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/147_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/149_i18n_front.png"
     },
-    "Вампир Повелитель": {
-        "name": "Вампир Повелитель",
+    "Master Vampire": {
+        "name": "Master Vampire",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/cpk/6",
         "level": "3",
@@ -2472,10 +2448,10 @@ var krosmasters = {
         "hp": "10",
         "ap": "7",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/148_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/139_i18n_front.png"
     },
-    "Владыка Ворон": {
-        "name": "Владыка Ворон",
+    "Lord Crow": {
+        "name": "Lord Crow",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/cpk/1",
         "level": "3",
@@ -2484,10 +2460,10 @@ var krosmasters = {
         "hp": "9",
         "ap": "7",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/149_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/134_i18n_front.png"
     },
-    "Деда Защитник": {
-        "name": "Деда Защитник",
+    "Grampy Protector": {
+        "name": "Grampy Protector",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/ks4/4",
         "level": "4",
@@ -2496,10 +2472,10 @@ var krosmasters = {
         "hp": "12",
         "ap": "7",
         "edition": "Krosmaster Arena 2.0",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/139_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/128_i18n_front.png"
     },
-    "Джахаш": {
-        "name": "Джахаш",
+    "Jahash": {
+        "name": "Jahash",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/ks4/6",
         "level": "4",
@@ -2508,10 +2484,10 @@ var krosmasters = {
         "hp": "12",
         "ap": "7",
         "edition": "Krosmaster Arena 2.0",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/134_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/124_i18n_front.png"
     },
-    "Джулит": {
-        "name": "Джулит",
+    "Julith": {
+        "name": "Julith",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/ks4/1",
         "level": "4",
@@ -2520,10 +2496,10 @@ var krosmasters = {
         "hp": "13",
         "ap": "7",
         "edition": "Krosmaster Arena 2.0",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/128_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/127_i18n_front.png"
     },
-    "Жалкий Вампир": {
-        "name": "Жалкий Вампир",
+    "Puny Vampire": {
+        "name": "Puny Vampire",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/cpk/7",
         "level": "1",
@@ -2532,10 +2508,10 @@ var krosmasters = {
         "hp": "6",
         "ap": "5",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/124_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/140_i18n_front.png"
     },
-    "Жорис Меченосец": {
-        "name": "Жорис Меченосец",
+    "Joris Swashbuckler": {
+        "name": "Joris Swashbuckler",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/ks4/5",
         "level": "2",
@@ -2544,10 +2520,10 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Krosmaster Arena 2.0",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/127_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/126_i18n_front.png"
     },
-    "Ипат Копат": {
-        "name": "Ипат Копат",
+    "Persee Phore": {
+        "name": "Persee Phore",
         "color": "nameclr-2",
         "link": "http://krosfinder.com/ru/ed/cpk/5",
         "level": "2",
@@ -2556,10 +2532,10 @@ var krosmasters = {
         "hp": "7",
         "ap": "5",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/140_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/138_i18n_front.png"
     },
-    "Король Лохмоть": {
-        "name": "Король Лохмоть",
+    "Mopy King": {
+        "name": "Mopy King",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/cpk/3",
         "level": "4",
@@ -2568,10 +2544,10 @@ var krosmasters = {
         "hp": "13",
         "ap": "7",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/126_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/136_i18n_front.png"
     },
-    "Лилотта": {
-        "name": "Лилотта",
+    "Lilotte": {
+        "name": "Lilotte",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/ks4/2",
         "level": "2",
@@ -2580,10 +2556,10 @@ var krosmasters = {
         "hp": "6",
         "ap": "6",
         "edition": "Krosmaster Arena 2.0",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/138_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/130_i18n_front.png"
     },
-    "Марлин": {
-        "name": "Марлин",
+    "Marline": {
+        "name": "Marline",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/ks4/3",
         "level": "2",
@@ -2592,10 +2568,10 @@ var krosmasters = {
         "hp": "6",
         "ap": "6",
         "edition": "Krosmaster Arena 2.0",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/136_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/131_i18n_front.png"
     },
-    "Монашка": {
-        "name": "Монашка",
+    "The Nun": {
+        "name": "The Nun",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/cpk/4",
         "level": "5",
@@ -2604,10 +2580,10 @@ var krosmasters = {
         "hp": "14",
         "ap": "8",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/130_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/137_i18n_front.png"
     },
-    "Мрачный Чтец": {
-        "name": "Мрачный Чтец",
+    "Grim Preacher": {
+        "name": "Grim Preacher",
         "color": "nameclr-2",
         "link": "http://krosfinder.com/ru/ed/cpk/13",
         "level": "2",
@@ -2616,10 +2592,10 @@ var krosmasters = {
         "hp": "5",
         "ap": "7",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/131_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/146_i18n_front.png"
     },
-    "Сфинктер Целл": {
-        "name": "Сфинктер Целл",
+    "Sphincter Cell": {
+        "name": "Sphincter Cell",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/cpk/2",
         "level": "4",
@@ -2628,10 +2604,10 @@ var krosmasters = {
         "hp": "13",
         "ap": "7",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/137_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/135_i18n_front.png"
     },
-    "Хан Каркасс": {
-        "name": "Хан Каркасс",
+    "Khan Karkass": {
+        "name": "Khan Karkass",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/ks4/7",
         "level": "2",
@@ -2640,10 +2616,10 @@ var krosmasters = {
         "hp": "8",
         "ap": "6",
         "edition": "Krosmaster Arena 2.0",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/146_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/129_i18n_front.png"
     },
-    "Чафер Копейщик": {
-        "name": "Чафер Копейщик",
+    "Chafer Lancer": {
+        "name": "Chafer Lancer",
         "color": "nameclr-3",
         "link": "http://krosfinder.com/ru/ed/cpk/10",
         "level": "1",
@@ -2652,10 +2628,10 @@ var krosmasters = {
         "hp": "6",
         "ap": "5",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/135_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/143_i18n_front.png"
     },
-    "Чафер Лучник": {
-        "name": "Чафер Лучник",
+    "Chafer Archer": {
+        "name": "Chafer Archer",
         "color": "nameclr-3",
         "link": "http://krosfinder.com/ru/ed/cpk/8",
         "level": "2",
@@ -2664,10 +2640,10 @@ var krosmasters = {
         "hp": "5",
         "ap": "6",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/129_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/141_i18n_front.png"
     },
-    "Чафер Невидимка": {
-        "name": "Чафер Невидимка",
+    "Invisible Chafer": {
+        "name": "Invisible Chafer",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/cpk/11",
         "level": "3",
@@ -2676,10 +2652,10 @@ var krosmasters = {
         "hp": "9",
         "ap": "6",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/143_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/144_i18n_front.png"
     },
-    "Чафер Пехотинец": {
-        "name": "Чафер Пехотинец",
+    "Chafer Foot Soldier": {
+        "name": "Chafer Foot Soldier",
         "color": "nameclr-2",
         "link": "http://krosfinder.com/ru/ed/cpk/9",
         "level": "1",
@@ -2688,10 +2664,10 @@ var krosmasters = {
         "hp": "6",
         "ap": "5",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/141_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/142_i18n_front.png"
     },
-    "Элитный Чафер": {
-        "name": "Элитный Чафер",
+    "Elite Chafer": {
+        "name": "Elite Chafer",
         "color": "nameclr-1",
         "link": "http://krosfinder.com/ru/ed/cpk/12",
         "level": "4",
@@ -2700,7 +2676,7 @@ var krosmasters = {
         "hp": "11",
         "ap": "6",
         "edition": "Cemetery Park",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/144_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/145_i18n_front.png"
     }
 };
 
@@ -2985,27 +2961,27 @@ localStorage.setItem("data", JSON.stringify(data_img));
 //     "http://cdn.krosfinder.info/media/krs/RU/145_i18n_front.png"
 // ];
 
-var busy = 0;
-var temp1 = '';
-var temp2 = '';
-var i = 0;
-for (var val in krosmasters) {
-    if (val == 'Royal Tofu') {
-        busy = 1;
-    }
-    if (busy) {
-        temp1=val;
-        if (i==0) {
-            temp1=val;
-            i++;
-        } else if(i==2) {
-            temp2=val;
-            i++;
-        } else if (i==3) {
-            krosmasters[temp1]['img']=krosmasters[val]['img'];
-            temp1 = temp2;
-            temp2 = val;
-        }
-    }
-};
-console.log(krosmasters);
+// var busy = 0;
+// var temp1 = '';
+// var temp2 = '';
+// var i = 0;
+// for (var val in krosmasters) {
+//     if (val == 'Royal Tofu') {
+//         busy = 1;
+//     }
+//     if (busy) {
+//         temp1=val;
+//         if (i==0) {
+//             temp1=val;
+//             i++;
+//         } else if(i==2) {
+//             temp2=val;
+//             i++;
+//         } else if (i==3) {
+//             krosmasters[temp1]['img']=krosmasters[val]['img'];
+//             temp1 = temp2;
+//             temp2 = val;
+//         }
+//     }
+// };
+// console.log(krosmasters);

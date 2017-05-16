@@ -468,11 +468,12 @@
         var styles = '';
         for (var val in data) {
             var title= data[val]['name'].toLowerCase().replace(/\s/ig, '_');
+        if ((data[val]["edition"] !=='Eternal 1')) {
     %>
             <div class="krosmaster <%= title %>"><span class='prototype circle'><img src='img/krosmasters/lv<%= data[val]["level"] %>/<%=  title %>.png' alt='<%= data[val]["name"] %>'></span></div>
     <%
             styles += '.'+title+':hover::after {background-image:url("'+data[val]["img"]+'");}';
-
+            }
         };
         $('#card_styles').append(styles);
     %>
