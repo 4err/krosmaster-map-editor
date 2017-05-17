@@ -4,7 +4,7 @@
 var krosmasters = {
     "Queen of the Tofus": {
         "name": "Queen of the Tofus",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/arena/1",
         "level": "3",
         "initiative": "8",
@@ -16,7 +16,7 @@ var krosmasters = {
     },
     "King of the Gobballs": {
         "name": "King of the Gobballs",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/arena/2",
         "level": "3",
         "initiative": "2",
@@ -28,7 +28,7 @@ var krosmasters = {
     },
     "Boo Ming": {
         "name": "Boo Ming",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/1",
         "level": "2",
         "initiative": "2",
@@ -40,7 +40,7 @@ var krosmasters = {
     },
     "Bad Aboum": {
         "name": "Bad Aboum",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/2",
         "level": "3",
         "initiative": "3",
@@ -52,7 +52,7 @@ var krosmasters = {
     },
     "Remington Smisse": {
         "name": "Remington Smisse",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/3",
         "level": "5",
         "initiative": "5",
@@ -64,7 +64,7 @@ var krosmasters = {
     },
     "Maskun John": {
         "name": "Maskun John",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/4",
         "level": "2",
         "initiative": "4",
@@ -76,7 +76,7 @@ var krosmasters = {
     },
     "Kassius Kaos": {
         "name": "Kassius Kaos",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/5",
         "level": "3",
         "initiative": "4",
@@ -88,7 +88,7 @@ var krosmasters = {
     },
     "Victor don Voom": {
         "name": "Victor don Voom",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/6",
         "level": "5",
         "initiative": "9",
@@ -100,7 +100,7 @@ var krosmasters = {
     },
     "Bill Tell": {
         "name": "Bill Tell",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/7",
         "level": "3",
         "initiative": "7",
@@ -112,7 +112,7 @@ var krosmasters = {
     },
     "Jems Blond": {
         "name": "Jems Blond",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/8",
         "level": "4",
         "initiative": "8",
@@ -124,7 +124,7 @@ var krosmasters = {
     },
     "Luk Ylook": {
         "name": "Luk Ylook",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/9",
         "level": "2",
         "initiative": "6",
@@ -136,7 +136,7 @@ var krosmasters = {
     },
     "Lil Healey": {
         "name": "Lil Healey",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/10",
         "level": "3",
         "initiative": "1",
@@ -148,7 +148,7 @@ var krosmasters = {
     },
     "Ally McZeal": {
         "name": "Ally McZeal",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/11",
         "level": "4",
         "initiative": "3",
@@ -160,7 +160,7 @@ var krosmasters = {
     },
     "Di Curey": {
         "name": "Di Curey",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/12",
         "level": "1",
         "initiative": "0",
@@ -172,7 +172,7 @@ var krosmasters = {
     },
     "Srammy": {
         "name": "Srammy",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/13",
         "level": "2",
         "initiative": "8",
@@ -184,7 +184,7 @@ var krosmasters = {
     },
     "Oscar Kass": {
         "name": "Oscar Kass",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/14",
         "level": "3",
         "initiative": "6",
@@ -196,7 +196,7 @@ var krosmasters = {
     },
     "Fraktor": {
         "name": "Fraktor",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/15",
         "level": "4",
         "initiative": "4",
@@ -208,7 +208,7 @@ var krosmasters = {
     },
     "Coa Gulary": {
         "name": "Coa Gulary",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/16",
         "level": "1",
         "initiative": "6",
@@ -220,7 +220,7 @@ var krosmasters = {
     },
     "Anna Tommy": {
         "name": "Anna Tommy",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/17",
         "level": "3",
         "initiative": "9",
@@ -232,7 +232,7 @@ var krosmasters = {
     },
     "Clot the Crapulous": {
         "name": "Clot the Crapulous",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/18",
         "level": "4",
         "initiative": "4",
@@ -244,7 +244,7 @@ var krosmasters = {
     },
     "Klor Ofil": {
         "name": "Klor Ofil",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/19",
         "level": "4",
         "initiative": "4",
@@ -256,7 +256,7 @@ var krosmasters = {
     },
     "Makum Bah": {
         "name": "Makum Bah",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/20",
         "level": "4",
         "initiative": "6",
@@ -268,7 +268,7 @@ var krosmasters = {
     },
     "Fern Sockem": {
         "name": "Fern Sockem",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/21",
         "level": "1",
         "initiative": "2",
@@ -280,7 +280,7 @@ var krosmasters = {
     },
     "Quentin Flush": {
         "name": "Quentin Flush",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/22",
         "level": "1",
         "initiative": "2",
@@ -292,7 +292,7 @@ var krosmasters = {
     },
     "Dani OShun": {
         "name": "Dani OShun",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks1/23",
         "level": "4",
         "initiative": "5",
@@ -304,7 +304,7 @@ var krosmasters = {
     },
     "Naz Rael": {
         "name": "Naz Rael",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/24",
         "level": "2",
         "initiative": "3",
@@ -316,7 +316,7 @@ var krosmasters = {
     },
     "Percimol": {
         "name": "Percimol",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/25",
         "level": "5",
         "initiative": "2",
@@ -328,7 +328,7 @@ var krosmasters = {
     },
     "Shak Shaka": {
         "name": "Shak Shaka",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/26",
         "level": "5",
         "initiative": "0",
@@ -340,7 +340,7 @@ var krosmasters = {
     },
     "Goultard": {
         "name": "Goultard",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/27",
         "level": "6",
         "initiative": "7",
@@ -352,7 +352,7 @@ var krosmasters = {
     },
     "Cloud Knight": {
         "name": "Cloud Knight",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/28",
         "level": "3",
         "initiative": "6",
@@ -364,7 +364,7 @@ var krosmasters = {
     },
     "Drop Knight": {
         "name": "Drop Knight",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/29",
         "level": "3",
         "initiative": "2",
@@ -376,7 +376,7 @@ var krosmasters = {
     },
     "Flame Knight": {
         "name": "Flame Knight",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/30",
         "level": "3",
         "initiative": "4",
@@ -388,7 +388,7 @@ var krosmasters = {
     },
     "Leaf Knight": {
         "name": "Leaf Knight",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/31",
         "level": "3",
         "initiative": "0",
@@ -400,7 +400,7 @@ var krosmasters = {
     },
     "Darkness Knight": {
         "name": "Darkness Knight",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks1/32",
         "level": "6",
         "initiative": "8",
@@ -412,7 +412,7 @@ var krosmasters = {
     },
     "Argon Gass": {
         "name": "Argon Gass",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf/1",
         "level": "3",
         "initiative": "3",
@@ -424,7 +424,7 @@ var krosmasters = {
     },
     "Amalia": {
         "name": "Amalia",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf/2",
         "level": "3",
         "initiative": "4",
@@ -436,7 +436,7 @@ var krosmasters = {
     },
     "Evangelyne": {
         "name": "Evangelyne",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf/3",
         "level": "3",
         "initiative": "8",
@@ -448,7 +448,7 @@ var krosmasters = {
     },
     "Nox": {
         "name": "Nox",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf/4",
         "level": "6",
         "initiative": "10",
@@ -460,7 +460,7 @@ var krosmasters = {
     },
     "Ruel Stroud": {
         "name": "Ruel Stroud",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf/5",
         "level": "3",
         "initiative": "6",
@@ -472,7 +472,7 @@ var krosmasters = {
     },
     "Percedal": {
         "name": "Percedal",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf/6",
         "level": "3",
         "initiative": "2",
@@ -484,7 +484,7 @@ var krosmasters = {
     },
     "Yugo": {
         "name": "Yugo",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf/7",
         "level": "3",
         "initiative": "7",
@@ -496,7 +496,7 @@ var krosmasters = {
     },
     "Goultard the Barbarian": {
         "name": "Goultard the Barbarian",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf/8",
         "level": "6",
         "initiative": "5",
@@ -508,7 +508,7 @@ var krosmasters = {
     },
     "Count Frigost": {
         "name": "Count Frigost",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf/9",
         "level": "6",
         "initiative": "6",
@@ -520,7 +520,7 @@ var krosmasters = {
     },
     "Captain Amakna": {
         "name": "Captain Amakna",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/duel/1",
         "level": "6",
         "initiative": "8",
@@ -532,7 +532,7 @@ var krosmasters = {
     },
     "Merkator": {
         "name": "Merkator",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/duel/2",
         "level": "6",
         "initiative": "2",
@@ -544,7 +544,7 @@ var krosmasters = {
     },
     "Count Harebourg": {
         "name": "Count Harebourg",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/frig/1",
         "level": "6",
         "initiative": "8",
@@ -556,7 +556,7 @@ var krosmasters = {
     },
     "Lumino": {
         "name": "Lumino",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/multi/1",
         "level": "2",
         "initiative": "6",
@@ -568,7 +568,7 @@ var krosmasters = {
     },
     "Krobax": {
         "name": "Krobax",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/multi/2",
         "level": "2",
         "initiative": "4",
@@ -580,7 +580,7 @@ var krosmasters = {
     },
     "Skale": {
         "name": "Skale",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/multi/3",
         "level": "2",
         "initiative": "4",
@@ -592,7 +592,7 @@ var krosmasters = {
     },
     "Trank": {
         "name": "Trank",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/multi/4",
         "level": "2",
         "initiative": "4",
@@ -604,7 +604,7 @@ var krosmasters = {
     },
     "Bellzebug": {
         "name": "Bellzebug",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/multi/5",
         "level": "2",
         "initiative": "4",
@@ -616,7 +616,7 @@ var krosmasters = {
     },
     "Shadow": {
         "name": "Shadow",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/multi/6",
         "level": "2",
         "initiative": "3",
@@ -628,7 +628,7 @@ var krosmasters = {
     },
     "Grampy": {
         "name": "Grampy",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/kerub/1",
         "level": "4",
         "initiative": "4",
@@ -640,7 +640,7 @@ var krosmasters = {
     },
     "Joris": {
         "name": "Joris",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/kerub/2",
         "level": "2",
         "initiative": "8",
@@ -652,7 +652,7 @@ var krosmasters = {
     },
     "Kerub Crepin": {
         "name": "Kerub Crepin",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/kerub/3",
         "level": "4",
         "initiative": "9",
@@ -664,7 +664,7 @@ var krosmasters = {
     },
     "Lou": {
         "name": "Lou",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/kerub/4",
         "level": "2",
         "initiative": "2",
@@ -676,7 +676,7 @@ var krosmasters = {
     },
     "Wakfu Terminatot": {
         "name": "Wakfu Terminatot",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/term/1",
         "level": "3",
         "initiative": "7",
@@ -689,7 +689,7 @@ var krosmasters = {
     },
     "Stasis Terminatot": {
         "name": "Stasis Terminatot",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/term/2",
         "level": "3",
         "initiative": "7",
@@ -702,7 +702,7 @@ var krosmasters = {
     },
     "Goldenrod Terminatot": {
         "name": "Goldenrod Terminatot",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/term/3",
         "level": "3",
         "initiative": "7",
@@ -715,7 +715,7 @@ var krosmasters = {
     },
     "Elogio": {
         "name": "Elogio",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/1",
         "level": "4",
         "initiative": "1",
@@ -727,7 +727,7 @@ var krosmasters = {
     },
     "Ira Tayte": {
         "name": "Ira Tayte",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/2",
         "level": "2",
         "initiative": "0",
@@ -739,7 +739,7 @@ var krosmasters = {
     },
     "Harry Sah": {
         "name": "Harry Sah",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/3",
         "level": "5",
         "initiative": "5",
@@ -751,7 +751,7 @@ var krosmasters = {
     },
     "Raul Bak": {
         "name": "Raul Bak",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/4",
         "level": "3",
         "initiative": "8",
@@ -763,7 +763,7 @@ var krosmasters = {
     },
     "Henual": {
         "name": "Henual",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/5",
         "level": "2",
         "initiative": "6",
@@ -776,7 +776,7 @@ var krosmasters = {
     },
     "Mike Locke": {
         "name": "Mike Locke",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/6",
         "level": "1",
         "initiative": "2",
@@ -788,7 +788,7 @@ var krosmasters = {
     },
     "Katsu Mi": {
         "name": "Katsu Mi",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/7",
         "level": "3",
         "initiative": "2",
@@ -800,7 +800,7 @@ var krosmasters = {
     },
     "Kitty Rage": {
         "name": "Kitty Rage",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/8",
         "level": "5",
         "initiative": "5",
@@ -812,7 +812,7 @@ var krosmasters = {
     },
     "Emma Sacre": {
         "name": "Emma Sacre",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/9",
         "level": "4",
         "initiative": "0",
@@ -824,7 +824,7 @@ var krosmasters = {
     },
     "Chrissy Entrinch": {
         "name": "Chrissy Entrinch",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/10",
         "level": "3",
         "initiative": "3",
@@ -836,7 +836,7 @@ var krosmasters = {
     },
     "Anne Gupp": {
         "name": "Anne Gupp",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/11",
         "level": "4",
         "initiative": "4",
@@ -848,7 +848,7 @@ var krosmasters = {
     },
     "Steamy Wonder": {
         "name": "Steamy Wonder",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/12",
         "level": "1",
         "initiative": "0",
@@ -861,7 +861,7 @@ var krosmasters = {
     },
     "Diver Birel": {
         "name": "Diver Birel",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/13",
         "level": "3",
         "initiative": "6",
@@ -873,7 +873,7 @@ var krosmasters = {
     },
     "Moe Lawr": {
         "name": "Moe Lawr",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/14",
         "level": "1",
         "initiative": "3",
@@ -885,7 +885,7 @@ var krosmasters = {
     },
     "Ghett Outadier": {
         "name": "Ghett Outadier",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/15",
         "level": "4",
         "initiative": "8",
@@ -898,7 +898,7 @@ var krosmasters = {
     },
     "Pandalida": {
         "name": "Pandalida",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/16",
         "level": "3",
         "initiative": "5",
@@ -910,7 +910,7 @@ var krosmasters = {
     },
     "Malee Buhrum": {
         "name": "Malee Buhrum",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/17",
         "level": "5",
         "initiative": "5",
@@ -922,7 +922,7 @@ var krosmasters = {
     },
     "Poochan": {
         "name": "Poochan",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/18",
         "level": "1",
         "initiative": "5",
@@ -935,7 +935,7 @@ var krosmasters = {
     },
     "Igar Dlador": {
         "name": "Igar Dlador",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/19",
         "level": "2",
         "initiative": "4",
@@ -947,7 +947,7 @@ var krosmasters = {
     },
     "Wally Sumwerels": {
         "name": "Wally Sumwerels",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/20",
         "level": "1",
         "initiative": "4",
@@ -959,7 +959,7 @@ var krosmasters = {
     },
     "Doo Rex": {
         "name": "Doo Rex",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/21",
         "level": "5",
         "initiative": "7",
@@ -971,7 +971,7 @@ var krosmasters = {
     },
     "Ayan": {
         "name": "Ayan",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/22",
         "level": "2",
         "initiative": "5",
@@ -983,7 +983,7 @@ var krosmasters = {
     },
     "Kivin": {
         "name": "Kivin",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/23",
         "level": "1",
         "initiative": "0",
@@ -996,7 +996,7 @@ var krosmasters = {
     },
     "Theo": {
         "name": "Theo",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/24",
         "level": "4",
         "initiative": "10",
@@ -1009,7 +1009,7 @@ var krosmasters = {
     },
     "Gein": {
         "name": "Gein",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/25",
         "level": "6",
         "initiative": "12",
@@ -1022,7 +1022,7 @@ var krosmasters = {
     },
     "Adamai": {
         "name": "Adamai",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/26",
         "level": "3",
         "initiative": "7",
@@ -1034,7 +1034,7 @@ var krosmasters = {
     },
     "Qilby": {
         "name": "Qilby",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks2/27",
         "level": "6",
         "initiative": "6",
@@ -1047,7 +1047,7 @@ var krosmasters = {
     },
     "Amakna Riktus": {
         "name": "Amakna Riktus",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/dks2/28",
         "level": "2",
         "initiative": "3",
@@ -1059,7 +1059,7 @@ var krosmasters = {
     },
     "Bonta Riktus": {
         "name": "Bonta Riktus",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/dks2/29",
         "level": "2",
         "initiative": "3",
@@ -1071,7 +1071,7 @@ var krosmasters = {
     },
     "Sufokia Riktus": {
         "name": "Sufokia Riktus",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/dks2/30",
         "level": "2",
         "initiative": "3",
@@ -1083,7 +1083,7 @@ var krosmasters = {
     },
     "Brakmar Riktus": {
         "name": "Brakmar Riktus",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/dks2/31",
         "level": "2",
         "initiative": "3",
@@ -1095,7 +1095,7 @@ var krosmasters = {
     },
     "Elite Riktus": {
         "name": "Elite Riktus",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks2/32",
         "level": "4",
         "initiative": "6",
@@ -1107,7 +1107,7 @@ var krosmasters = {
     },
     "Qilby Traitor": {
         "name": "Qilby Traitor",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf2/1",
         "level": "6",
         "initiative": "6",
@@ -1119,7 +1119,7 @@ var krosmasters = {
     },
     "Yugo Young King": {
         "name": "Yugo Young King",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf2/2",
         "level": "4",
         "initiative": "8",
@@ -1131,7 +1131,7 @@ var krosmasters = {
     },
     "Adamai Dragon": {
         "name": "Adamai Dragon",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf2/3",
         "level": "3",
         "initiative": "7",
@@ -1143,7 +1143,7 @@ var krosmasters = {
     },
     "Phaeris Devastated": {
         "name": "Phaeris Devastated",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf2/4",
         "level": "1",
         "initiative": "5",
@@ -1155,7 +1155,7 @@ var krosmasters = {
     },
     "Cleophee": {
         "name": "Cleophee",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf2/5",
         "level": "2",
         "initiative": "7",
@@ -1167,7 +1167,7 @@ var krosmasters = {
     },
     "Percedal Percylax": {
         "name": "Percedal Percylax",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf2/6",
         "level": "5",
         "initiative": "10",
@@ -1179,7 +1179,7 @@ var krosmasters = {
     },
     "Arthur Bine": {
         "name": "Arthur Bine",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf2/7",
         "level": "3",
         "initiative": "3",
@@ -1192,7 +1192,7 @@ var krosmasters = {
     },
     "Tiktokovitch": {
         "name": "Tiktokovitch",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/junior/1",
         "level": "3",
         "initiative": "4",
@@ -1204,7 +1204,7 @@ var krosmasters = {
     },
     "Choppy Sue": {
         "name": "Choppy Sue",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/junior/2",
         "level": "3",
         "initiative": "1",
@@ -1216,7 +1216,7 @@ var krosmasters = {
     },
     "Mil Kluva": {
         "name": "Mil Kluva",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/junior/3",
         "level": "3",
         "initiative": "3",
@@ -1228,7 +1228,7 @@ var krosmasters = {
     },
     "Kip Agau": {
         "name": "Kip Agau",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/junior/4",
         "level": "3",
         "initiative": "2",
@@ -1240,7 +1240,7 @@ var krosmasters = {
     },
     "Queen of Thieves": {
         "name": "Queen of Thieves",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/duel2/1",
         "level": "4",
         "initiative": "8",
@@ -1252,7 +1252,7 @@ var krosmasters = {
     },
     "King Nidas": {
         "name": "King Nidas",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/duel2/2",
         "level": "4",
         "initiative": "7",
@@ -1264,7 +1264,7 @@ var krosmasters = {
     },
     "Djaul": {
         "name": "Djaul",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dark/1",
         "level": "1",
         "initiative": "4",
@@ -1277,7 +1277,7 @@ var krosmasters = {
     },
     "Dark Vlad": {
         "name": "Dark Vlad",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dark/2",
         "level": "2",
         "initiative": "7",
@@ -1289,7 +1289,7 @@ var krosmasters = {
     },
     "Kriss Krass": {
         "name": "Kriss Krass",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dark/3",
         "level": "3",
         "initiative": "7",
@@ -1301,7 +1301,7 @@ var krosmasters = {
     },
     "Black Crow": {
         "name": "Black Crow",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dark/4",
         "level": "4",
         "initiative": "4",
@@ -1314,7 +1314,7 @@ var krosmasters = {
     },
     "Vampyro": {
         "name": "Vampyro",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dark/5",
         "level": "5",
         "initiative": "8",
@@ -1326,7 +1326,7 @@ var krosmasters = {
     },
     "Katar": {
         "name": "Katar",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dark/6",
         "level": "6",
         "initiative": "9",
@@ -1339,7 +1339,7 @@ var krosmasters = {
     },
     "Kanniball Archer": {
         "name": "Kanniball Archer",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks3/1",
         "level": "1",
         "initiative": "1",
@@ -1351,7 +1351,7 @@ var krosmasters = {
     },
     "Kanniball Sarbak": {
         "name": "Kanniball Sarbak",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks3/2",
         "level": "1",
         "initiative": "5",
@@ -1363,7 +1363,7 @@ var krosmasters = {
     },
     "Kanniball Jav": {
         "name": "Kanniball Jav",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks3/3",
         "level": "2",
         "initiative": "6",
@@ -1375,7 +1375,7 @@ var krosmasters = {
     },
     "Kanniball Thierry": {
         "name": "Kanniball Thierry",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks3/4",
         "level": "2",
         "initiative": "2",
@@ -1387,7 +1387,7 @@ var krosmasters = {
     },
     "Kanniball Andchain": {
         "name": "Kanniball Andchain",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks3/5",
         "level": "3",
         "initiative": "7",
@@ -1399,7 +1399,7 @@ var krosmasters = {
     },
     "Moon": {
         "name": "Moon",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks3/6",
         "level": "5",
         "initiative": "1",
@@ -1411,7 +1411,7 @@ var krosmasters = {
     },
     "Dreggoog the Downunder": {
         "name": "Dreggoog the Downunder",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks3/7",
         "level": "2",
         "initiative": "5",
@@ -1423,7 +1423,7 @@ var krosmasters = {
     },
     "Dragossiper the Nag": {
         "name": "Dragossiper the Nag",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks3/8",
         "level": "3",
         "initiative": "5",
@@ -1435,7 +1435,7 @@ var krosmasters = {
     },
     "Dragostess": {
         "name": "Dragostess",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks3/9",
         "level": "4",
         "initiative": "5",
@@ -1447,7 +1447,7 @@ var krosmasters = {
     },
     "Crocabulia": {
         "name": "Crocabulia",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks3/10",
         "level": "5",
         "initiative": "8",
@@ -1459,7 +1459,7 @@ var krosmasters = {
     },
     "Hazwonarm": {
         "name": "Hazwonarm",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks3/11",
         "level": "2",
         "initiative": "2",
@@ -1471,7 +1471,7 @@ var krosmasters = {
     },
     "Boomba": {
         "name": "Boomba",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks3/12",
         "level": "1",
         "initiative": "3",
@@ -1483,7 +1483,7 @@ var krosmasters = {
     },
     "Buck Anear": {
         "name": "Buck Anear",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks3/13",
         "level": "4",
         "initiative": "9",
@@ -1495,7 +1495,7 @@ var krosmasters = {
     },
     "Deminoball": {
         "name": "Deminoball",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/dks3/14",
         "level": "3",
         "initiative": "7",
@@ -1507,7 +1507,7 @@ var krosmasters = {
     },
     "Minotoror": {
         "name": "Minotoror",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks3/15",
         "level": "4",
         "initiative": "7",
@@ -1519,7 +1519,7 @@ var krosmasters = {
     },
     "Otomai": {
         "name": "Otomai",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/dks3/16",
         "level": "6",
         "initiative": "0",
@@ -1531,7 +1531,7 @@ var krosmasters = {
     },
     "Dark Vlad Karnated": {
         "name": "Dark Vlad Karnated",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf3/1",
         "level": "3",
         "initiative": "7",
@@ -1543,7 +1543,7 @@ var krosmasters = {
     },
     "Yugo Unleashed": {
         "name": "Yugo Unleashed",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf3/2",
         "level": "5",
         "initiative": "8",
@@ -1555,7 +1555,7 @@ var krosmasters = {
     },
     "Ogrest Child": {
         "name": "Ogrest Child",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf3/3",
         "level": "1",
         "initiative": "5",
@@ -1567,7 +1567,7 @@ var krosmasters = {
     },
     "Arty": {
         "name": "Arty",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf3/4",
         "level": "3",
         "initiative": "6",
@@ -1579,7 +1579,7 @@ var krosmasters = {
     },
     "Joris Master": {
         "name": "Joris Master",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf3/5",
         "level": "3",
         "initiative": "9",
@@ -1591,7 +1591,7 @@ var krosmasters = {
     },
     "Grougaloragran Old": {
         "name": "Grougaloragran Old",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf3/6",
         "level": "1",
         "initiative": "2",
@@ -1603,7 +1603,7 @@ var krosmasters = {
     },
     "Grampy Shopkeeper": {
         "name": "Grampy Shopkeeper",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf3/7",
         "level": "3",
         "initiative": "4",
@@ -1615,7 +1615,7 @@ var krosmasters = {
     },
     "Darkli Moon": {
         "name": "Darkli Moon",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf3/8",
         "level": "2",
         "initiative": "6",
@@ -1627,7 +1627,7 @@ var krosmasters = {
     },
     "Cardboard Tube Samurai": {
         "name": "Cardboard Tube Samurai",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf3/9",
         "level": "3",
         "initiative": "8",
@@ -1640,7 +1640,7 @@ var krosmasters = {
     },
     "Nemesis Samurai": {
         "name": "Nemesis Samurai",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf3/10",
         "level": "3",
         "initiative": "5",
@@ -1653,7 +1653,7 @@ var krosmasters = {
     },
     "Royal Tofu": {
         "name": "Royal Tofu",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/qst/1",
         "level": "3",
         "initiative": "7",
@@ -1665,7 +1665,7 @@ var krosmasters = {
     },
     "Royal Gobball": {
         "name": "Royal Gobball",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/qst/2",
         "level": "3",
         "initiative": "1",
@@ -1677,7 +1677,7 @@ var krosmasters = {
     },
     "Le Chouque": {
         "name": "Le Chouque",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/piwate/1",
         "level": "5",
         "initiative": "4",
@@ -1689,7 +1689,7 @@ var krosmasters = {
     },
     "Percimol Controlled": {
         "name": "Percimol Controlled",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/oav/1",
         "level": "3",
         "initiative": "2",
@@ -1701,7 +1701,7 @@ var krosmasters = {
     },
     "Ush": {
         "name": "Ush",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/oav/2",
         "level": "4",
         "initiative": "6",
@@ -1713,7 +1713,7 @@ var krosmasters = {
     },
     "Remington Smisse Mercenary": {
         "name": "Remington Smisse Mercenary",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/oav/3",
         "level": "4",
         "initiative": "7",
@@ -1725,7 +1725,7 @@ var krosmasters = {
     },
     "Yugo Exalted": {
         "name": "Yugo Exalted",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/oav/4",
         "level": "4",
         "initiative": "7",
@@ -1737,7 +1737,7 @@ var krosmasters = {
     },
     "Maskemane Psychopath": {
         "name": "Maskemane Psychopath",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/oav/5",
         "level": "1",
         "initiative": "1",
@@ -1749,7 +1749,7 @@ var krosmasters = {
     },
     "Atcham": {
         "name": "Atcham",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/oav/6",
         "level": "2",
         "initiative": "4",
@@ -1761,7 +1761,7 @@ var krosmasters = {
     },
     "Maskemane Classic": {
         "name": "Maskemane Classic",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf4/1",
         "level": "1",
         "initiative": "1",
@@ -1773,7 +1773,7 @@ var krosmasters = {
     },
     "Maskemane Coward": {
         "name": "Maskemane Coward",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/exf4/2",
         "level": "1",
         "initiative": "1",
@@ -1785,7 +1785,7 @@ var krosmasters = {
     },
     "Argon Gass Eternal 1": {
         "name": "Argon Gass Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/1",
         "level": "3",
         "initiative": "3",
@@ -1797,7 +1797,7 @@ var krosmasters = {
     },
     "Amalia Eternal 1": {
         "name": "Amalia Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/2",
         "level": "3",
         "initiative": "3",
@@ -1809,7 +1809,7 @@ var krosmasters = {
     },
     "Evangelyne Eternal 1": {
         "name": "Evangelyne Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/3",
         "level": "3",
         "initiative": "8",
@@ -1821,7 +1821,7 @@ var krosmasters = {
     },
     "Nox Eternal 1": {
         "name": "Nox Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/4",
         "level": "6",
         "initiative": "10",
@@ -1833,7 +1833,7 @@ var krosmasters = {
     },
     "Ruel Stroud Eternal 1": {
         "name": "Ruel Stroud Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/5",
         "level": "3",
         "initiative": "6",
@@ -1845,7 +1845,7 @@ var krosmasters = {
     },
     "Percedal Eternal 1": {
         "name": "Percedal Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/6",
         "level": "3",
         "initiative": "3",
@@ -1857,7 +1857,7 @@ var krosmasters = {
     },
     "Yugo Eternal 1": {
         "name": "Yugo Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/7",
         "level": "3",
         "initiative": "7",
@@ -1869,7 +1869,7 @@ var krosmasters = {
     },
     "Bill Tell Eternal 1": {
         "name": "Bill Tell Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/8",
         "level": "3",
         "initiative": "7",
@@ -1881,7 +1881,7 @@ var krosmasters = {
     },
     "Lil Healey Eternal 1": {
         "name": "Lil Healey Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/9",
         "level": "3",
         "initiative": "5",
@@ -1893,7 +1893,7 @@ var krosmasters = {
     },
     "Bad Aboum Eternal 1": {
         "name": "Bad Aboum Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/10",
         "level": "3",
         "initiative": "4",
@@ -1905,7 +1905,7 @@ var krosmasters = {
     },
     "Anna Tommy Eternal 1": {
         "name": "Anna Tommy Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/11",
         "level": "3",
         "initiative": "9",
@@ -1917,7 +1917,7 @@ var krosmasters = {
     },
     "Oscar Kass Eternal 1": {
         "name": "Oscar Kass Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/12",
         "level": "3",
         "initiative": "4",
@@ -1929,7 +1929,7 @@ var krosmasters = {
     },
     "Kassius Kaos Eternal 1": {
         "name": "Kassius Kaos Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/13",
         "level": "3",
         "initiative": "4",
@@ -1941,7 +1941,7 @@ var krosmasters = {
     },
     "Queen of the Tofus Eternal 1": {
         "name": "Queen of the Tofus Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/14",
         "level": "3",
         "initiative": "8",
@@ -1953,7 +1953,7 @@ var krosmasters = {
     },
     "King of the Gobballs Eternal 1": {
         "name": "King of the Gobballs Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/15",
         "level": "3",
         "initiative": "2",
@@ -1965,7 +1965,7 @@ var krosmasters = {
     },
     "Jems Blond Eternal 1": {
         "name": "Jems Blond Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/16",
         "level": "4",
         "initiative": "8",
@@ -1977,7 +1977,7 @@ var krosmasters = {
     },
     "Luk Ylook Eternal 1": {
         "name": "Luk Ylook Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/17",
         "level": "2",
         "initiative": "6",
@@ -1989,7 +1989,7 @@ var krosmasters = {
     },
     "Dani OShun Eternal 1": {
         "name": "Dani OShun Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/18",
         "level": "4",
         "initiative": "5",
@@ -2001,7 +2001,7 @@ var krosmasters = {
     },
     "Naz Rael Eternal 1": {
         "name": "Naz Rael Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/19",
         "level": "2",
         "initiative": "3",
@@ -2013,7 +2013,7 @@ var krosmasters = {
     },
     "Quentin Flush Eternal 1": {
         "name": "Quentin Flush Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/20",
         "level": "1",
         "initiative": "2",
@@ -2025,7 +2025,7 @@ var krosmasters = {
     },
     "Ally McZeal Eternal 1": {
         "name": "Ally McZeal Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/21",
         "level": "4",
         "initiative": "3",
@@ -2037,7 +2037,7 @@ var krosmasters = {
     },
     "Di Curey Eternal 1": {
         "name": "Di Curey Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/22",
         "level": "1",
         "initiative": "3",
@@ -2049,7 +2049,7 @@ var krosmasters = {
     },
     "Goultard Eternal 1": {
         "name": "Goultard Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/23",
         "level": "6",
         "initiative": "7",
@@ -2061,7 +2061,7 @@ var krosmasters = {
     },
     "Remington Smisse Eternal 1": {
         "name": "Remington Smisse Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/24",
         "level": "5",
         "initiative": "5",
@@ -2073,7 +2073,7 @@ var krosmasters = {
     },
     "Boo Ming Eternal 1": {
         "name": "Boo Ming Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/25",
         "level": "2",
         "initiative": "3",
@@ -2085,7 +2085,7 @@ var krosmasters = {
     },
     "Coa Gulary Eternal 1": {
         "name": "Coa Gulary Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/26",
         "level": "1",
         "initiative": "6",
@@ -2097,7 +2097,7 @@ var krosmasters = {
     },
     "Clot the Crapulous Eternal 1": {
         "name": "Clot the Crapulous Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/27",
         "level": "4",
         "initiative": "4",
@@ -2109,7 +2109,7 @@ var krosmasters = {
     },
     "Klor Ofil Eternal 1": {
         "name": "Klor Ofil Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/28",
         "level": "2",
         "initiative": "4",
@@ -2121,7 +2121,7 @@ var krosmasters = {
     },
     "Fern Sockem Eternal 1": {
         "name": "Fern Sockem Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/29",
         "level": "1",
         "initiative": "2",
@@ -2133,7 +2133,7 @@ var krosmasters = {
     },
     "Makum Bah Eternal 1": {
         "name": "Makum Bah Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/30",
         "level": "4",
         "initiative": "6",
@@ -2145,7 +2145,7 @@ var krosmasters = {
     },
     "Srammy Eternal 1": {
         "name": "Srammy Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/31",
         "level": "2",
         "initiative": "9",
@@ -2157,7 +2157,7 @@ var krosmasters = {
     },
     "Fraktor Eternal 1": {
         "name": "Fraktor Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/32",
         "level": "4",
         "initiative": "4",
@@ -2169,7 +2169,7 @@ var krosmasters = {
     },
     "Maskun John Eternal 1": {
         "name": "Maskun John Eternal 1",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/et1/33",
         "level": "2",
         "initiative": "4",
@@ -2181,7 +2181,7 @@ var krosmasters = {
     },
     "Victor don Voom Eternal 1": {
         "name": "Victor don Voom Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/34",
         "level": "5",
         "initiative": "9",
@@ -2193,7 +2193,7 @@ var krosmasters = {
     },
     "Percimol Eternal 1": {
         "name": "Percimol Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/35",
         "level": "5",
         "initiative": "2",
@@ -2205,7 +2205,7 @@ var krosmasters = {
     },
     "Shak Shaka Eternal 1": {
         "name": "Shak Shaka Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/36",
         "level": "5",
         "initiative": "0",
@@ -2217,7 +2217,7 @@ var krosmasters = {
     },
     "Darkness Knight Eternal 1": {
         "name": "Darkness Knight Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/37",
         "level": "6",
         "initiative": "8",
@@ -2229,7 +2229,7 @@ var krosmasters = {
     },
     "Cloud Knight Eternal 1": {
         "name": "Cloud Knight Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/38",
         "level": "3",
         "initiative": "6",
@@ -2241,7 +2241,7 @@ var krosmasters = {
     },
     "Drop Knight Eternal 1": {
         "name": "Drop Knight Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/39",
         "level": "3",
         "initiative": "2",
@@ -2253,7 +2253,7 @@ var krosmasters = {
     },
     "Flame Knight Eternal 1": {
         "name": "Flame Knight Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/40",
         "level": "3",
         "initiative": "4",
@@ -2265,7 +2265,7 @@ var krosmasters = {
     },
     "Leaf Knight Eternal 1": {
         "name": "Leaf Knight Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/41",
         "level": "3",
         "initiative": "2",
@@ -2277,7 +2277,7 @@ var krosmasters = {
     },
     "Goultard the Barbarian Eternal 1": {
         "name": "Goultard the Barbarian Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/42",
         "level": "6",
         "initiative": "5",
@@ -2289,7 +2289,7 @@ var krosmasters = {
     },
     "Count Harebourg Eternal 1": {
         "name": "Count Harebourg Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/43",
         "level": "6",
         "initiative": "8",
@@ -2301,7 +2301,7 @@ var krosmasters = {
     },
     "Count Frigost Eternal 1": {
         "name": "Count Frigost Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/44",
         "level": "6",
         "initiative": "6",
@@ -2313,7 +2313,7 @@ var krosmasters = {
     },
     "Captain Amakna Eternal 1": {
         "name": "Captain Amakna Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/45",
         "level": "6",
         "initiative": "8",
@@ -2325,7 +2325,7 @@ var krosmasters = {
     },
     "Merkator Eternal 1": {
         "name": "Merkator Eternal 1",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/et1/46",
         "level": "6",
         "initiative": "7",
@@ -2337,7 +2337,7 @@ var krosmasters = {
     },
     "Krobax Eternal 1": {
         "name": "Krobax Eternal 1",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/et1/47",
         "level": "2",
         "initiative": "4",
@@ -2349,7 +2349,7 @@ var krosmasters = {
     },
     "Belezebug Eternal 1": {
         "name": "Belezebug Eternal 1",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/et1/48",
         "level": "2",
         "initiative": "4",
@@ -2361,7 +2361,7 @@ var krosmasters = {
     },
     "Skale Eternal 1": {
         "name": "Skale Eternal 1",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/et1/49",
         "level": "2",
         "initiative": "4",
@@ -2373,7 +2373,7 @@ var krosmasters = {
     },
     "Trank Eternal 1": {
         "name": "Trank Eternal 1",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/et1/50",
         "level": "2",
         "initiative": "4",
@@ -2385,7 +2385,7 @@ var krosmasters = {
     },
     "Lumino Eternal 1": {
         "name": "Lumino Eternal 1",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/et1/51",
         "level": "2",
         "initiative": "6",
@@ -2397,7 +2397,7 @@ var krosmasters = {
     },
     "Shadow Eternal 1": {
         "name": "Shadow Eternal 1",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/et1/52",
         "level": "2",
         "initiative": "2",
@@ -2409,7 +2409,7 @@ var krosmasters = {
     },
     "Bakara": {
         "name": "bakara",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/ks4/8",
         "level": "4",
         "initiative": "7",
@@ -2422,7 +2422,7 @@ var krosmasters = {
     },
     "Skidmonk": {
         "name": "Skidmonk",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/cpk/14",
         "level": "3",
         "initiative": "5",
@@ -2434,7 +2434,7 @@ var krosmasters = {
     },
     "Friar Tubs": {
         "name": "Friar Tubs",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/cpk/15",
         "level": "4",
         "initiative": "5",
@@ -2446,7 +2446,7 @@ var krosmasters = {
     },
     "Felonious Monk": {
         "name": "Felonious Monk",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/cpk/16",
         "level": "3",
         "initiative": "5",
@@ -2458,7 +2458,7 @@ var krosmasters = {
     },
     "Master Vampire": {
         "name": "Master Vampire",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/cpk/6",
         "level": "3",
         "initiative": "7",
@@ -2470,7 +2470,7 @@ var krosmasters = {
     },
     "Lord Crow": {
         "name": "Lord Crow",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/cpk/1",
         "level": "3",
         "initiative": "7",
@@ -2482,7 +2482,7 @@ var krosmasters = {
     },
     "Grampy Protector": {
         "name": "Grampy Protector",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/ks4/4",
         "level": "4",
         "initiative": "6",
@@ -2494,7 +2494,7 @@ var krosmasters = {
     },
     "Jahash": {
         "name": "Jahash",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/ks4/6",
         "level": "4",
         "initiative": "1",
@@ -2506,7 +2506,7 @@ var krosmasters = {
     },
     "Julith": {
         "name": "Julith",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/ks4/1",
         "level": "4",
         "initiative": "11",
@@ -2519,7 +2519,7 @@ var krosmasters = {
     },
     "Puny Vampire": {
         "name": "Puny Vampire",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/cpk/7",
         "level": "1",
         "initiative": "4",
@@ -2531,7 +2531,7 @@ var krosmasters = {
     },
     "Joris Swashbuckler": {
         "name": "Joris Swashbuckler",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/ks4/5",
         "level": "2",
         "initiative": "4",
@@ -2543,7 +2543,7 @@ var krosmasters = {
     },
     "Persee Phore": {
         "name": "Persee Phore",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/cpk/5",
         "level": "2",
         "initiative": "7",
@@ -2555,7 +2555,7 @@ var krosmasters = {
     },
     "Mopy King": {
         "name": "Mopy King",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/cpk/3",
         "level": "4",
         "initiative": "8",
@@ -2567,7 +2567,7 @@ var krosmasters = {
     },
     "Lilotte": {
         "name": "Lilotte",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/ks4/2",
         "level": "2",
         "initiative": "2",
@@ -2579,7 +2579,7 @@ var krosmasters = {
     },
     "Marline": {
         "name": "Marline",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/ks4/3",
         "level": "2",
         "initiative": "4",
@@ -2591,7 +2591,7 @@ var krosmasters = {
     },
     "The Nun": {
         "name": "The Nun",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/cpk/4",
         "level": "5",
         "initiative": "8",
@@ -2603,7 +2603,7 @@ var krosmasters = {
     },
     "Grim Preacher": {
         "name": "Grim Preacher",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/cpk/13",
         "level": "2",
         "initiative": "5",
@@ -2615,7 +2615,7 @@ var krosmasters = {
     },
     "Sphincter Cell": {
         "name": "Sphincter Cell",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/cpk/2",
         "level": "4",
         "initiative": "6",
@@ -2627,7 +2627,7 @@ var krosmasters = {
     },
     "Khan Karkass": {
         "name": "Khan Karkass",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/ks4/7",
         "level": "2",
         "initiative": "6",
@@ -2639,7 +2639,7 @@ var krosmasters = {
     },
     "Chafer Lancer": {
         "name": "Chafer Lancer",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/cpk/10",
         "level": "1",
         "initiative": "3",
@@ -2651,7 +2651,7 @@ var krosmasters = {
     },
     "Chafer Archer": {
         "name": "Chafer Archer",
-        "color": "nameclr-3",
+        "color": "black",
         "link": "http://krosfinder.com/ru/ed/cpk/8",
         "level": "2",
         "initiative": "3",
@@ -2663,7 +2663,7 @@ var krosmasters = {
     },
     "Invisible Chafer": {
         "name": "Invisible Chafer",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/cpk/11",
         "level": "3",
         "initiative": "3",
@@ -2675,7 +2675,7 @@ var krosmasters = {
     },
     "Chafer Foot Soldier": {
         "name": "Chafer Foot Soldier",
-        "color": "nameclr-2",
+        "color": "white",
         "link": "http://krosfinder.com/ru/ed/cpk/9",
         "level": "1",
         "initiative": "3",
@@ -2687,7 +2687,7 @@ var krosmasters = {
     },
     "Elite Chafer": {
         "name": "Elite Chafer",
-        "color": "nameclr-1",
+        "color": "yellow",
         "link": "http://krosfinder.com/ru/ed/cpk/12",
         "level": "4",
         "initiative": "3",

@@ -20,6 +20,10 @@ body {
     display: inline-block;
 }
 
+.ui-tabs .ui-tabs-panel{
+    background-color: #f0f0f0;
+}
+
 .main-container {
     justify-content: center;
     text-align: center;
@@ -102,7 +106,16 @@ body {
 
 .circle img {
     border-radius: 50%;
-    border: 8px solid black;
+    border: 8px solid blue;
+}
+.yellow img {
+    border-color: rgb(214, 182, 96);
+}
+.white img {
+    border-color: white;
+}
+.black img {
+    border-color: black;
 }
 
 #titlebarDialog {
@@ -232,9 +245,6 @@ body {
     z-index: 1;
 }
 
-.krosmaster {
-    /*position:relative;*/
-}
 .krosmaster:hover::after {
     content:'';
     position:absolute;
@@ -246,11 +256,6 @@ body {
     top: -60px;
     z-index: 100000;
 }
-
-/*.jeton.krosmaster:hover::after{*/
-    /*left: -300px;*/
-    /*top: 150px;*/
-/*}*/
 
 .left-top-corner:hover::after {
     left: 100px;
@@ -267,4 +272,17 @@ body {
 .left-bottom-corner:hover::after {
     left: 100px;
     top: -350px;
+}
+.krosmaster-num {
+    display: inline-block;
+    position: absolute;
+    bottom: -17px;
+    left: 25px;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: white;
+    color: black;
+    padding: 0 5px;
+    line-height: 30px;
+    border-radius: 5px;
 }

@@ -60,6 +60,7 @@ $(function () {
             , scrollSensitivity: 100
             , helper: "clone"
             , stop: function (event, ui) {
+                var krosmaster_name = $(this)[0].classList[2];
                 var jeton = $("<div class = 'jeton " + $(this)[0].classList[1]+ ' ' + $(this)[0].classList[2] +"'>" + $(this).html() + "</div>").appendTo("body").css({
                     "position": "absolute"
                     , "left": ui.offset.left
@@ -93,6 +94,10 @@ $(function () {
 
                 var direct = get_workflow_quater(ui.offset.top, ui.offset.left);
                 $(jeton).addClass(direct);
+
+                if ($('.jeton.'+krosmaster_name).length > 1) {
+                    $(jeton).append('<div class="krosmaster-num">'+$('.jeton.'+krosmaster_name).length+'</div>');
+                }
 
                 if ($('.jeton').length == 1) {
                     cs.mouseHandler(event, 'moveHero');
