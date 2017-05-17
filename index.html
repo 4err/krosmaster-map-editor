@@ -62,10 +62,9 @@
                 <li><a href="#tabs-6" class="js-tab" data-level="6">Ур. 6</a></li>
                 <li><a href="#tabs-7" class="js-tab" data-level="eternal">Вечность*</a></li>
                 <li><a href="#tabs-8" class="js-tab" data-level="ban">Бан-Лист*</a></li>
-                <li><a href="#tabs-9" class="js-tab" data-level="boss">Босс-Лист*</a></li>
-                <li><a href="#tabs-10">Токены</a></li>
+                <li><a href="#tabs-9">Токены</a></li>
                <!-- <li><a href="#tabs-8">Диаграммы</a></li>-->
-                <li><a href="#tabs-11">Клетки и декор</a></li>
+                <li><a href="#tabs-10">Клетки и декор</a></li>
                 <!--  <li><a href="#tabs-12">Цифры</a></li>-->
               </ul>
             <div id="tabs-1" class="tab"></div>
@@ -76,8 +75,7 @@
             <div id="tabs-6" class="tab"></div>
             <div id="tabs-7" class="tab"></div>
             <div id="tabs-8" class="tab"></div>
-            <div id="tabs-9" class="tab"></div>
-            <div id="tabs-10" class="tab">
+            <div id="tabs-9" class="tab">
                 <span class='prototype circle'><img src='img/summons/water_bomb.png' alt='water_bomb'></span>
                 <span class='prototype circle'><img src='img/summons/firebomb.png' alt='firebomb'></span>
                 <span class='prototype circle'><img src='img/summons/grenado.png' alt='grenado'></span>
@@ -115,8 +113,7 @@
                 <span class='prototype circle'><img src='img/summons/leonardawa_atooin.png' alt='leonardawa_atooin'></span>
                 <span class='prototype circle'><img src='img/summons/raphaela_atooin.png' alt='raphaela_atooin'></span>
             </div>
-          <!--  <div id="tabs-8" class="tab"></div> -->
-            <div id="tabs-11" class="tab">
+            <div id="tabs-10" class="tab">
                 <span class='prototype kit'><img src='img/pieces/tuile/herbe1.png' alt='piece_herbe1'></span>
                 <span class='prototype kit'><img src='img/pieces/tuile/herbe2.png' alt='piece_herbe2'></span>
                 <span class='prototype kit'><img src='img/pieces/tuile/herbe3.png' alt='piece_herbe3'></span>
@@ -283,7 +280,6 @@
 <script type="text/template" id="tab_template">
     <%
         var styles = '';
-    console.log(level);
         for (var val in data) {
             var print = false;
             var title= data[val]['name'].toLowerCase().replace(/\s/ig, '_');
@@ -292,14 +288,13 @@
                 print = true;
             } else {
                 if ((data[val]["edition"] !== 'Eternal 1') && (data[val]["edition"] !== 'Season 1')) {
-                    if (level=='boss' && data[val]["status"]=='boss') {console.log('boss'); print = true;}
-                    if (level=='ban' && data[val]["status"]=='ban') {console.log('ban');print = true;}
-                    if (level==data[val]['level'] && data[val]["status"]!='boss' && data[val]["status"]!='ban') {console.log('level');print = true;}
+                    if (level=='ban' && data[val]["status"]=='ban') {print = true;}
+                    if (level==data[val]['level'] && data[val]["status"]!='ban') {print = true;}
                 }
             }
             if (print) {
     %>
-            <div class="prototype krosmaster <%= title %>"><span class='circle'><img src='img/krosmasters/lv<%= data[val]["level"] %>/<%=  title %>.png' alt='<%= data[val]["name"] %>'></span></div>
+            <div class="prototype krosmaster <%= title %> "><span class='circle <%= data[val]["color"] %>'><img src='img/krosmasters/lv<%= data[val]["level"] %>/<%=  title %>.png' alt='<%= data[val]["name"] %>' title='<%= data[val]["name"] %>'></span></div>
     <%
             styles += '.'+title+':hover::after {background-image:url("'+data[val]["img"]+'");}';
             }
