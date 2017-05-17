@@ -24,9 +24,32 @@ $(function () {
     $("#accordion").accordion({
         heightStyle: "content"
     });
+
+    //Check quater of workflow
+    function get_workflow_quater(top, left) {
+        top = top - $('.workflow').position().top;
+        left = left - $('.workflow').position().left;
+        width = 900;
+        height = 900;
+
+        if (left<=width/2 && top<=height/2){
+            return 'left-top-corner'
+        }
+        if (left<=width/2 && top>=height/2){
+            return 'left-bottom-corner'
+        }
+        if (left>=width/2 && top<=height/2){
+            return 'right-top-corner'
+        }
+        if (left>=width/2 && top>=height/2){
+            return 'right-bottom-corner'
+        }
+
+    }
     //Event liées à prototype
     //Avec la creation d'un jeton lors du draggage du dit prototype.
     //Le jeton obtenant draggage et divers capacitée liés au jeton
+    function dragg() {
         $(".prototype").draggable({
             delay: 100
             , appendTo: ".workflow"
@@ -37,7 +60,7 @@ $(function () {
             , scrollSensitivity: 100
             , helper: "clone"
             , stop: function (event, ui) {
-                $("<span class = 'jeton " + $(this)[0].classList[1] + "'>" + $(this).html() + "</span>").appendTo("body").css({
+                var jeton = $("<div class = 'jeton " + $(this)[0].classList[1]+ ' ' + $(this)[0].classList[2] +"'>" + $(this).html() + "</div>").appendTo("body").css({
                     "position": "absolute"
                     , "left": ui.offset.left
                     , "top": ui.offset.top
@@ -48,7 +71,14 @@ $(function () {
                     , cursor: "move"
                     , scroll: true
                     , scrollSpeed: 30
-                    , scrollSensitivity: 100,
+                    , scrollSensitivity: 100
+                    , drag: function (event, ui) {
+                        var direct = get_workflow_quater(ui.offset.top, ui.offset.left);
+                        if(!$(this).hasClass(direct)){
+                            $(this).removeClass('left-top-corner right-top-corner right-bottom-corner left-bottom-corner');
+                            $(this).addClass(direct);
+                        }
+                    },
                     start: function (event) {
                         cs.mouseHandler(event, 'removeObstructive');
                     },
@@ -61,6 +91,9 @@ $(function () {
                     }
                 });
 
+                var direct = get_workflow_quater(ui.offset.top, ui.offset.left);
+                $(jeton).addClass(direct);
+
                 if ($('.jeton').length == 1) {
                     cs.mouseHandler(event, 'moveHero');
                 } else {
@@ -69,10 +102,11 @@ $(function () {
 
             }
         });
+    };
+
     //Gestion des jetons
     //Changement de couleur du circle via click gauche
     $(document).on("dblclick", ".jeton", function (event) {
-
 
         if (event.shiftKey) {
             cs.mouseHandler(event, 'addObstructive');
@@ -156,98 +190,98 @@ $(function () {
         $("#dialog_aide").dialog("open");
     });
 
-    function CreerTriangle(orientation, couleur) {
-        var canvas = document.getElementById("createur");
-        var context = canvas.getContext("2d");
-        context.setTransform(1, 0, 0, 1, 0, 0);
-        context.clearRect(0, 0, 72, 72);
-        context.translate(36, 36);
-        // translate and rotate
-        if (orientation == "left") {
-            context.rotate(Math.PI / 2);
-        }
-        else if (orientation == "bottom") {
-            context.rotate(Math.PI);
-        }
-        else if (orientation == "right") {
-            context.rotate(3 * Math.PI / 2);
-        }
-        context.fillStyle = couleur;
-        context.beginPath();
-        context.moveTo(-36, 24);
-        context.lineTo(0, -36);
-        context.lineTo(36, 24);
-        context.lineTo(19, 24);
-        context.lineTo(10, 12);
-        context.lineTo(10, 36);
-        context.lineTo(-10, 36);
-        context.lineTo(-10, 12);
-        context.lineTo(-19, 24);
-        context.lineTo(0, 24);
-        context.fill();
-        context.closePath();
-        return canvas.toDataURL();
-    }
-
-    function CreerAngle(orientation, couleur) {
-        var canvas = document.getElementById("createur");
-        var context = canvas.getContext("2d");
-        context.setTransform(1, 0, 0, 1, 0, 0);
-        context.clearRect(0, 0, 72, 72);
-        context.translate(36, 36);
-        var rectWidth = 72;
-        var rectHeight = 20;
-        // translate and rotate
-        if (orientation == "aleft") {
-            context.rotate(Math.PI / 2);
-        }
-        else if (orientation == "abottom") {
-            context.rotate(Math.PI);
-        }
-        else if (orientation == "aright") {
-            context.rotate(3 * Math.PI / 2);
-        }
-        context.fillStyle = couleur;
-        context.fillRect(rectHeight / -2, rectWidth / -2, rectHeight, rectWidth - 26);
-        context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 26, rectHeight);
-        return canvas.toDataURL();
-    }
-
-    function CreerRect(orientation, couleur) {
-        var canvas = document.getElementById("createur");
-        var context = canvas.getContext("2d");
-        context.setTransform(1, 0, 0, 1, 0, 0);
-        context.clearRect(0, 0, 72, 72);
-        context.translate(36, 36);
-        context.fillStyle = couleur;
-        var rectWidth = 72;
-        var rectHeight = 20;
-        // translate and rotate
-        if (orientation == "hori") {
-            context.rotate(Math.PI / 2);
-        }
-        context.fillStyle = couleur;
-        context.fillRect(rectHeight / -2, rectWidth / -2, rectHeight, rectWidth);
-        return canvas.toDataURL();
-    }
-
-    function CreerCroix(couleur) {
-        var canvas = document.getElementById("createur");
-        var context = canvas.getContext("2d");
-        context.setTransform(1, 0, 0, 1, 0, 0);
-        context.clearRect(0, 0, 72, 72);
-        context.fillStyle = couleur;
-        var rectWidth = 72;
-        var rectHeight = 15;
-        // translate context to center of canvas
-        context.translate(canvas.width / 2, canvas.height / 2);
-        // rotate 45 degrees clockwise
-        context.rotate(Math.PI / 4);
-        context.fillStyle = couleur;
-        context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth, rectHeight);
-        context.fillRect(rectHeight / -2, rectWidth / -2, rectHeight, rectWidth);
-        return canvas.toDataURL();
-    }
+    // function CreerTriangle(orientation, couleur) {
+    //     var canvas = document.getElementById("createur");
+    //     var context = canvas.getContext("2d");
+    //     context.setTransform(1, 0, 0, 1, 0, 0);
+    //     context.clearRect(0, 0, 72, 72);
+    //     context.translate(36, 36);
+    //     // translate and rotate
+    //     if (orientation == "left") {
+    //         context.rotate(Math.PI / 2);
+    //     }
+    //     else if (orientation == "bottom") {
+    //         context.rotate(Math.PI);
+    //     }
+    //     else if (orientation == "right") {
+    //         context.rotate(3 * Math.PI / 2);
+    //     }
+    //     context.fillStyle = couleur;
+    //     context.beginPath();
+    //     context.moveTo(-36, 24);
+    //     context.lineTo(0, -36);
+    //     context.lineTo(36, 24);
+    //     context.lineTo(19, 24);
+    //     context.lineTo(10, 12);
+    //     context.lineTo(10, 36);
+    //     context.lineTo(-10, 36);
+    //     context.lineTo(-10, 12);
+    //     context.lineTo(-19, 24);
+    //     context.lineTo(0, 24);
+    //     context.fill();
+    //     context.closePath();
+    //     return canvas.toDataURL();
+    // }
+    //
+    // function CreerAngle(orientation, couleur) {
+    //     var canvas = document.getElementById("createur");
+    //     var context = canvas.getContext("2d");
+    //     context.setTransform(1, 0, 0, 1, 0, 0);
+    //     context.clearRect(0, 0, 72, 72);
+    //     context.translate(36, 36);
+    //     var rectWidth = 72;
+    //     var rectHeight = 20;
+    //     // translate and rotate
+    //     if (orientation == "aleft") {
+    //         context.rotate(Math.PI / 2);
+    //     }
+    //     else if (orientation == "abottom") {
+    //         context.rotate(Math.PI);
+    //     }
+    //     else if (orientation == "aright") {
+    //         context.rotate(3 * Math.PI / 2);
+    //     }
+    //     context.fillStyle = couleur;
+    //     context.fillRect(rectHeight / -2, rectWidth / -2, rectHeight, rectWidth - 26);
+    //     context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 26, rectHeight);
+    //     return canvas.toDataURL();
+    // }
+    //
+    // function CreerRect(orientation, couleur) {
+    //     var canvas = document.getElementById("createur");
+    //     var context = canvas.getContext("2d");
+    //     context.setTransform(1, 0, 0, 1, 0, 0);
+    //     context.clearRect(0, 0, 72, 72);
+    //     context.translate(36, 36);
+    //     context.fillStyle = couleur;
+    //     var rectWidth = 72;
+    //     var rectHeight = 20;
+    //     // translate and rotate
+    //     if (orientation == "hori") {
+    //         context.rotate(Math.PI / 2);
+    //     }
+    //     context.fillStyle = couleur;
+    //     context.fillRect(rectHeight / -2, rectWidth / -2, rectHeight, rectWidth);
+    //     return canvas.toDataURL();
+    // }
+    //
+    // function CreerCroix(couleur) {
+    //     var canvas = document.getElementById("createur");
+    //     var context = canvas.getContext("2d");
+    //     context.setTransform(1, 0, 0, 1, 0, 0);
+    //     context.clearRect(0, 0, 72, 72);
+    //     context.fillStyle = couleur;
+    //     var rectWidth = 72;
+    //     var rectHeight = 15;
+    //     // translate context to center of canvas
+    //     context.translate(canvas.width / 2, canvas.height / 2);
+    //     // rotate 45 degrees clockwise
+    //     context.rotate(Math.PI / 4);
+    //     context.fillStyle = couleur;
+    //     context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth, rectHeight);
+    //     context.fillRect(rectHeight / -2, rectWidth / -2, rectHeight, rectWidth);
+    //     return canvas.toDataURL();
+    // }
 
     function tournerKit(url) {
         var canvas = document.getElementById("canvasKit");
@@ -268,69 +302,69 @@ $(function () {
             $(this).children("img").attr("src", tournerKit($(this).children("img").attr("src")));
         }
     });
-    $(document).on("dblclick", ".schema", function (event) {
-        if (event.which == 1) {
-            if ($(this).children("img").hasClass(".black")) {
-                var couleur = "blue"
-            }
-            if ($(this).children("img").hasClass(".blue")) {
-                var couleur = "red"
-            }
-            if ($(this).children("img").hasClass(".red")) {
-                var couleur = "orange"
-            }
-            if ($(this).children("img").hasClass(".orange")) {
-                var couleur = "purple"
-            }
-            if ($(this).children("img").hasClass(".purple")) {
-                var couleur = "black"
-            }
-            if ($(this).children("img").hasClass(".croix")) {
-                $(this).children("img").attr("src", CreerCroix(couleur)).removeClass().addClass(".croix").addClass("." + couleur);
-            }
-            if ($(this).children("img").hasClass(".top")) {
-                $(this).children("img").attr("src", CreerTriangle("top", couleur)).removeClass().addClass(".top").addClass("." + couleur);
-            }
-            if ($(this).children("img").hasClass(".bottom")) {
-                $(this).children("img").attr("src", CreerTriangle("bottom", couleur)).removeClass().addClass(".bottom").addClass("." + couleur);
-            }
-            if ($(this).children("img").hasClass(".left")) {
-                $(this).children("img").attr("src", CreerTriangle("left", couleur)).removeClass().addClass(".left").addClass("." + couleur);
-            }
-            if ($(this).children("img").hasClass(".right")) {
-                $(this).children("img").attr("src", CreerTriangle("right", couleur)).removeClass().addClass(".right").addClass("." + couleur);
-            }
-            if ($(this).children("img").hasClass(".atop")) {
-                $(this).children("img").attr("src", CreerAngle("atop", couleur)).removeClass().addClass(".atop").addClass("." + couleur);
-            }
-            if ($(this).children("img").hasClass(".abottom")) {
-                $(this).children("img").attr("src", CreerAngle("abottom", couleur)).removeClass().addClass(".abottom").addClass("." + couleur);
-            }
-            if ($(this).children("img").hasClass(".aleft")) {
-                $(this).children("img").attr("src", CreerAngle("aleft", couleur)).removeClass().addClass(".aleft").addClass("." + couleur);
-            }
-            if ($(this).children("img").hasClass(".aright")) {
-                $(this).children("img").attr("src", CreerAngle("aright", couleur)).removeClass().addClass(".aright").addClass("." + couleur);
-            }
-            if ($(this).children("img").hasClass(".vert")) {
-                $(this).children("img").attr("src", CreerRect("vert", couleur)).removeClass().addClass(".vert").addClass("." + couleur);
-            }
-            if ($(this).children("img").hasClass(".hori")) {
-                $(this).children("img").attr("src", CreerRect("hori", couleur)).removeClass().addClass(".hori").addClass("." + couleur);
-            }
-        }
-    });
-    $("<span class = 'prototype schema'><img src ='" + CreerTriangle("left", "black") + "' class = '.left .black' ></span>").appendTo("#tabs-8");
-    $("<span class = 'prototype schema'><img src ='" + CreerTriangle("right", "black") + "'class = '.right .black' ></span>").appendTo("#tabs-8");
-    $("<span class = 'prototype schema'><img src ='" + CreerTriangle("top", "black") + "' class = '.top .black'></span>").appendTo("#tabs-8");
-    $("<span class = 'prototype schema'><img src ='" + CreerTriangle("bottom", "black") + "'class = '.bottom .black' ></span>").appendTo("#tabs-8");
-    $("<span class = 'prototype schema'><img src ='" + CreerAngle("atop", "black") + "' class = '.atop .black'></span>").appendTo("#tabs-8");
-    $("<span class = 'prototype schema'><img src ='" + CreerAngle("aright", "black") + "'class = '.aright .black' ></span>").appendTo("#tabs-8");
-    $("<span class = 'prototype schema'><img src ='" + CreerAngle("abottom", "black") + "'class = '.abottom .black' ></span>").appendTo("#tabs-8");
-    $("<span class = 'prototype schema'><img src ='" + CreerAngle("aleft", "black") + "' class = '.aleft .black' ></span>").appendTo("#tabs-8");
-    $("<span class = 'prototype schema'><img src ='" + CreerRect("verti", "black") + "' class = '.vert .black'></span>").appendTo("#tabs-8");
-    $("<span class = 'prototype schema'><img src ='" + CreerRect("hori", "black") + "' class = '.hori .black'></span>").appendTo("#tabs-8");
-    $("<span class = 'prototype schema'><img src ='" + CreerCroix("black") + "' class = '.croix .black'></span>").appendTo("#tabs-8");
+    // $(document).on("dblclick", ".schema", function (event) {
+    //     if (event.which == 1) {
+    //         if ($(this).children("img").hasClass(".black")) {
+    //             var couleur = "blue"
+    //         }
+    //         if ($(this).children("img").hasClass(".blue")) {
+    //             var couleur = "red"
+    //         }
+    //         if ($(this).children("img").hasClass(".red")) {
+    //             var couleur = "orange"
+    //         }
+    //         if ($(this).children("img").hasClass(".orange")) {
+    //             var couleur = "purple"
+    //         }
+    //         if ($(this).children("img").hasClass(".purple")) {
+    //             var couleur = "black"
+    //         }
+    //         if ($(this).children("img").hasClass(".croix")) {
+    //             $(this).children("img").attr("src", CreerCroix(couleur)).removeClass().addClass(".croix").addClass("." + couleur);
+    //         }
+    //         if ($(this).children("img").hasClass(".top")) {
+    //             $(this).children("img").attr("src", CreerTriangle("top", couleur)).removeClass().addClass(".top").addClass("." + couleur);
+    //         }
+    //         if ($(this).children("img").hasClass(".bottom")) {
+    //             $(this).children("img").attr("src", CreerTriangle("bottom", couleur)).removeClass().addClass(".bottom").addClass("." + couleur);
+    //         }
+    //         if ($(this).children("img").hasClass(".left")) {
+    //             $(this).children("img").attr("src", CreerTriangle("left", couleur)).removeClass().addClass(".left").addClass("." + couleur);
+    //         }
+    //         if ($(this).children("img").hasClass(".right")) {
+    //             $(this).children("img").attr("src", CreerTriangle("right", couleur)).removeClass().addClass(".right").addClass("." + couleur);
+    //         }
+    //         if ($(this).children("img").hasClass(".atop")) {
+    //             $(this).children("img").attr("src", CreerAngle("atop", couleur)).removeClass().addClass(".atop").addClass("." + couleur);
+    //         }
+    //         if ($(this).children("img").hasClass(".abottom")) {
+    //             $(this).children("img").attr("src", CreerAngle("abottom", couleur)).removeClass().addClass(".abottom").addClass("." + couleur);
+    //         }
+    //         if ($(this).children("img").hasClass(".aleft")) {
+    //             $(this).children("img").attr("src", CreerAngle("aleft", couleur)).removeClass().addClass(".aleft").addClass("." + couleur);
+    //         }
+    //         if ($(this).children("img").hasClass(".aright")) {
+    //             $(this).children("img").attr("src", CreerAngle("aright", couleur)).removeClass().addClass(".aright").addClass("." + couleur);
+    //         }
+    //         if ($(this).children("img").hasClass(".vert")) {
+    //             $(this).children("img").attr("src", CreerRect("vert", couleur)).removeClass().addClass(".vert").addClass("." + couleur);
+    //         }
+    //         if ($(this).children("img").hasClass(".hori")) {
+    //             $(this).children("img").attr("src", CreerRect("hori", couleur)).removeClass().addClass(".hori").addClass("." + couleur);
+    //         }
+    //     }
+    // });
+    // $("<span class = 'prototype schema'><img src ='" + CreerTriangle("left", "black") + "' class = '.left .black' ></span>").appendTo("#tabs-8");
+    // $("<span class = 'prototype schema'><img src ='" + CreerTriangle("right", "black") + "'class = '.right .black' ></span>").appendTo("#tabs-8");
+    // $("<span class = 'prototype schema'><img src ='" + CreerTriangle("top", "black") + "' class = '.top .black'></span>").appendTo("#tabs-8");
+    // $("<span class = 'prototype schema'><img src ='" + CreerTriangle("bottom", "black") + "'class = '.bottom .black' ></span>").appendTo("#tabs-8");
+    // $("<span class = 'prototype schema'><img src ='" + CreerAngle("atop", "black") + "' class = '.atop .black'></span>").appendTo("#tabs-8");
+    // $("<span class = 'prototype schema'><img src ='" + CreerAngle("aright", "black") + "'class = '.aright .black' ></span>").appendTo("#tabs-8");
+    // $("<span class = 'prototype schema'><img src ='" + CreerAngle("abottom", "black") + "'class = '.abottom .black' ></span>").appendTo("#tabs-8");
+    // $("<span class = 'prototype schema'><img src ='" + CreerAngle("aleft", "black") + "' class = '.aleft .black' ></span>").appendTo("#tabs-8");
+    // $("<span class = 'prototype schema'><img src ='" + CreerRect("verti", "black") + "' class = '.vert .black'></span>").appendTo("#tabs-8");
+    // $("<span class = 'prototype schema'><img src ='" + CreerRect("hori", "black") + "' class = '.hori .black'></span>").appendTo("#tabs-8");
+    // $("<span class = 'prototype schema'><img src ='" + CreerCroix("black") + "' class = '.croix .black'></span>").appendTo("#tabs-8");
 
     $('.js-kamas-button').on('click', function () {
         var count = parseInt(document.querySelector('.js-kamas-counter').innerHTML, 10);
@@ -379,49 +413,34 @@ $(function () {
 
     });
 
-    var data = {
-        "Queen of the Tofus": {
-            "name": "Queen of the Tofus",
-            "color": "nameclr-1",
-            "link": "http://krosfinder.com/ru/ed/arena/1",
-            "level": "3",
-            "initiative": "8",
-            "mp": "4",
-            "hp": "8",
-            "ap": "6",
-            "edition": "Krosmaster Arena",
-            "img": "http://cdn.krosfinder.info/media/krs/EN/014_i18n_front.png"
-        },
-        "King of the Gobballs": {
-            "name": "King of the Gobballs",
-            "color": "nameclr-1",
-            "link": "http://krosfinder.com/ru/ed/arena/2",
-            "level": "3",
-            "initiative": "2",
-            "mp": "3",
-            "hp": "10",
-            "ap": "7",
-            "edition": "Krosmaster Arena",
-            "img": "http://cdn.krosfinder.info/media/krs/EN/015_i18n_front.png"
-        }
-    };
-    var template = document.getElementById('tab_template').innerHTML;
-    var tmpl = _.template(template);
+    var tmpl = _.template(document.getElementById('tab_template').innerHTML);
     var result = tmpl({data: krosmasters, level: 1});
     $('#tabs-1').append(result);
+    dragg();
 
-    // <script type="text/template" id="tab_template">
-    //     <%
-    // var styles = '';
-    // for (var val in data) {
-    //     var title= data[val]['name'].toLowerCase().replace(/\s/ig, '_');
-    // %>
-    // <div class="krosmaster <%= title %>"><span class='prototype circle'><img src='img/krosmasters/lv<%= data[val]["level"] %>/<%= data[val]["name"] %>.png' alt='<%= title %>'></span></div>
-    //     <%
-    //     styles += '.<%= title %>{background-url:url(<%= data[val]["img"] %>);} ';
-    // };
-    // $('#card_styles').append(styles);
-    // %>
-    // </script>
+    $('.js-tab').on('click', function () {
+        var level = $(this).data('level');
+        var num = 0;
+        switch (level) {
+            case 'eternal':
+                num = 7;
+                break;
+            case 'ban':
+                num = 8;
+                break;
+            case 'boss':
+                num = 9;
+                break;
+            default:
+                num = level;
+                break;
+        }
+        if($('#tabs-' + num)[0].innerHTML == '') {
+            result = tmpl({data: krosmasters, level: level});
+            $('#tabs-'+ num).append(result);
+            console.log('страница загружена!');
+            dragg();
+        }
 
+    });
 });

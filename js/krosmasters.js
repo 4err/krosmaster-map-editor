@@ -11,7 +11,7 @@ var krosmasters = {
         "mp": "4",
         "hp": "8",
         "ap": "6",
-        "edition": "Krosmaster Arena",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/014_i18n_front.png"
     },
     "King of the Gobballs": {
@@ -23,7 +23,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "10",
         "ap": "7",
-        "edition": "Krosmaster Arena",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/015_i18n_front.png"
     },
     "Boo Ming": {
@@ -35,7 +35,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "7",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/025_i18n_front.png"
     },
     "Bad Aboum": {
@@ -47,7 +47,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "9",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/010_i18n_front.png"
     },
     "Remington Smisse": {
@@ -59,7 +59,7 @@ var krosmasters = {
         "mp": "4",
         "hp": "13",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/024_i18n_front.png"
     },
     "Maskun John": {
@@ -71,7 +71,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "7",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/033_i18n_front.png"
     },
     "Kassius Kaos": {
@@ -83,7 +83,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "9",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/013_i18n_front.png"
     },
     "Victor don Voom": {
@@ -95,7 +95,7 @@ var krosmasters = {
         "mp": "4",
         "hp": "14",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/034_i18n_front.png"
     },
     "Bill Tell": {
@@ -107,7 +107,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "6",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/008_i18n_front.png"
     },
     "Jems Blond": {
@@ -119,7 +119,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "8",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/016_i18n_front.png"
     },
     "Luk Ylook": {
@@ -131,7 +131,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "5",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/017_i18n_front.png"
     },
     "Lil Healey": {
@@ -143,7 +143,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "8",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/009_i18n_front.png"
     },
     "Ally McZeal": {
@@ -155,7 +155,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "11",
         "ap": "7",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/021_i18n_front.png"
     },
     "Di Curey": {
@@ -167,7 +167,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "5",
         "ap": "5",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/022_i18n_front.png"
     },
     "Srammy": {
@@ -179,7 +179,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "6",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/031_i18n_front.png"
     },
     "Oscar Kass": {
@@ -191,7 +191,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "10",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/012_i18n_front.png"
     },
     "Fraktor": {
@@ -203,7 +203,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "12",
         "ap": "7",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/032_i18n_front.png"
     },
     "Coa Gulary": {
@@ -215,7 +215,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "7",
         "ap": "5",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/026_i18n_front.png"
     },
     "Anna Tommy": {
@@ -227,7 +227,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "12",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/011_i18n_front.png"
     },
     "Clot the Crapulous": {
@@ -239,7 +239,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "14",
         "ap": "7",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/027_i18n_front.png"
     },
     "Klor Ofil": {
@@ -251,7 +251,7 @@ var krosmasters = {
         "mp": "4",
         "hp": "7",
         "ap": "5",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/028_i18n_front.png"
     },
     "Makum Bah": {
@@ -263,7 +263,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "13",
         "ap": "7",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/030_i18n_front.png"
     },
     "Fern Sockem": {
@@ -275,7 +275,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "6",
         "ap": "5",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/029_i18n_front.png"
     },
     "Quentin Flush": {
@@ -287,7 +287,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "6",
         "ap": "5",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/020_i18n_front.png"
     },
     "Dani OShun": {
@@ -299,7 +299,7 @@ var krosmasters = {
         "mp": "4",
         "hp": "12",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/018_i18n_front.png"
     },
     "Naz Rael": {
@@ -311,7 +311,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "8",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/019_i18n_front.png"
     },
     "Percimol": {
@@ -323,7 +323,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "17",
         "ap": "7",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/035_i18n_front.png"
     },
     "Shak Shaka": {
@@ -335,7 +335,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "15",
         "ap": "7",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/036_i18n_front.png"
     },
     "Goultard": {
@@ -347,7 +347,7 @@ var krosmasters = {
         "mp": "4",
         "hp": "16",
         "ap": "8",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/023_i18n_front.png"
     },
     "Cloud Knight": {
@@ -359,7 +359,7 @@ var krosmasters = {
         "mp": "4",
         "hp": "8",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/038_i18n_front.png"
     },
     "Drop Knight": {
@@ -371,7 +371,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "10",
         "ap": "6",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/039_i18n_front.png"
     },
     "Flame Knight": {
@@ -383,7 +383,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "9",
         "ap": "7",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/040_i18n_front.png"
     },
     "Leaf Knight": {
@@ -395,7 +395,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "11",
         "ap": "5",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/041_i18n_front.png"
     },
     "Darkness Knight": {
@@ -407,7 +407,7 @@ var krosmasters = {
         "mp": "4",
         "hp": "15",
         "ap": "7",
-        "edition": "Dofus Krosmaster 1",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/037_i18n_front.png"
     },
     "Argon Gass": {
@@ -419,7 +419,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "10",
         "ap": "6",
-        "edition": "Exclusive Figurines",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/001_i18n_front.png"
     },
     "Amalia": {
@@ -431,7 +431,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "8",
         "ap": "6",
-        "edition": "Exclusive Figurines",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/002_i18n_front.png"
     },
     "Evangelyne": {
@@ -443,7 +443,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "8",
         "ap": "6",
-        "edition": "Exclusive Figurines",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/003_i18n_front.png"
     },
     "Nox": {
@@ -455,7 +455,7 @@ var krosmasters = {
         "mp": "2",
         "hp": "14",
         "ap": "8",
-        "edition": "Exclusive Figurines",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/004_i18n_front.png"
     },
     "Ruel Stroud": {
@@ -467,7 +467,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "8",
         "ap": "6",
-        "edition": "Exclusive Figurines",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/005_i18n_front.png"
     },
     "Percedal": {
@@ -479,7 +479,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "10",
         "ap": "6",
-        "edition": "Exclusive Figurines",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/006_i18n_front.png"
     },
     "Yugo": {
@@ -491,7 +491,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "8",
         "ap": "7",
-        "edition": "Exclusive Figurines",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/007_i18n_front.png"
     },
     "Goultard the Barbarian": {
@@ -503,7 +503,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "25",
         "ap": "8",
-        "edition": "Exclusive Figurines",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/042_i18n_front.png"
     },
     "Count Frigost": {
@@ -515,7 +515,7 @@ var krosmasters = {
         "mp": "5",
         "hp": "14",
         "ap": "10",
-        "edition": "Exclusive Figurines",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/044_i18n_front.png"
     },
     "Captain Amakna": {
@@ -551,7 +551,7 @@ var krosmasters = {
         "mp": "4",
         "hp": "16",
         "ap": "8",
-        "edition": "Frigost Add-on",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/043_i18n_front.png"
     },
     "Lumino": {
@@ -563,7 +563,7 @@ var krosmasters = {
         "mp": "4",
         "hp": "4",
         "ap": "6",
-        "edition": "Multiman Pack",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/051_i18n_front.png"
     },
     "Krobax": {
@@ -575,7 +575,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "5",
         "ap": "5",
-        "edition": "Multiman Pack",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/047_i18n_front.png"
     },
     "Skale": {
@@ -587,7 +587,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "6",
         "ap": "6",
-        "edition": "Multiman Pack",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/049_i18n_front.png"
     },
     "Trank": {
@@ -599,7 +599,7 @@ var krosmasters = {
         "mp": "2",
         "hp": "9",
         "ap": "6",
-        "edition": "Multiman Pack",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/050_i18n_front.png"
     },
     "Bellzebug": {
@@ -611,7 +611,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "8",
         "ap": "6",
-        "edition": "Multiman Pack",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/048_i18n_front.png"
     },
     "Shadow": {
@@ -623,7 +623,7 @@ var krosmasters = {
         "mp": "3",
         "hp": "7",
         "ap": "7",
-        "edition": "Multiman Pack",
+        "edition": "Season 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/052_i18n_front.png"
     },
     "Grampy": {
@@ -684,7 +684,8 @@ var krosmasters = {
         "hp": "10",
         "ap": "6",
         "edition": "Krosmaster Terminatot",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/053_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/053_i18n_front.png",
+        "status": "ban"
     },
     "Stasis Terminatot": {
         "name": "Stasis Terminatot",
@@ -696,7 +697,8 @@ var krosmasters = {
         "hp": "10",
         "ap": "6",
         "edition": "Krosmaster Terminatot",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/054_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/054_i18n_front.png",
+        "status": "ban"
     },
     "Goldenrod Terminatot": {
         "name": "Goldenrod Terminatot",
@@ -708,7 +710,8 @@ var krosmasters = {
         "hp": "10",
         "ap": "6",
         "edition": "Krosmaster Terminatot",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/055_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/055_i18n_front.png",
+        "status": "ban"
     },
     "Elogio": {
         "name": "Elogio",
@@ -768,7 +771,8 @@ var krosmasters = {
         "hp": "5",
         "ap": "7",
         "edition": "Dofus Krosmaster 2",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/064_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/064_i18n_front.png",
+        "status": "boss"
     },
     "Mike Locke": {
         "name": "Mike Locke",
@@ -852,7 +856,8 @@ var krosmasters = {
         "hp": "6",
         "ap": "5",
         "edition": "Dofus Krosmaster 2",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/071_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/071_i18n_front.png",
+        "status": "boss"
     },
     "Diver Birel": {
         "name": "Diver Birel",
@@ -888,7 +893,8 @@ var krosmasters = {
         "hp": "11",
         "ap": "7",
         "edition": "Dofus Krosmaster 2",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/074_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/074_i18n_front.png",
+        "status": "boss"
     },
     "Pandalida": {
         "name": "Pandalida",
@@ -924,7 +930,8 @@ var krosmasters = {
         "hp": "5",
         "ap": "5",
         "edition": "Dofus Krosmaster 2",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/077_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/077_i18n_front.png",
+        "status": "ban"
     },
     "Igar Dlador": {
         "name": "Igar Dlador",
@@ -984,7 +991,8 @@ var krosmasters = {
         "hp": "5",
         "ap": "5",
         "edition": "Dofus Krosmaster 2",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/079_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/079_i18n_front.png",
+        "status": "boss"
     },
     "Theo": {
         "name": "Theo",
@@ -996,7 +1004,8 @@ var krosmasters = {
         "hp": "10",
         "ap": "7",
         "edition": "Dofus Krosmaster 2",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/080_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/080_i18n_front.png",
+        "status": "ban"
     },
     "Gein": {
         "name": "Gein",
@@ -1008,7 +1017,8 @@ var krosmasters = {
         "hp": "13",
         "ap": "7",
         "edition": "Dofus Krosmaster 2",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/091_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/091_i18n_front.png",
+        "status": "boss"
     },
     "Adamai": {
         "name": "Adamai",
@@ -1032,7 +1042,8 @@ var krosmasters = {
         "hp": "16",
         "ap": "10",
         "edition": "Dofus Krosmaster 2",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/090_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/090_i18n_front.png",
+        "status": "boss"
     },
     "Amakna Riktus": {
         "name": "Amakna Riktus",
@@ -1176,7 +1187,8 @@ var krosmasters = {
         "hp": "10",
         "ap": "6",
         "edition": "Exclusive Figurines 2",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/132_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/132_i18n_front.png",
+        "status": "ban"
     },
     "Tiktokovitch": {
         "name": "Tiktokovitch",
@@ -1260,7 +1272,8 @@ var krosmasters = {
         "hp": "6",
         "ap": "5",
         "edition": "Dark Heroes",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/106_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/106_i18n_front.png",
+        "status": "boss"
     },
     "Dark Vlad": {
         "name": "Dark Vlad",
@@ -1296,7 +1309,8 @@ var krosmasters = {
         "hp": "10",
         "ap": "7",
         "edition": "Dark Heroes",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/109_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/109_i18n_front.png",
+        "status": "boss"
     },
     "Vampyro": {
         "name": "Vampyro",
@@ -1320,7 +1334,8 @@ var krosmasters = {
         "hp": "12",
         "ap": "8",
         "edition": "Dark Heroes",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/111_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/111_i18n_front.png",
+        "status": "boss"
     },
     "Kanniball Archer": {
         "name": "Kanniball Archer",
@@ -1620,7 +1635,8 @@ var krosmasters = {
         "hp": "10",
         "ap": "6",
         "edition": "Exclusive Figurines 3",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/172_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/172_i18n_front.png",
+        "status": "ban"
     },
     "Nemesis Samurai": {
         "name": "Nemesis Samurai",
@@ -1632,7 +1648,8 @@ var krosmasters = {
         "hp": "9",
         "ap": "6",
         "edition": "Exclusive Figurines 3",
-        "img": "http://cdn.krosfinder.info/media/krs/EN/173_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/EN/173_i18n_front.png",
+        "status": "ban"
     },
     "Royal Tofu": {
         "name": "Royal Tofu",
@@ -1970,8 +1987,8 @@ var krosmasters = {
         "edition": "Eternal 1",
         "img": "http://cdn.krosfinder.info/media/krs/EN/217_i18n_front.png"
     },
-    "Dani O'Shun Eternal 1": {
-        "name": "Dani O'Shun Eternal 1",
+    "Dani OShun Eternal 1": {
+        "name": "Dani OShun Eternal 1",
         "color": "nameclr-2",
         "link": "http://krosfinder.com/ru/ed/et1/18",
         "level": "4",
@@ -2400,7 +2417,8 @@ var krosmasters = {
         "hp": "11",
         "ap": "7",
         "edition": "Krosmaster Arena 2.0",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/125_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/125_i18n_front.png",
+        "status": "boss"
     },
     "Skidmonk": {
         "name": "Skidmonk",
@@ -2496,7 +2514,8 @@ var krosmasters = {
         "hp": "13",
         "ap": "7",
         "edition": "Krosmaster Arena 2.0",
-        "img": "http://cdn.krosfinder.info/media/krs/RU/127_i18n_front.png"
+        "img": "http://cdn.krosfinder.info/media/krs/RU/127_i18n_front.png",
+        "status": "boss"
     },
     "Puny Vampire": {
         "name": "Puny Vampire",
