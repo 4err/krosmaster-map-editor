@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Редактор карт для Krosmaster Arena</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!-- endbuild -->
+
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+</head>
+
+<body>
+<div class="main-container">
+    <aside class="tools-list">
+        <div class="toolbox">
+            <button class="tool-btn tool-btn-view js-enable-los" title="Режим вечности">Вкл/выкл режим "Вечность"</button>
+            <button class="tool-btn tool-btn-help js-enable-help" title="Помощь">Помощь</button>
+        </div>
+
+        <div id="tabs" class="tabs">
+            <ul>
+                <li><a href="#tabs-1" class="js-tab" data-level="1">Ур. 1</a></li>
+                <li><a href="#tabs-2" class="js-tab" data-level="2">Ур. 2</a></li>
+                <li><a href="#tabs-3" class="js-tab" data-level="3">Ур. 3</a></li>
+                <li><a href="#tabs-4" class="js-tab" data-level="4">Ур. 4</a></li>
+                <li><a href="#tabs-5" class="js-tab" data-level="5">Ур. 5</a></li>
+                <li><a href="#tabs-6" class="js-tab" data-level="6">Ур. 6</a></li>
+                <li><a href="#tabs-7" class="js-tab" data-level="eternal">Вечность*</a></li>
+            </ul>
+
+            <div id="tabs-1" class="tab"></div>
+            <div id="tabs-2" class="tab"></div>
+            <div id="tabs-3" class="tab"></div>
+            <div id="tabs-4" class="tab"></div>
+            <div id="tabs-5" class="tab"></div>
+            <div id="tabs-6" class="tab"></div>
+            <div id="tabs-7" class="tab"></div>
+        </div>
+        <div class="team-stats">
+            Уровень: <span class="team-lvl">0</span> из 12,
+            Инициатива: <span class="team-initiative">0</span>
+            <div class="errors">
+
+            </div>
+        </div>
+    </aside>
+    <section class="workflow">
+        <h2>Создание команды</h2>
+        <div class="deck"></div>
+    </section>
+    <section class="teams">
+        <h2>Ваши команды</h2>
+    </section>
+</div>
+
+<div class="help-popup">
+    <h2>Помощь</h2>
+    <div class="question">Управление</div>
+    <div class="answer">
+        Для работы с картой используются кнопки инструментов, расположенные над панелью кросмастеров.<br>
+        По умолчанию ЛОС отключен.
+        Камера автоматически устанавливается под первого выставленного кросмастера.
+        <p>Расширенные возможности работы с ЛОС</p>
+        <ul>
+            <li><b>Двойной клик по жетону</b> - устанавливает камеру в эту клетку.</li>
+            <li><b>SHIFT + Двойной клик по жетону</b> - устанавливает дерево в эту клетку</li>
+            <li><b>Правый клик по жетону</b> - удаляет жетон и дерево под ним</li>
+        </ul>
+    </div>
+    <div class="question">Поддержка</div>
+    <div class="answer">
+        <p>Сделано специально для <a href="https://vk.com/kmarussia">Krosmaster Russia</a></p>
+        <a href="https://github.com/4err/krosmaster-map-editor">Репозиторий проекта на GitHub</a><br>
+        <a href="https://github.com/4err/krosmaster-map-editor/blob/master/changelog.md">ChangeLog</a><br>
+        Пожелания и ошибки лучше писать в <a href="https://github.com/4err/krosmaster-map-editor/issues">багтрекер на GitHub</a><br>
+        Модуль ЛОСа взят и доработан с <a href="http://krosfinder.com/">Krosfinder</a><br>
+        Жетоны и идея карты взяты с <a href="http://big-bad.forumactif.org/h4-big-bad-s-taktikor">Big bad taktikor</a>
+
+    </div>
+</div>
+
+<!-- build:js -->
+<script src="js/krosmasters.js"></script>
+<script src="js/func.js"></script>
+<script src="js/teambuilder.js"></script>
+<!-- endbuild -->
+
+<script type="text/template" id="tab_template">
+    <%
+    for (var val in data) {
+    var print = false;
+    var title= data[val]['name'].toLowerCase().replace(/\s/ig, '_');
+    if ((level == 'eternal') && (data[val]["edition"] == 'Eternal 1')) {
+    title=title.replace(/_eternal_1/ig, '');
+    print = true;
+    } else {
+    if ((data[val]["edition"] !== 'Eternal 1') && (data[val]["edition"] !== 'Season 1')) {
+    if (level=='ban' && data[val]["status"]=='ban') {print = true;}
+    if (level==data[val]['level'] && data[val]["status"]!='ban') {print = true;}
+    }
+    }
+    if (print) {
+    %>
+    <div class='prototype krosmaster <%= title %>' data-title='<%= data[val]["name"] %>'><span class='circle <%= data[val]["color"] %>'><img src='img/krosmasters/lv<%= data[val]["level"] %>/<%=  title %>.png' alt='<%= data[val]["name"] %>' title='<%= data[val]["name"] %>'></span></div>
+    <%
+    }
+    };
+    %>
+</script>
+
+<script type="text/template" id="team_template">
+    <%
+    for (var val in data) {
+    var title= data[val]['name'].toLowerCase().replace(/\s/ig, '_');
+    %>
+    <div class='card' data-num='<%= val %>'><img src='<%= data[val]["img"] %>' alt='<%= data[val]["name"] %>' title='<%= data[val]["name"] %>'></div>
+
+    <%
+    }
+    %>
+</script>
+<style id="card_styles">
+</style>
+</body>
+</html>

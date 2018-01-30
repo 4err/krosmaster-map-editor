@@ -5,9 +5,9 @@ $(function () {
 
     $("#choice_map").change(function () {
         if (this.value === 'empty') {
-            $(".workflow").css("background-image", "url(./img/maps/" + this.value + ".png)");
+            $(".map-workflow").css("background-image", "url(./img/maps/" + this.value + ".png)");
         } else {
-            $(".workflow").css("background-image", "url(./img/maps/" + this.value + ".jpg)");
+            $(".map-workflow").css("background-image", "url(./img/maps/" + this.value + ".jpg)");
         }
     });
 
@@ -25,10 +25,10 @@ $(function () {
         heightStyle: "content"
     });
 
-    //Check quater of workflow
+    //Check quater of map-workflow
     function get_workflow_quater(top, left) {
-        top = top - $('.workflow').position().top;
-        left = left - $('.workflow').position().left;
+        top = top - $('.map-workflow').position().top;
+        left = left - $('.map-workflow').position().left;
         width = 900;
         height = 900;
 
@@ -52,7 +52,7 @@ $(function () {
     function dragg() {
         $(".prototype").draggable({
             delay: 100
-            , appendTo: ".workflow"
+            , appendTo: ".map-workflow"
             , containment: "parent"
             , cursor: "move"
             , scroll: true
@@ -60,7 +60,6 @@ $(function () {
             , scrollSensitivity: 100
             , helper: "clone"
             , stop: function (event, ui) {
-                var krosmaster_name = $(this)[0].classList[2];
                 var jeton = $("<div class = 'jeton " + $(this)[0].classList[1]+ ' ' + $(this)[0].classList[2] +"'>" + $(this).html() + "</div>").appendTo("body").css({
                     "position": "absolute"
                     , "left": ui.offset.left
@@ -68,7 +67,7 @@ $(function () {
                     , "border-color": $(this).css("borderTopColor")
                 }).draggable({
                     delay: 100
-                    , containment: ".workflow"
+                    , containment: ".map-workflow"
                     , cursor: "move"
                     , scroll: true
                     , scrollSpeed: 30
@@ -94,9 +93,12 @@ $(function () {
 
                 var direct = get_workflow_quater(ui.offset.top, ui.offset.left);
                 $(jeton).addClass(direct);
+                if ($(this).hasClass('krosmaster')) {
+                    var krosmaster_name = $(this)[0].classList[2];
 
-                if ($('.jeton.'+krosmaster_name).length > 1) {
-                    $(jeton).append('<div class="krosmaster-num">'+$('.jeton.'+krosmaster_name).length+'</div>');
+                    if ($('.jeton.'+krosmaster_name).length > 1) {
+                        $(jeton).append('<div class="krosmaster-num">'+$('.jeton.'+krosmaster_name).length+'</div>');
+                    }
                 }
 
                 if ($('.jeton').length == 1) {

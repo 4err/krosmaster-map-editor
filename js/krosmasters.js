@@ -772,7 +772,7 @@ var krosmasters = {
         "ap": "7",
         "edition": "Dofus Krosmaster 2",
         "img": "http://cdn.krosfinder.info/media/krs/EN/064_i18n_front.png",
-        "status": "boss"
+        "status": "ban"
     },
     "Mike Locke": {
         "name": "Mike Locke",

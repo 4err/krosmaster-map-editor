@@ -214,7 +214,7 @@
          <button class="js-kamas-button kama-btn">-</button>
      </div>
  </aside>
- <section class="workflow">
+ <section class="map-workflow">
      <canvas class="los" id="los"></canvas>
  </section>
  <!--
@@ -234,21 +234,21 @@
          <button class="help-btn js-enable-help">Помощь</button>
      </div>
  </aside> -->
-    <canvas id="createur" style="border:2px solid black;" width="72" height="72"></canvas>
-    <canvas id="canvasKit" style="border:2px solid black;" width="93" height="93"></canvas>
-    <canvas id="canvas" style="border:2px solid black;" width="1196" height="1196"></canvas>
-    <!--
-        <div id="dialog_enreg" title="Параметры сохранения">
-            <label>Размер изображения:
-                <input type="number" name="Largeur" id="qualite" value=800 size=4></label>
-            <label>Имя изображения:
-                <input type="text" name="Nom" id="nomImage" value="Моя карта" size=16></label>
-            <label>Симметрия относительно центра:
-                <input type="checkbox" name="SymC" id="symC"></label>
-            <div id="bouton_valid">Сохранить</div>
-        </div>
-    </div>
-    -->
+    <!--  <canvas id="createur" style="border:2px solid black;" width="72" height="72"></canvas>
+      <canvas id="canvasKit" style="border:2px solid black;" width="93" height="93"></canvas>
+      <canvas id="canvas" style="border:2px solid black;" width="1196" height="1196"></canvas> -->
+      <!--
+          <div id="dialog_enreg" title="Параметры сохранения">
+              <label>Размер изображения:
+                  <input type="number" name="Largeur" id="qualite" value=800 size=4></label>
+              <label>Имя изображения:
+                  <input type="text" name="Nom" id="nomImage" value="Моя карта" size=16></label>
+              <label>Симметрия относительно центра:
+                  <input type="checkbox" name="SymC" id="symC"></label>
+              <div id="bouton_valid">Сохранить</div>
+          </div>
+      </div>
+      -->
     <div class="help-popup">
         <h2>Помощь</h2>
         <div class="question">Управление</div>
@@ -281,7 +281,7 @@
 <script src="js/canvas-toBlob.js"></script>
 <script src="js/FileSaver.js"></script>
 <script src="js/los.js"></script>
-<script src="js/main_script.js"></script>
+<script src="js/workflow.js"></script>
 <!-- endbuild -->
 
 <script type="text/template" id="tab_template">
@@ -303,7 +303,7 @@
     %>
             <div class="prototype krosmaster <%= title %> "><span class='circle <%= data[val]["color"] %>'><img src='img/krosmasters/lv<%= data[val]["level"] %>/<%=  title %>.png' alt='<%= data[val]["name"] %>' title='<%= data[val]["name"] %>'></span></div>
     <%
-            styles += '.'+title+':hover::after {background-image:url("'+data[val]["img"]+'");}';
+                styles += '.'+title+':hover::after {background-image:url("'+data[val]["img"]+'");}';
             }
         };
         $('#card_styles').append(styles);
